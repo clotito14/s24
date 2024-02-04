@@ -1,0 +1,115 @@
+$date
+	Thu Feb 01 18:15:02 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module tb $end
+$var wire 8 ! D [7:0] $end
+$var reg 1 " E $end
+$var reg 8 # I [7:0] $end
+$var integer 32 $ i [31:0] $end
+$scope module U1 $end
+$var wire 1 " E $end
+$var wire 8 % I [7:0] $end
+$var wire 8 & D [7:0] $end
+$upscope $end
+$scope begin GKTWAVE $end
+$upscope $end
+$scope begin stimmichecks $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+bx &
+b0 %
+b0 $
+b0 #
+x"
+bx !
+$end
+#10
+b1 $
+b1 #
+b1 %
+bz !
+bz &
+0"
+#20
+b10 $
+b10 #
+b10 %
+#30
+b11 $
+b100 #
+b100 %
+#40
+b100 $
+b1000 #
+b1000 %
+#50
+b101 $
+b10000 #
+b10000 %
+#60
+b110 $
+b100000 #
+b100000 %
+#70
+b111 $
+b1000000 #
+b1000000 %
+#80
+b0 $
+b10000000 #
+b10000000 %
+#90
+b1 $
+b1 !
+b1 &
+1"
+b1 #
+b1 %
+#100
+b10 !
+b10 &
+b10 $
+b10 #
+b10 %
+#110
+b100 !
+b100 &
+b11 $
+b100 #
+b100 %
+#120
+b1000 !
+b1000 &
+b100 $
+b1000 #
+b1000 %
+#130
+b10000 !
+b10000 &
+b101 $
+b10000 #
+b10000 %
+#140
+b100000 !
+b100000 &
+b110 $
+b100000 #
+b100000 %
+#150
+b1000000 !
+b1000000 &
+b111 $
+b1000000 #
+b1000000 %
