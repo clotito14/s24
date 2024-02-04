@@ -1,0 +1,73 @@
+$date
+	Thu Feb 01 14:44:57 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module tb $end
+$var wire 8 ! BOUT [7:0] $end
+$var wire 8 " AOUT [7:0] $end
+$var reg 8 # A [7:0] $end
+$var reg 8 $ B [7:0] $end
+$var reg 1 % CE $end
+$var reg 1 & SR $end
+$scope module bb8 $end
+$var wire 8 ' A [7:0] $end
+$var wire 8 ( B [7:0] $end
+$var wire 1 % CE $end
+$var wire 1 & SR $end
+$var wire 1 ) _SR $end
+$var wire 1 * downEnable $end
+$var wire 1 + upEnable $end
+$var wire 8 , BOUT [7:0] $end
+$var wire 8 - AOUT [7:0] $end
+$upscope $end
+$scope begin GTKWAVE $end
+$upscope $end
+$scope begin stimmychecks $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+bz -
+bz ,
+0+
+0*
+1)
+b11111111 (
+b11111111 '
+0&
+0%
+b11111111 $
+b11111111 #
+bz "
+bz !
+$end
+#50
+0)
+b10101010 !
+b10101010 ,
+1+
+b10101010 #
+b10101010 '
+1%
+1&
+#100
+b10101010 "
+b10101010 -
+1*
+1)
+bz !
+bz ,
+0+
+b10101010 $
+b10101010 (
+0&
+#150
