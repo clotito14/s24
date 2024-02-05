@@ -6,48 +6,32 @@ HW3 - Q3 - Clock Generation
 
 `timescale 1ns / 1ns
 
-// Clock buffer
-module clk(O, I);
-    // I/O
-    input I;
-    output O;
-
-    buf CLKBUF(O, I);
-endmodule
-
 // Work done here
-module main();
+module clock();
+
+// Duty Cycle Parameters (50%, 10 cycles)
+parameter TON = 10;
+parameter TOFF = 10;
+parameter cycles = 10;
 
 // let me see the signals!
 initial begin : GTKWAVE
-    $dumpfile("main.vcd");
-    $dumpvars(0, main);
+    $dumpfile("clock.vcd");
+    $dumpvars(0, clk);
 end
 
 // I/O, Reg, Wire
 reg clk;
-wire outputClock;
 
-// Setting clock duty cycle
-reg TON, TOFF;
-initial begin : dutyCycle
-    TON = 10;
-    TOFF = 20;
-    clk = 0;
-    #200 $finish;
+initial begin
+    // Setting clock duty cycle
+    repeat(cycles) begin
+        clk = 0;
+        #TOFF 
+        clk = 1;
+        #TON 
+        clk = 0;
+    end
 end
-
-
-always begin
-    #TON clk = 1;
-    #TOFF clk = 0;
-end
-
-// Add buffer initialization
-clk U1(
-    .O(outputClock),
-    .I(clk)
-);
-
 
 endmodule
