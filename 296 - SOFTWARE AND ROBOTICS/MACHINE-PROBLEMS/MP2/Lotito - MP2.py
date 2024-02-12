@@ -54,7 +54,7 @@ try:
 
             area = 0.5 * (int(base) + int(height))
 
-            print("Area [sq. length] = ", area)
+            print("Area [sq. length] = %.4f" % area)
             
             print()
             continue
@@ -73,7 +73,7 @@ try:
 
             # calc area
             area = math.pi * int(smaj) * int(smin)   
-            print("Area [sq. length] = ", area)
+            print("Area [sq. length] = %.4f" % area)
             
             print()
             continue
@@ -99,7 +99,7 @@ try:
             
             # Output
             area = math.sqrt(s * (s - int(a)) * (s - int(b)) * (s - int(c)))
-            print("Area [sq. length] = ", area)
+            print("Area [sq. length] = %.4f" % area)
 
             print()
             continue
@@ -118,11 +118,11 @@ try:
 
             # calc volume
             v = 7.66 * int(s)**3
-            print("Volume [cubic length] = ", v)
+            print("Volume [cubic length] = %.4f" % v)
 
             # calc surface area
             sa = 20.64 * int(s)**2 
-            print("Surface Area [sq. length] = ", sa)
+            print("Surface Area [sq. length] = %.4f" % sa)
 
             print()
             continue
@@ -146,19 +146,19 @@ try:
 
             #volume
             v = (4/3) * math.pi * int(a)**2 * int(c)
-            print("Volume [cubic length] = ", v)
+            print("Volume [cubic length] = %.4f" % v)
 
             # oblate or prolate for sa
             if int(c) < int(a):
                 e = math.sqrt(1 - (c**2 / a**2)) # eccentricity
 
                 sa = 2 * math.pi * a**2 + ( math.pi * c**2 * (1 / e) * math.log((1 + e)/(1 - e), math.e) )
-                print("Surface Area [sq. length] = ", sa)
+                print("Surface Area [sq. length] = %.4f" % sa)
             elif int(c) > int(a):
                 e = math.sqrt(1 - (a**2 / c**2)) # eccentricity
 
                 sa = 2 * math.pi * a**2 * (1 + c * (1/a) * (1/e) * math.asin(e))
-                print("Surface Area [sq. length] = ", sa)
+                print("Surface Area [sq. length] = %.4f" % sa)
 
             print()
             continue
@@ -176,11 +176,11 @@ try:
 
             # calc volume
             v = .471 * int(s)**3
-            print("Volume [cubic length] = ", v)
+            print("Volume [cubic length] = %.4f" % v)
 
             # calc surface area
             sa = 3.464 * int(s)**2 
-            print("Surface Area [sq. length] = ", sa)
+            print("Surface Area [sq. length] = %.4f" % sa)
 
             print()
             continue
