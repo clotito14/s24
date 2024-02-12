@@ -9,6 +9,7 @@ LAB3 - 4-bit Adders
 // Full Adder Block
 
 `include "FullAdder.v"
+`timescale 1us/1us
 
 module RippleCarryAdder_4bit (
     sum, cout, a, b, cin

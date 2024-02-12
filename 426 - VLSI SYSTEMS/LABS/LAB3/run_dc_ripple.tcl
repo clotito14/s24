@@ -3,6 +3,6 @@ set link_library "saed90nm_max.db"
 set target_library "saed90nm_max.db"
 set symbol_library "saed90nm_max.db"
 analyze -library WORK -format verilog {/home/ugrad/siu856093429/ECE426/lab3/RippleCarryAdder.v}
-elaborate RippleCarryAdder -library WORK
+elaborate RippleCarryAdder_4bit -library WORK
 link
 compile -exact_map

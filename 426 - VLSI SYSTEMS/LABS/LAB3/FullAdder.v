@@ -1,5 +1,7 @@
 // Chase Lotito - SIUC Undergrad - Full Adder
 
+`timescale 1us/1us
+
 module FullAdder (
     sum, cout, a, b, cin
 );

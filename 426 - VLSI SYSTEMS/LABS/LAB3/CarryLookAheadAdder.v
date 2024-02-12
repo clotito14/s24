@@ -9,6 +9,8 @@
     // sum[i] = p[i] ^ c[i-1] = a[i] ^ b[i] ^ c[i-1]
     // 
 
+`timescale 1us/1us
+
 module CarryLookAheadAdder_4bit (
     sum, cout, a, b, cin
 );
