@@ -15,6 +15,11 @@ Lab 2 - Testbench
 // Create testbench module
 module testbench();
  
+initial begin
+    $dumpfile("tb.vcd");
+    $dumpvars(0, testbench);
+end
+
 // Initialize I/O
 reg [2:0] I; // reg is a storage element in procedural blocks (like initial!)
 reg EN;
@@ -34,8 +39,7 @@ begin: tb_stimulus // tb_stimulus = [name_of_block], necessary for blocks with v
             {EN, I[2], I[1], I[0]} = invect[4:0];
             
             // Display both Structural and Behavioral designs to terminal
-            #10 $display ("[STRUCTURAL] EN = %b, INPUT = %b, OUTPUT = %b || 
-                [BEHAVIORAL] EN = %b, INPUT = %b, OUTPUT = %b", EN, I, D_STRUCTURAL, EN, I, D_BEHAVIORAL);
+            #10 $display ("[STRUCTURAL] EN = %b, INPUT = %b, OUTPUT = %b || [BEHAVIORAL] EN = %b, INPUT = %b, OUTPUT = %b", EN, I, D_STRUCTURAL, EN, I, D_BEHAVIORAL);
         end
 end
 
