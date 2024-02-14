@@ -1,8 +1,18 @@
-function [] = test()
-    t = [0:0.1:10];
-    a = 0.0002*t^6 - 0.0087*t^5 + 0.1258*t^4 - 0.9235*t^3 + 3.6223*t^2 - 7.2286*t + 9.2538;
-    plot(t, a, 'B*--');
+function [] = BandgapCrystalHeightPlot()
+    syms x
+    t = 0:0.1:6;
+    f = @(x) 0.0002*x.^6 - 0.0077*x.^5 + 0.112*x.^4 - 0.8339*x.^3 + 3.3261*x.^2 - 6.7689*x + 9;
+    df= matlabFunction(diff(f(x),1));
+
+    %plot(t, f(t), 'B.--'); hold on;
+  
+    plot(t, df(t), 'R.--'); hold on;
+    ylim([-6,6]);
+
     xlabel('Nanocrystal Height (nm)');
-    ylabel('Bandgap Energy (eV)');
-    title('Bandgap Energy v. Nanocrystal Height');
+    ylabel('Bandgap Energy per Unit Height (eV/nm)');
+   % ylabel('dEg/dz (eV/nm)');
+ 
+    grid("on");
+    title('First Derivative of Bandgap Energy by Nanocrystal Height');
 end
