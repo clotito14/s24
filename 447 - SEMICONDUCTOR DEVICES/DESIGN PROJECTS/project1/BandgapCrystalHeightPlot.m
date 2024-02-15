@@ -6,8 +6,9 @@ function [] = BandgapCrystalHeightPlot()
 
     %plot(t, f(t), 'B.--'); hold on;
   
-    plot(t, df(t), 'R.--'); hold on;
-    ylim([-6,6]);
+    plot(t, f(t), 'R.--'); hold on;
+    ylim([0,6]);
+    plot(t, 3.545, 'K.--');
 
     xlabel('Nanocrystal Height (nm)');
     ylabel('Bandgap Energy per Unit Height (eV/nm)');

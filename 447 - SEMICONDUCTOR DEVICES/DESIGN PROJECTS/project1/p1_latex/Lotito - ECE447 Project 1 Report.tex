@@ -3,10 +3,12 @@
 % Packages
 \usepackage{amsmath}
 \usepackage[cmintegrals]{newtxmath}
+\usepackage{graphicx}
+\usepackage{xurl} % Makes urls better
 
 % Title Stuff
 \title{Designing a 350nm Ultraviolet Light Emitter with GaN Nanocrystal}
-\author{Chase A. Lotito}
+\author{Chase A. Lotito, \textit{SIUC Undergraduate}}
 \date{}
 
 % Makes a header!
@@ -21,16 +23,16 @@ it{et al.}}: A Novel Tin Can Link}
 \begin{abstract}
     % [A brief statement on what you plan to do in this project.]
 
-    Using an online simulator, we wish to make a \(350nm\) ultraviolet light emitting device out of \(GaN\) nanocrystal. By changing the height of the box nanocrystal, we will quantumly constrain the electrons and causie their bandgap energy to change to the energy needed for a 350nm-wavelength photon.   
+    Using an online simulator, we wish to make a \(350nm\) ultraviolet light emitting device out of \(GaN\) nanocrystal. By changing the height of the box nanocrystal, we will quantumly constrain the electrons and cause their bandgap energy to change to the energy needed for a 350nm-wavelength photon.   
 
 \end{abstract}
 
 \section{Introduction}
 % [Why this project and related device is important.]
 
-From Einstein, we know photons of discrete frequencies are emitted from deenergizing electrons. If we could harness these emitted photons, maybe we could get wavelength-specific light sources that are more efficient than their incandescent counterparts.
+From Einstein, we know photons of discrete frequencies are emitted from de-energizing electrons. If we could harness these emitted photons, maybe we could get wavelength-specific light sources that are more efficient than their incandescent counterparts.
 
-Ultraviolet light-sources have uses in santiation, medical, and law enforcement. Manufacturing with a material like $GaN$ will be a large step forward to improving our qualities of life. With efficient use of resources, these nanocrystal devices can find uses in developing nations who can be provided cheaper nanoscale electronic devices.
+Ultraviolet light-sources have uses in sanitation, medical, and law enforcement. Manufacturing with a material like $GaN$ will be a large step forward to improving our qualities of life. With efficient use of resources, these nanocrystal devices can find uses in developing nations who can be provided cheaper nanoscale electronic devices.
 
 So, we need to find a way to engineer the specific wavelength of light we need. Our goal is to manipulate the quantum confinement on the electrons in a \(GaN\) box-shaped nanocrystal.
 
@@ -65,7 +67,7 @@ Ultimately, we achieve this by manipulating the volume of a cube \(GaN\) nanocry
 \section{Design Method}
 % [i.e. the simulator used and a reference to it.]
 
-From nanoHUB, the \textit{Nanoscale Solid-State Lighting Device Simulator} from Southern Illinois University Carbondale, can simulate GaN nanocrystals of different shapes, calculating the 3-D wavefunctions for the device.
+From nanoHUB, the \textit{Nanoscale Solid-State Lighting Device Simulator} \cite{simulator} from Southern Illinois University Carbondale, can simulate GaN nanocrystals of different shapes, calculating the 3-D wavefunctions for the device.
 
 We will sweep the height of the nanocrystal \(L_z\) from 1nm-6nm, and use Microsoft EXCEL to find a polynomial regression \(E_g(L_z)\) that approximates the bandgap energy \(E_g\) with respect to \(L_z\).
 
@@ -74,10 +76,52 @@ The resulting function for bandgap will let us predict the value for \(L_z\) for
 \section{Discussion on Design and Analysis}
 % [Describe design and analysis. attach necessary graphs, snapshots of simulator pages, and/or codes if used.]
 
+From our sweep across values of \(L_z\), we were able to get the following polynomial approximation for \(E_g\) with respect to \(L_z\) (\(R^2 = 0.9946\)):
+
+\begin{multline} \label{eq:bandgap}
+    E_g(L_z) = 0.0002 L_z^6 - 0.0077 L_z^5 + 0.112 L_z^4 \\ - 0.8339 L_z^3 + 3.3261 L_z^2 - 6.7689 L_z + 9
+\end{multline}
+
+% Graph of bandgap function
+\begin{figure}[!h]
+    \centering
+    \includegraphics*[width = 6cm]{EgVLz.png}
+    \caption{\(E_g\) versus \(L_z\)}
+\end{figure}    
+
+Using MATLAB, we can find when \(L_z = 2.3nm\), \(E_g(2.3) = 3.545eV\).
+
+Now, the simulator only calculates the wavefunction for integer multiples of \(0.5nm\), so we cannot verify our value for \(L_z\), but a close approximation is fine. 
+
+% Talking about the derivative
+
+We can also use MATLAB to graph the derivative of Eq. \ref{eq:bandgap}. 
+
+What we find is large changes in the bandgap energy for values of \(L_z\) between \(0nm - 2nm\).
+
+This is the region that the quantum confinement is stronger than the natural confinement that a bulk piece of \(GaN\) provides to an electron. 
+
+We would need a better approximation for Eq. \ref{eq:bandgap}, but we can predict that as \(L_z \to \infty\), we would find \(E_g \to E_{g0}\), where \(E_{g0}\) is the \textit{bulk bandgap energy} of \(GaN\) .
+
+% Graph of the derivative
+\begin{figure}[!h] \label{fig:derivative}
+    \centering
+    \includegraphics*[width = 6cm]{derivativeOfEgVLz.png}
+    \caption{\(dE_g \ dL_z\)}
+\end{figure}    
+
+
+
+
+
 \section{Conclusion}
 % [State what you have learned].
 
-\section*{References}
 
+
+
+% REFERENCES!
+\bibliographystyle{IEEEtran}
+\bibliography{project1Bib}
 
 \end{document}

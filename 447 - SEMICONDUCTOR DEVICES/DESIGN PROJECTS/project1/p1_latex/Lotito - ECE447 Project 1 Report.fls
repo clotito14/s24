@@ -77,6 +77,23 @@ INPUT C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex\generic\binhex\binhex.tex
 INPUT C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex\generic\binhex\binhex.tex
 INPUT C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex\generic\binhex\binhex.tex
 INPUT C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex\generic\binhex\binhex.tex
+INPUT C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex\latex\graphics\graphicx.sty
+INPUT C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex\latex\graphics\graphicx.sty
+INPUT C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex\latex\graphics\keyval.sty
+INPUT C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex\latex\graphics\graphics.sty
+INPUT C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex\latex\graphics\graphics.sty
+INPUT C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex\latex\graphics\trig.sty
+INPUT C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex\latex\graphics\trig.sty
+INPUT C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex\latex\graphics-cfg\graphics.cfg
+INPUT C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex\latex\graphics-cfg\graphics.cfg
+INPUT C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex\latex\graphics-cfg\graphics.cfg
+INPUT C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex\latex\graphics-def\pdftex.def
+INPUT C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex\latex\graphics-def\pdftex.def
+INPUT C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex\latex\graphics-def\pdftex.def
+INPUT C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex\latex\xurl\xurl.sty
+INPUT C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex\latex\xurl\xurl.sty
+INPUT C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex\latex\url\url.sty
+INPUT C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex\latex\url\url.sty
 INPUT C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
 INPUT C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
 INPUT .\Lotito - ECE447 Project 1 Report.aux
@@ -95,6 +112,14 @@ INPUT C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex\latex\newtx\lmsntxsy.fd
 INPUT C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex\latex\newtx\lmxntxexx.fd
 INPUT C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex\latex\newtx\lmxntxexx.fd
 INPUT C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex\latex\newtx\lmxntxexx.fd
+INPUT C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
+INPUT C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
+INPUT C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
+INPUT C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex\latex\epstopdf-pkg\epstopdf-base.sty
+INPUT C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex\latex\epstopdf-pkg\epstopdf-base.sty
+INPUT C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
+INPUT C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
+INPUT C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
 INPUT C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex\latex\newtx\ot1minntx.fd
 INPUT C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex\latex\newtx\ot1minntx.fd
 INPUT C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex\latex\newtx\ot1minntx.fd
@@ -140,7 +165,30 @@ INPUT C:\Users\cloti\AppData\Local\Programs\MiKTeX\fonts\tfm\public\newtx\ntxmia
 INPUT C:\Users\cloti\AppData\Local\Programs\MiKTeX\fonts\tfm\public\newtx\ntxsym.tfm
 INPUT C:\Users\cloti\AppData\Local\Programs\MiKTeX\fonts\tfm\public\newtx\ntxsyc.tfm
 INPUT C:\Users\cloti\AppData\Local\Programs\MiKTeX\fonts\tfm\public\newtx\ntxexa.tfm
+INPUT .\EgVLz.png
+INPUT .\EgVLz.png
+INPUT .\EgVLz.png
+INPUT .\EgVLz.png
 OUTPUT Lotito - ECE447 Project 1 Report.pdf
+INPUT .\EgVLz.png
+INPUT .\EgVLz.png
+INPUT .\EgVLz.png
+INPUT C:\Users\cloti\AppData\Local\Programs\MiKTeX\fonts\tfm\public\newtx\ntx-Regular-tlf-ot1.tfm
+INPUT C:\Users\cloti\AppData\Local\Programs\MiKTeX\fonts\tfm\public\newtx\ntx-Regular-tlf-ot1.tfm
+INPUT C:\Users\cloti\AppData\Local\Programs\MiKTeX\fonts\tfm\public\newtx\ntxmi7.tfm
+INPUT C:\Users\cloti\AppData\Local\Programs\MiKTeX\fonts\tfm\public\newtx\ntxmi5.tfm
+INPUT C:\Users\cloti\AppData\Local\Programs\MiKTeX\fonts\tfm\public\newtx\ntxsy7.tfm
+INPUT C:\Users\cloti\AppData\Local\Programs\MiKTeX\fonts\tfm\public\newtx\ntxsy5.tfm
+INPUT C:\Users\cloti\AppData\Local\Programs\MiKTeX\fonts\tfm\public\newtx\ntxexx.tfm
+INPUT C:\Users\cloti\AppData\Local\Programs\MiKTeX\fonts\tfm\public\newtx\ntxexx.tfm
+INPUT C:\Users\cloti\AppData\Local\Programs\MiKTeX\fonts\tfm\public\newtx\ntxmia.tfm
+INPUT C:\Users\cloti\AppData\Local\Programs\MiKTeX\fonts\tfm\public\newtx\ntxmia.tfm
+INPUT C:\Users\cloti\AppData\Local\Programs\MiKTeX\fonts\tfm\public\newtx\ntxsym.tfm
+INPUT C:\Users\cloti\AppData\Local\Programs\MiKTeX\fonts\tfm\public\newtx\ntxsym.tfm
+INPUT C:\Users\cloti\AppData\Local\Programs\MiKTeX\fonts\tfm\public\newtx\ntxsyc.tfm
+INPUT C:\Users\cloti\AppData\Local\Programs\MiKTeX\fonts\tfm\public\newtx\ntxsyc.tfm
+INPUT C:\Users\cloti\AppData\Local\Programs\MiKTeX\fonts\tfm\public\newtx\ntxexa.tfm
+INPUT C:\Users\cloti\AppData\Local\Programs\MiKTeX\fonts\tfm\public\newtx\ntxexa.tfm
 INPUT C:\Users\cloti\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\times\ptmr7t.vf
 INPUT C:\Users\cloti\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmr8r.tfm
 INPUT C:\Users\cloti\AppData\Local\MiKTeX\fonts\map\pdftex\pdftex.map
@@ -149,6 +197,8 @@ INPUT C:\Users\cloti\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\times\ptmr7t.v
 INPUT C:\Users\cloti\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmr8r.tfm
 INPUT C:\Users\cloti\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\times\ptmr7t.vf
 INPUT C:\Users\cloti\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmr8r.tfm
+INPUT C:\Users\cloti\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\times\ptmri7t.vf
+INPUT C:\Users\cloti\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmri8r.tfm
 INPUT C:\Users\cloti\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\times\ptmbi7t.vf
 INPUT C:\Users\cloti\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmbi8r.tfm
 INPUT C:\Users\cloti\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\times\ptmb7t.vf
@@ -186,9 +236,28 @@ INPUT C:\Users\cloti\AppData\Local\Programs\MiKTeX\fonts\tfm\public\newtx\txsys.
 INPUT C:\Users\cloti\AppData\Local\Programs\MiKTeX\fonts\tfm\public\newtx\txex-bar.tfm
 INPUT C:\Users\cloti\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\times\ptmri7t.vf
 INPUT C:\Users\cloti\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmri8r.tfm
+INPUT C:\Users\cloti\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\times\ptmr7t.vf
+INPUT C:\Users\cloti\AppData\Local\Programs\MiKTeX\fonts\vf\public\newtx\ntxmi7.vf
+INPUT C:\Users\cloti\AppData\Local\Programs\MiKTeX\fonts\tfm\public\newtx\NewTXMI7.tfm
+INPUT C:\Users\cloti\AppData\Local\Programs\MiKTeX\fonts\tfm\public\newtx\stxscr.tfm
+INPUT C:\Users\cloti\AppData\Local\Programs\MiKTeX\fonts\vf\public\newtx\ntxmi5.vf
+INPUT C:\Users\cloti\AppData\Local\Programs\MiKTeX\fonts\tfm\public\newtx\NewTXMI5.tfm
+INPUT C:\Users\cloti\AppData\Local\Programs\MiKTeX\fonts\tfm\public\newtx\stxscr.tfm
+INPUT .\derivativeOfEgVLz.png
+INPUT .\derivativeOfEgVLz.png
+INPUT .\derivativeOfEgVLz.png
+INPUT .\derivativeOfEgVLz.png
+INPUT .\derivativeOfEgVLz.png
+INPUT .\derivativeOfEgVLz.png
+INPUT .\derivativeOfEgVLz.png
+INPUT .\Lotito - ECE447 Project 1 Report.bbl
+INPUT .\Lotito - ECE447 Project 1 Report.bbl
+INPUT Lotito - ECE447 Project 1 Report.bbl
 INPUT Lotito - ECE447 Project 1 Report.aux
 INPUT C:\Users\cloti\AppData\Local\Programs\MiKTeX\fonts\type1\public\newtx\NewTXMI.pfb
 INPUT C:\Users\cloti\AppData\Local\Programs\MiKTeX\fonts\type1\public\newtx\NewTXMI.pfb
+INPUT C:\Users\cloti\AppData\Local\Programs\MiKTeX\fonts\type1\public\newtx\NewTXMI5.pfb
+INPUT C:\Users\cloti\AppData\Local\Programs\MiKTeX\fonts\type1\public\newtx\NewTXMI5.pfb
 INPUT C:\Users\cloti\AppData\Local\Programs\MiKTeX\fonts\type1\public\newtx\NewTXMI7.pfb
 INPUT C:\Users\cloti\AppData\Local\Programs\MiKTeX\fonts\type1\public\newtx\NewTXMI7.pfb
 INPUT C:\Users\cloti\AppData\Local\Programs\MiKTeX\fonts\type1\public\newtx\txmiaX.pfb

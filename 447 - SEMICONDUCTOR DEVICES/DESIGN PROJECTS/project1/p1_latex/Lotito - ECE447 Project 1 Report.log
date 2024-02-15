@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.2.12)  14 FEB 2024 21:06
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.2.12)  15 FEB 2024 15:03
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -291,87 +291,140 @@ LaTeX Font Info:    Redeclaring math accent \ddot on input line 971.
 LaTeX Font Info:    Redeclaring math accent \vec on input line 2044.
 LaTeX Info: Redefining \Bbbk on input line 2834.
 LaTeX Info: Redefining \not on input line 2982.
-) (C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
+) (C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+ (C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
+Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
+ (C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
+) (C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 107.
+ (C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
+File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen173
+\Gin@req@width=\dimen174
+) (C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex/latex/xurl\xurl.sty
+Package: xurl 2022/01/09 v 0.10 modify URL breaks
+ (C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
+\Urlmuskip=\muskip17
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)) (C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
 File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count285
 \l__pdf_internal_box=\box55
 ) (Lotito - ECE447 Project 1 Report.aux)
 \openout1 = `"Lotito - ECE447 Project 1 Report.aux"'.
 
-LaTeX Font Info:    Checking defaults for OML/ntxmi/m/it on input line 16.
-LaTeX Font Info:    Trying to load font information for OML+ntxmi on input line 16.
+LaTeX Font Info:    Checking defaults for OML/ntxmi/m/it on input line 18.
+LaTeX Font Info:    Trying to load font information for OML+ntxmi on input line 18.
  (C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex/latex/newtx\omlntxmi.fd
 File: omlntxmi.fd 2015/08/25 Fontinst v1.933 font definitions for OML/ntxmi.
 )
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 16.
-LaTeX Font Info:    Trying to load font information for U+ntxexa on input line 16.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 18.
+LaTeX Font Info:    Trying to load font information for U+ntxexa on input line 18.
  (C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex/latex/newtx\untxexa.fd
 File: untxexa.fd 2012/04/16 Fontinst v1.933 font definitions for U/ntxexa.
 )
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for LMS/ntxsy/m/n on input line 16.
-LaTeX Font Info:    Trying to load font information for LMS+ntxsy on input line 16.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for LMS/ntxsy/m/n on input line 18.
+LaTeX Font Info:    Trying to load font information for LMS+ntxsy on input line 18.
  (C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex/latex/newtx\lmsntxsy.fd
 File: lmsntxsy.fd 2016/07/02 Fontinst v1.933 font definitions for LMS/ntxsy.
 )
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 16.
-LaTeX Font Info:    Trying to load font information for LMX+ntxexx on input line 16.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 18.
+LaTeX Font Info:    Trying to load font information for LMX+ntxexx on input line 18.
  (C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex/latex/newtx\lmxntxexx.fd
 File: lmxntxexx.fd 2016/07/03 Fontinst v1.933 font definitions for LMX/ntxexx.
 )
-LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    ... okay on input line 18.
 
 -- Lines per column: 58 (exact).
-LaTeX Info: Command `\dddot' is already robust on input line 16.
-LaTeX Info: Command `\ddddot' is already robust on input line 16.
-LaTeX Font Info:    Trying to load font information for OT1+minntx on input line 24.
-(C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex/latex/newtx\ot1minntx.fd
+LaTeX Info: Command `\dddot' is already robust on input line 18.
+LaTeX Info: Command `\ddddot' is already robust on input line 18.
+(C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count286
+\scratchdimen=\dimen175
+\scratchbox=\box56
+\nofMPsegments=\count287
+\nofMParguments=\count288
+\everyMPshowfont=\toks28
+\MPscratchCnt=\count289
+\MPscratchDim=\dimen176
+\MPnumerator=\count290
+\makeMPintoPDFobject=\count291
+\everyMPtoPDFconversion=\toks29
+) (C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
+ (C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
+))
+LaTeX Font Info:    Trying to load font information for OT1+minntx on input line 26.
+ (C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex/latex/newtx\ot1minntx.fd
 File: ot1minntx.fd 2023/09/09 v1.1 font definition file for OT1/minntx
 )
-LaTeX Font Info:    Trying to load font information for U+ntxmia on input line 24.
+LaTeX Font Info:    Trying to load font information for U+ntxmia on input line 26.
  (C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex/latex/newtx\untxmia.fd
 File: untxmia.fd 2018/04/14 Fontinst v1.933 font definitions for U/ntxmia.
 )
-LaTeX Font Info:    Trying to load font information for U+ntxsym on input line 24.
+LaTeX Font Info:    Trying to load font information for U+ntxsym on input line 26.
  (C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex/latex/newtx\untxsym.fd
 File: untxsym.fd 2023/08/16 Fontinst v1.933 font definitions for U/ntxsym.
 )
-LaTeX Font Info:    Trying to load font information for U+ntxsyc on input line 24.
+LaTeX Font Info:    Trying to load font information for U+ntxsyc on input line 26.
  (C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex/latex/newtx\untxsyc.fd
 File: untxsyc.fd 2012/04/12 Fontinst v1.933 font definitions for U/ntxsyc.
-) [1{C:/Users/cloti/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/cloti/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}
+)
+<EgVLz.png, id=1, 414.04688pt x 338.76563pt>
+File: EgVLz.png Graphic file (type png)
+<use EgVLz.png>
+Package pdftex.def Info: EgVLz.png  used on input line 88.
+(pdftex.def)             Requested size: 170.71652pt x 139.68051pt.
+ [1{C:/Users/cloti/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/cloti/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}
 
 
-{C:/Users/cloti/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc}] (Lotito - ECE447 Project 1 Report.aux)
+{C:/Users/cloti/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc} <./EgVLz.png>]
+<derivativeOfEgVLz.png, id=20, 392.96812pt x 327.47343pt>
+File: derivativeOfEgVLz.png Graphic file (type png)
+<use derivativeOfEgVLz.png>
+Package pdftex.def Info: derivativeOfEgVLz.png  used on input line 109.
+(pdftex.def)             Requested size: 170.71652pt x 142.26491pt.
+ (Lotito - ECE447 Project 1 Report.bbl) [2
+
+ <./derivativeOfEgVLz.png>] (Lotito - ECE447 Project 1 Report.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 5155 strings out of 474486
- 72326 string characters out of 5743755
- 1936542 words of memory out of 5000000
- 27399 multiletter control sequences out of 15000+600000
- 611429 words of font info for 134 fonts, out of 8000000 for 9000
+ 6127 strings out of 474486
+ 87718 string characters out of 5743755
+ 1939542 words of memory out of 5000000
+ 28325 multiletter control sequences out of 15000+600000
+ 621836 words of font info for 155 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 56i,6n,65p,614b,187s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/cloti/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/NewTXMI.pfb><C:/Users/cloti/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/NewTXMI7.pfb><C:/Users/cloti/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/txmiaX.pfb><C:/Users/cloti/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/txsys.pfb><C:/Users/cloti/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/cloti/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C:/Users/cloti/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/cloti/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb><C:/Users/cloti/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/ztmr.pfb>
-Output written on "Lotito - ECE447 Project 1 Report.pdf" (1 page, 121512 bytes).
+ 57i,7n,65p,613b,425s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/cloti/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/NewTXMI.pfb><C:/Users/cloti/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/NewTXMI5.pfb><C:/Users/cloti/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/NewTXMI7.pfb><C:/Users/cloti/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/txmiaX.pfb><C:/Users/cloti/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/txsys.pfb><C:/Users/cloti/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/cloti/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C:/Users/cloti/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/cloti/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb><C:/Users/cloti/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/ztmr.pfb>
+Output written on "Lotito - ECE447 Project 1 Report.pdf" (2 pages, 454587 bytes).
 PDF statistics:
- 53 PDF objects out of 1000 (max. 8388607)
+ 70 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 23 words of extra memory for PDF output out of 10000 (max. 10000000)
 
