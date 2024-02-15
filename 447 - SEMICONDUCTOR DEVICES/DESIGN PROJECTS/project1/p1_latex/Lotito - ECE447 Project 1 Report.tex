@@ -1,0 +1,83 @@
+\documentclass{IEEEtran}
+
+% Packages
+\usepackage{amsmath}
+\usepackage[cmintegrals]{newtxmath}
+
+% Title Stuff
+\title{Designing a 350nm Ultraviolet Light Emitter with GaN Nanocrystal}
+\author{Chase A. Lotito}
+\date{}
+
+% Makes a header!
+\markboth{ECE447 Semiconductor Devices --- Project 1, February 2024}{Shell \MakeLowercase{\text
+it{et al.}}: A Novel Tin Can Link}
+
+\begin{document}
+
+\maketitle % Makes the title
+
+% ABSTRACT
+\begin{abstract}
+    % [A brief statement on what you plan to do in this project.]
+
+    Using an online simulator, we wish to make a \(350nm\) ultraviolet light emitting device out of \(GaN\) nanocrystal. By changing the height of the box nanocrystal, we will quantumly constrain the electrons and causie their bandgap energy to change to the energy needed for a 350nm-wavelength photon.   
+
+\end{abstract}
+
+\section{Introduction}
+% [Why this project and related device is important.]
+
+From Einstein, we know photons of discrete frequencies are emitted from deenergizing electrons. If we could harness these emitted photons, maybe we could get wavelength-specific light sources that are more efficient than their incandescent counterparts.
+
+Ultraviolet light-sources have uses in santiation, medical, and law enforcement. Manufacturing with a material like $GaN$ will be a large step forward to improving our qualities of life. With efficient use of resources, these nanocrystal devices can find uses in developing nations who can be provided cheaper nanoscale electronic devices.
+
+So, we need to find a way to engineer the specific wavelength of light we need. Our goal is to manipulate the quantum confinement on the electrons in a \(GaN\) box-shaped nanocrystal.
+
+
+Ultraviolet radiation's wavelength falls in between \(400nm\) and \(1nm\). To get the design frequency \(f_d = 350nm\), we would need higher frequency ultraviolet light from our \(GaN\) nanocrystal. We can find the exact frequency for light in free-space:
+
+\begin{equation}
+    f = \frac{c}{\lambda}
+\end{equation}
+
+\begin{equation*}
+    \implies f_d = \frac{3 \times 10^8}{350 \times 10^{-9}} = 8.571 \times 10^{14} Hz
+\end{equation*}
+
+From here, we can use the Planck-Einstein relation, to find the necessary bandgap energy \(E_g\).
+
+\begin{equation}
+    E_g = hf
+\end{equation}
+
+\begin{equation*}
+    \implies E_g = (6.626 \times 10^{-34})(8.571 \times 10^{14}) = 3.545 eV
+\end{equation*}
+
+Here, \(E_g\) really represents the difference in energy from the first-excited energy state \(E_1\) and the ground energy state \(E_0\), \(h = 6.626 \times 10^{-34} ~ J\cdot s\), and f is the frequency of the particle.
+
+Now, it is not certain that nature allows for a continuous frequency \(GaN\) electrons. For a given crystal, we know from Schrodinger's wave equation \(\Psi\) that the energy states for its electrons has been discretized by the potential boundaries it imposes. So, if we can change the potentials we can tailor \(E_g\) to our desired frequency.
+
+Ultimately, we achieve this by manipulating the volume of a cube \(GaN\) nanocrystal by changing it's height \(L_z\). The different heights might constrain or relieve the wavefunction of the electrons giving rise to different bandgaps.
+
+
+\section{Design Method}
+% [i.e. the simulator used and a reference to it.]
+
+From nanoHUB, the \textit{Nanoscale Solid-State Lighting Device Simulator} from Southern Illinois University Carbondale, can simulate GaN nanocrystals of different shapes, calculating the 3-D wavefunctions for the device.
+
+We will sweep the height of the nanocrystal \(L_z\) from 1nm-6nm, and use Microsoft EXCEL to find a polynomial regression \(E_g(L_z)\) that approximates the bandgap energy \(E_g\) with respect to \(L_z\).
+
+The resulting function for bandgap will let us predict the value for \(L_z\) for \(E_g = 3.545eV\). It will also be valuable to see how \(dE_g / dL_z\) will show intuition on quantum constraining.
+
+\section{Discussion on Design and Analysis}
+% [Describe design and analysis. attach necessary graphs, snapshots of simulator pages, and/or codes if used.]
+
+\section{Conclusion}
+% [State what you have learned].
+
+\section*{References}
+
+
+\end{document}
