@@ -19,6 +19,10 @@ D6 = 1 # Data Pin 6
 D7 = 1 # Data Pin 7
 BKL = 1 # Backlight
 
+# Useful parameters
+LN1 = 1
+LN2 = 2
+
 GPIO.setmode(GPIO.BCM) # BROADCOM PINS
 GPIO.setup(TRIG_PIN, GPIO.OUT)
 GPIO.setup(ECHO_PIN, GPIO.IN)
@@ -49,8 +53,8 @@ try:
         print('[TRIP TIME]: %.2f ms [DISTANCE]: %.1f cm \n' % (trip_time * 1000, distance))
 
         # Display on LCD!
-        lcd_string(GPIO, "Distance: ", LCD_LINE_1)
-        lcd_string(GPIO, round(distance,1), LCD_LINE_2)
+        lcd_string(GPIO, "TIME: %.2f ms" % (trip_time * 1000), LN1)
+        lcd_string(GPIO, "DIST: %.1f cm" % (distance), LN2)
 
 finally:
     lcd_shutdown(GPIO)
