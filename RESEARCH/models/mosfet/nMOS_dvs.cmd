@@ -16,7 +16,7 @@
 ; CREATING THE CONTACTS
 ; create vertices for contact
 (sdegeo:insert-vertex (position 0.7 0 0))
-(sdegeo: insert-vertex (position 2.3 0 0))
+(sdegeo:insert-vertex (position 2.3 0 0))
 
 ; define and create contacts
 ; SOURCE
@@ -69,13 +69,15 @@
 ; MESHING CONFIGURATION
 
 ;meshing active region
+(sdedr:define-refeval-window "RefEvalWin_5" "Rectangle" (position 0 0 0) (position 3 0.2 0))
+(sdedr:define-refinement-size "top" 0.1 0.04 0.01 0.01)
+(sdedr:define-refinement-placement "top" "top" "RefEvalWin_5")
 
+; meshing entire device
+(sdedr:define-refeval-window "RefEvalWin_6" "Rectangle" (position 0 -0.01 0) (position 3 1.3 0))
+(sdedr:define-refinement-size "entire" 0.2 0.2 0.02 0.02)
+(sdedr:define-refinement-placement "entire" "entire" "RefEvalWin_6")
 
+(sde:build-mesh "mesh" "-P -discontinuousData" "nMOS_dvs.cmd")
 
-
-
-
-
-
-
-
+;--------------------------------------------
