@@ -1,8 +1,8 @@
 '''
 Chase Lotito - SIUC - SP2024
 ECE296L - Dr. James Phegley
-RPi Lab 3 - Code from Phegley
-Ultrasonic Sensor with LCD screen
+RPi Lab 4 - Code from Phegley
+Ultrasonic Sensor with LCD screen with CUSTOM CHARS
 '''
 import RPi.GPIO as GPIO
 from myLCD import *
