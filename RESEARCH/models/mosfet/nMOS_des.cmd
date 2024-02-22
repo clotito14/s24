@@ -39,7 +39,7 @@ solve {
   Poisson
   coupled {poisson electron hole}
   Quasistationary(
-    InitialStep=2.0e-3
+    InitialStep = 2.0e-3
     MinStep = 2.0e-5
     MaxStep = 2.0e-1
     goal{name = "Drain" voltage = 2.0}
@@ -50,7 +50,3 @@ solve {
   }
 
 }
-
-
-
-
