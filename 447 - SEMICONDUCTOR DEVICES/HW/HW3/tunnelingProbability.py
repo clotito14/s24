@@ -24,20 +24,28 @@ def tunnelProb(x, a):
     # Find the energy of the electron 
     energy = x * q       # making sure to convert eV to J
     energyOverPotential = energy / v0_J
-    k = ( ( ( 2 * me ) / hbar**2 )  * ( v0_J - energy ) )**0.5  # second wavenumber
+    k =  ( 2 * me * (v0_J - energy) )**0.5 / hbar  # second wavenumber
     
-    exponentialTerm = pow(math.e, -1 * 2 * k * a)
+    exponentialTerm = np.exp(-1 * 2 * k * a)
 
     return (16 * energyOverPotential * ( 1 - energyOverPotential ) * exponentialTerm)
 
 # Ranges for graph
-x = np.arange(0,.3,0.001)                  # Gives a range of 0 to 4 with steps of 0.001
+x = np.linspace(0,4,4000)                  # Gives a range of 0 to 4 with steps of 0.001
 y1 = tunnelProb(x, a1)                    # Evals tunneling prob of 15A barrier thickness
 y2 = tunnelProb(x, a2)                    # Does this again with 5A barrier thickness
 
 # Plot the graphs
 plt.plot(x, y1, label = '15A')
 plt.plot(x, y2, label = '5A')
+
+# Find the maximums of the functions!
+max_x = np.argmax(tunnelProb(x, a1))
+max_y = tunnelProb(float(max_x), a1)
+print(f"The maximum of the function occurs at x = {x[max_x]} with a value of {max_y}")
+
+# Plot the maximums of our functions!
+# plt.plot(max_x, 5e-6, marker="o", markersize=2, markeredgecolor="orange", markerfacecolor="orange")
 
 # Console log some values for import debug
 print('[15A] E = ' + '{:e}'.format(0.2 * q) + ', T = ' + '{:e}'.format(tunnelProb(0.2,a1)))
@@ -56,6 +64,9 @@ for i in range(6):
 plt.xlabel('Energy (eV)')
 plt.ylabel('Tunneling Coefficient')
 plt.title('Tunneling Coefficient for 5A and 15A Well')
+
+# Axis formatting
+plt.xlim(0,4)
 
 # Show the plot
 plt.legend()
