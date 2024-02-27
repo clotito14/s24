@@ -72,6 +72,7 @@
 (sdedr:define-refeval-window "RefEvalWin_5" "Rectangle" (position 0 0 0) (position 3 0.2 0))
 (sdedr:define-refinement-size "top" 0.1 0.04 0.01 0.01)
 (sdedr:define-refinement-placement "top" "top" "RefEvalWin_5")
+; For refinement size: x_mesh_max y_mesh_max x_mesh_min y_mesh_min
 
 ; meshing entire device
 (sdedr:define-refeval-window "RefEvalWin_6" "Rectangle" (position 0 -0.01 0) (position 3 1.3 0))
@@ -81,3 +82,9 @@
 (sde:build-mesh "mesh" "-P -discontinuousData" "nMOS_dvs.cmd")
 
 ;--------------------------------------------
+
+; GENERAL NOTES ABOUT THE CODE AND HOW IT WORKS
+
+; sdegeo creates the geometry for the device 
+    ; i.e. create-rectangle, insert-vertex
+
