@@ -3,7 +3,21 @@
 
 ## A. Questions
 1. Differences between substrates and epitaxial wafers?
-2. 
+2. If the undoped substrate is insulating, and we can only dope to make an n-type, how do we get conduction?? Oxide is insulating?
+3. What is dopant flux?
+4. What is island coalescence?
+5. What are modulation-doped FETS? (MODFETs)
+6. How do you actually control the plane that you can grow a crystal? How can you determine the plane a crystal is on in general?
+7. What are heterostructures, and are they good or bad?
+8. What is trap characterization?
+9. Why do high voltage devices require low doping concentrations?
+10. What are Quasi-Fermi Levels, and how are they related to a device's bandgap?
+11. What is a phonon?
+12. What does ab initio mean?
+13. Explaining what a two-dimensional electron gas (2DEG) is?
+    13a. If 2DEG causes increased electron mobility. Is this related to the 2D quantum confinement, where the 2D density-of-states is constant and related to the effective mass of the electron?
+14. How does anisotropy effect electrical properties? Is it exploitable?
+15. 
 
 ## 0. IMPORTANT TERMINOLOGY
  
@@ -29,7 +43,7 @@
 
 11. CZOCHRALSKI METHOD (CZ)
 
-12. MOLECULAR BEAM EPITAXY (MBE)
+12. MOLECULAR BEAM EPITAXY (MBE) - realized by the reaction of Ga vapor with reactive oxygen on the heated substrate in a high vacuum. 
 
 13. METAL ORGANIC CHEMICAL VAPOR DEPOSITION (MOCVD)
 
@@ -38,6 +52,8 @@
 15. FLOATING ZONE METHOD (FZ)
 
 16. MONOCLINIC CRYSTAL SYSTEM - The crystal is described by 3 vectors of unequal lengths, with 2 perpendicular.
+
+17. TWO-DIMENSIONAL ELECTRON GAS (2DEG) - a layer or sheet of electrons that can only move in two-dimensions caused by the junction of two differing semiconductor materials. The special quantum confinement of 2DEG can reduce the effective mass of the electron. Less electron scattering compared to 3D confinement. 
 
 --I have notes for the previous sections I and II on paper--
 
@@ -86,5 +102,139 @@ Intrinsic Material Properties
     3. Field strength (anisotropic)
 
 ### 2. EPITAXIAL WAFERS
+
+## V. BULK GROWTH
+
+Leibniz Institute for Crystal Growth research finds that the growth environment needs a high 02 atmosphere to increase crystal diameter.
+
+### A. KEY CHALLENGES
+
+> THE GOAL IS TO GET CRYSTALS OF AT LEAST 100MM IN DIAMETER.
+
+The (100) and (001) planes are highly suseptible to mechanical stress, and this complicates fabrication and polishing.
+
+CZ - undoped layers are shown to be insulating??
+   - 91% C02 and 9% 02 sufficient for growth of (010) Fe-doped crystals that are 60mm in diameter.
+
+CZ will be the preferred method because it is the standard, but that means there will need to be high control of the growth environment, and work arounds for the Iridium crucible deteriorating.
+
+## VI. MOLECULAR BEAM EPITAXY (MBE)
+
+### A. STATUS
+
+This research field was started with the Higashiwaki MESFET:
+    1. Homoepitaxial, Sn-doped layer (tin) grown with MBE.
+    2. On top of a Fe-doped beta-Ga203 substrate.
+
+> IMPORTANT: Because of beta-Ga203 bulk growth, we can have MBE do Homoepitaxial growth of functional layers. (WHY?)
+
+MBE has a growth rate of a few nm/min. [for (100), (010), (001), (201)]
+
+n-type is controlled with donor doping with Sn, Ge, Si to get electron concentrations of 10^20 per cubic cm.
+
+### B. CURRENT AND FUTURE CHALLENGES
+
+The monoclinic nature of the crystal poses structural defects.
+
+There are limited alloy compositions (Al,Ga)203 and (In,Ga)203 because of band-offsets and electron confinement.
+
+The growth rate is heavily impacted by temperature desorption volatile suboxide Ga20. (WHY?: it takes temperature to remove the Ga20?)
+
+Fasted growth rate on (010) plane at 3nm/min. At 700 centigrade.
+
+Higher growth rates can be made with introducing a catalyst vapor of In or Sn, causing a thermodynamically driven exchange of the Ga metal ion. Called Metal-Exchange Catalysis (MEXCAT or MOCATAXY).
+
+
+### B-2. MBE: ELECTRICAL QUALITY DOPING, PURITY AND POINT DEFECTS
+
+Sn-doping can be controlled but mobility is below the empirical mobility limit. (WHAT DOES THAT MEAN?)
+
+Ge-doping has higher mobility but less control due to necessary growth conditions.
+
+Si-doping is best but struggles to be made with MBE bc of source oxidation causing drift of Si Flux. (??)
+
+What exactly is unintentional doping (UID)? (Related to Si0 and Si).
+    -> I think during the doping process, unintentional Si comes from Si0 and the quartz cavity of the oxygen plasma source. 
+    -> The electron concentration is lowest but has the highest Hall mobility 
+
+To fix this? Ga polishing or intentionally doping Fe. (Fe is the deep acceptor?)
+
+Thick UID buffer layers can help FET performance by reducing acceptor concentrations in the channel. (WHY?)
+
+### B-3. EPITAXY: CRYSTALLINITY AND EXTENDED DEFECTS
+
+The monoclinic structure can lead to defects:
+    -> Twin formation (?) on (100) and (201)
+        -> Due to:
+            -> double positioning of Ga atmosphere
+            -> Island coalescence??
+
+Island coalescence can trap electrons which is terrible for mobility.
+
+THIS IS NOT A PROBLEM FOR (010) AND (001)
+
+## VII. METALORGANIC VAPOR PHASE EPITAXY (MOVPE)
+
+Good for lateral and vertical devices.
+
+Rapid advances for B-Ga203 and B-(AlxGa1-x)203 in vertical power device applications. 
+
+Growth rates for (010) up to 10um/hr (166.7 nm/min?)
+    -> UID low as 7.4e15 cm^-3
+    -> 300K mobility = 176 cm^2/Vs
+
+Max mobility reported of 194 cm^2/Vs with n_e = 8e15 cm^-3.
+
+(100) problems with two-dimensional islands can be migitated with a 6 to 2 degree miscut toward [001]. 
+
+This method allows for very low concentrations (<1e-15)
+
+## VIII. OTHER GROWTH STUFF
+    
+MVPE grown B-Ga203 doped with Si in the (001) plane showed +100 cm^2/Vs mobility with concentrations as low as 1e15 cm^-3.
+
+Low Pressure Chemical Vapor Deposition (LPCVD).
+ -> This with MVPE are good for growing thick films, good for Schottky-Barrier diodes.
+
+## IX: CHARACTERIZATION
+
+Quasi-Fermi levels describe the non-equilibrium distribution of charge carriers in a device. 
+
+Trap characterization?
+
+Finding electrically-active defects with deep-level transient and optical spectroscopy (DLTS/DLOS) and admittance spectroscopy (AS).  
+
+These techniques can give electronic information about defect type, so we can simulate the trap impacts on:
+    1. Leakage-CURRENT
+    2. Dynamic On-RESISTANCE
+    3. Threshold Voltage Instability
+    4. Linearity.
+
+There exist several traps in all bandgaps, but the location and number of traps is completely dependent on the growth method.
+    -> This is a problem since power devices need low-doping levels which exacerbate the issues caused by traps and defects.
+    -> This also causes general problems with controlling the doping concentration.
+
+Low concentrations of traps can cause dynamic on-resistance in transistors.
+    -> bc Voltage switching causes the quasi-Fermi levels to move through the bandgap of the device.
+
+There are modulations in trap occupancies. Since the Fermi Levels swing, there are trap emissions and also captures of charge carriers. So in a transient setting, the local charge densities change and so do the terminal characteristics of a device.
+
+Ultimately, this just means the transistors are derated by device designers.
+
+For medium concentrations, or temps that allow ionization, the defects can lead to leakage current or reduced mobility.
+
+The Ec-0.8eV and Ec-0.7eV traps cause threshold voltage Instability.
+
+Ec-2.0eV and Ec-4.4eV traps are carrier compensation centers. (WHAT?)
+
+## X: FUNDAMENTAL MATERIALS AND TRANSPORT PROPERTIES
+
+The ab initio computational technique was able to accurately predict room temp electron mobility.
+
+Using heterostructures like AlGaO/Ga203 to make high 2DEG densities can increase electron mobility.
+
+
+
+
 
 
