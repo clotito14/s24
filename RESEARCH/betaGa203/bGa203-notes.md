@@ -19,7 +19,7 @@ Chase Lotito - SIUC Undergraduate - Spring 2024
 14. How does anisotropy effect electrical properties? Is it exploitable?
 15. Is it favorable to have a diode with the same forward and reverse I-V characteristics? 
 16. What is the Reduded Surface Field Effect (RESURF)?
-
+17. Using different doping techniques and RESURF, is it possible to doping layers around the inert films to reduce the E-field and then prevent premature breakdown?
 
 ## 0. IMPORTANT TERMINOLOGY
  
@@ -58,6 +58,8 @@ Chase Lotito - SIUC Undergraduate - Spring 2024
 17. TWO-DIMENSIONAL ELECTRON GAS (2DEG) - a layer or sheet of electrons that can only move in two-dimensions caused by the junction of two differing semiconductor materials. The special quantum confinement of 2DEG can reduce the effective mass of the electron. Less electron scattering compared to 3D confinement. 
 
 18. SCHOTTKY BARRIER DIODE (SBD) - a diode created by the junction of a metal and a semiconductor, where there is a potential barrier formed from the difference of the two material's work functions.
+
+19. UNIPOLAR LIMIT OF SEMICONDUCTOR - The idealized scenario when the carrier associated with charge transport in a semiconductor is either only electrons or only holes. (Unipolar Electron Conduction or Unipolar Hole Conduction)
 
 --I have notes for the previous sections I and II on paper--
 
@@ -261,5 +263,52 @@ Reducing power loss either by increasing device area or introducting Junction Ba
 Photodetectors (PDs) absorb photons and then sweep the resulting mobile charge carriers away using an external bias or a built-in potential caused by a junction.
 
 M-S-M PDs made with B-Ga203 can absorb >90% of photons with energy greater than its bandgap.
+
+The vertical $`\Beta Ga_2 O_3`$ shown are (limited scope as no p-type):
+1. FinFETs
+2. Static Induction Transistors (SITs)
+3. Current Aperture Verticle FETs (CAVETs)
+
+Drain Induced Barrier Lowering (DIBL) - When the drain voltage is high enough for a FET, the potential from the drain extends into the channel region, so the FET is slightly controlled by the drain voltage, meaning the gate voltage required to turn the device on is lowered.
+* This can be non-ideal as it allows for sub-gate-threshold voltages to allow current to "leak".
+* To prevent this from happening in a vertical finFET, the aspect ratio must be >2 for the fin channel.
+
+There are 3 different FET gate structures of interest:
+1. pn-junction based gates.
+2. Metal-semiconductor (M-S) based gates.
+3. Metal-Insulator-Semiconductor (MIS) based gates. 
+
+We are shooting for $`V_(th) > 0`$:
+* This is dependent on the built-in potential of the MIS and MS gate stack
+    * Governed by the gate-metal work function.
+        * It is difficult to achieve $`V_(th) > 1.5V`$
+    * It would be easier to get higher threshold voltages with a pn-junction.
+        * This requires a high-quality epitaxial heterojunction interface.
+
+The use of MIS based gates is problematic as the dielectric will breakdown much sooner than the $`\Beta Ga_2 O_3`$, so there shows another need for a p-type to employ pn-junction based gates.
+
+$`\Beta Ga_2 O_3`$ CAVETs cannot get beyond 600V due to the voltage-blocking capability of the semi-insulating current blocking layer. This is another implication of no p-type.
+
+### P-N HETEROJUNCTIONS
+
+The placement of a pn-junction capable of avalanche breakdown within the structure of a device:
+* Possible minimization of electric-field crowding
+* Implementation of RESURF
+    * Using specific doping throughout the device to evenly distribute the electric-field, which prevents high E-field concentrations which can allow for higher breakdown voltages.
+        * Possible strategies to evenly-distribute E-Field
+            * Higher doping at Surface
+            * Buried doped layers
+
+### CONCLUDING REMARKS
+
+Ideally, given an interface the displacement current is the same:
+$$
+\epsilon_1 E_1 = \epsilon_2 E_2
+$$
+
+
+
+
+
 
 
