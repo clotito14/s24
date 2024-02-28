@@ -285,9 +285,9 @@ We are shooting for $`V_(th) > 0`$:
     * It would be easier to get higher threshold voltages with a pn-junction.
         * This requires a high-quality epitaxial heterojunction interface.
 
-The use of MIS based gates is problematic as the dielectric will breakdown much sooner than the $`\Beta Ga_2 O_3`$, so there shows another need for a p-type to employ pn-junction based gates.
+The use of MIS based gates is problematic as the dielectric will breakdown much sooner than the $`\beta Ga_2 O_3`$, so there shows another need for a p-type to employ pn-junction based gates.
 
-$`\Beta Ga_2 O_3`$ CAVETs cannot get beyond 600V due to the voltage-blocking capability of the semi-insulating current blocking layer. This is another implication of no p-type.
+$`\beta Ga_2 O_3`$ CAVETs cannot get beyond 600V due to the voltage-blocking capability of the semi-insulating current blocking layer. This is another implication of no p-type.
 
 ### P-N HETEROJUNCTIONS
 
@@ -302,9 +302,9 @@ The placement of a pn-junction capable of avalanche breakdown within the structu
 ### CONCLUDING REMARKS
 
 Ideally, given an interface the displacement current is the same:
-$$
+```math
 \epsilon_1 E_1 = \epsilon_2 E_2
-$$
+```
 
 
 
