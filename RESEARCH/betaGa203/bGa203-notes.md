@@ -187,7 +187,7 @@ Growth rates for (010) up to 10um/hr (166.7 nm/min?)
 * UID low as 7.4e15 cm^-3
 * 300K mobility = 176 cm^2/Vs
 
-Max mobility reported of 194 cm^2/Vs with $ n_e = 8 \times 15 cm^{-3} $.
+Max mobility reported of 194 cm^2/Vs with $` n_e = 8 \times 15 cm^{-3} `$.
 
 (100) problems with two-dimensional islands can be migitated with a 6 to 2 degree miscut toward [001]. 
 
