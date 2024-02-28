@@ -61,11 +61,13 @@ Chase Lotito - SIUC Undergraduate - Spring 2024
 
 19. UNIPOLAR LIMIT OF SEMICONDUCTOR - The idealized scenario when the carrier associated with charge transport in a semiconductor is either only electrons or only holes. (Unipolar Electron Conduction or Unipolar Hole Conduction)
 
+20. TIME-DEPENDENT DIELECTRIC BREAKDOWN (TDDB) - Over time, the electric field wears down on a dielectric material. 
+
 --I have notes for the previous sections I and II on paper--
 
 ## I. INTRODUCTION
 
-## II. AN OUTLOOK TO THE COMMERCIAL MARKET OPPORTUNITIES OF BETA-GA203 BASED ON POWER DEVICES
+## II. AN OUTLOOK TO THE COMMERCIAL MARKET OPPORTUNITIES OF $`\bea -Ga_2 O_3`$ BASED ON POWER DEVICES
 
 ## III. DEFENSE BASED POWER CONVERTER APPLICATIONS
 
@@ -264,7 +266,7 @@ Photodetectors (PDs) absorb photons and then sweep the resulting mobile charge c
 
 M-S-M PDs made with B-Ga203 can absorb >90% of photons with energy greater than its bandgap.
 
-The vertical $`\Beta Ga_2 O_3`$ shown are (limited scope as no p-type):
+The vertical $`\beta -Ga_2 O_3`$ shown are (limited scope as no p-type):
 1. FinFETs
 2. Static Induction Transistors (SITs)
 3. Current Aperture Verticle FETs (CAVETs)
@@ -278,16 +280,16 @@ There are 3 different FET gate structures of interest:
 2. Metal-semiconductor (M-S) based gates.
 3. Metal-Insulator-Semiconductor (MIS) based gates. 
 
-We are shooting for $`V_(th) > 0`$:
+We are shooting for $`V_{th} > 0`$:
 * This is dependent on the built-in potential of the MIS and MS gate stack
     * Governed by the gate-metal work function.
-        * It is difficult to achieve $`V_(th) > 1.5V`$
+        * It is difficult to achieve $`V_{th} > 1.5V`$
     * It would be easier to get higher threshold voltages with a pn-junction.
         * This requires a high-quality epitaxial heterojunction interface.
 
-The use of MIS based gates is problematic as the dielectric will breakdown much sooner than the $`\beta Ga_2 O_3`$, so there shows another need for a p-type to employ pn-junction based gates.
+The use of MIS based gates is problematic as the dielectric will breakdown much sooner than the $`\beta -Ga_2 O_3`$, so there shows another need for a p-type to employ pn-junction based gates.
 
-$`\beta Ga_2 O_3`$ CAVETs cannot get beyond 600V due to the voltage-blocking capability of the semi-insulating current blocking layer. This is another implication of no p-type.
+$`\beta -Ga_2 O_3`$ CAVETs cannot get beyond 600V due to the voltage-blocking capability of the semi-insulating current blocking layer. This is another implication of no p-type.
 
 ### P-N HETEROJUNCTIONS
 
@@ -305,6 +307,36 @@ Ideally, given an interface the displacement current is the same:
 ```math
 \epsilon_1 E_1 = \epsilon_2 E_2
 ```
+We ultimately want the semiconductor critical breakdown field $`E_c`$ to be smaller than the critical breakdown field of the dielectric material in the device.
+
+```math
+E_{c,semi} < E_{c,dielec}
+```
+This way the semiconductor material itself at high surges does not put the insulator at risk of failure, reducing TDDB and increasing device lifetime.
+
+## XIII. LATERAL DEVICES
+
+Lateral devices are ideal for switching applications:
+* Power switching
+* RF switching
+* Switch-mode power amplifiers
+
+Differences of lateral devices to vertical devices:
+* Small capacitive footprint (connected to gate charge)
+* Low on-resistance
+
+The ulitmate goal -> Self-Aligned Gate-to-Source (SAG) $`\beta -Ga_2 O_3`$ transistors.
+* Poised for fast-switching power converters.
+
+Huang's Unipolar Material FOM:
+* $`HMFOM = E_max \cdot \mu^{0.5}`$
+
+Intrinsic Transconductance:
+* $`g_m \approx v_{int} \cdot C_G/L_G`$
+
+Extrinsic Transconductance ($`R_S`$ is the source access resistance):
+* $`G_M = g_M \cdot ( 1 + R_S \cdot g_m ) - 1`$
+
 
 
 
