@@ -195,7 +195,7 @@ This method allows for very low concentrations (<1e-15)
 
 ## VIII. OTHER GROWTH STUFF
     
-MVPE grown B-Ga203 doped with Si in the (001) plane showed $`+100 cm^2/{Vs}`$ mobility with concentrations as low as $`1 \times 15 cm^{-3}}`$.
+MVPE grown B-Ga203 doped with Si in the (001) plane showed $`+100 cm^2/{Vs}`$ mobility with concentrations as low as $`1 \times 15 cm^{-3}`$.
 
 Low Pressure Chemical Vapor Deposition (LPCVD).
  * This with MVPE are good for growing thick films, good for Schottky-Barrier diodes.
