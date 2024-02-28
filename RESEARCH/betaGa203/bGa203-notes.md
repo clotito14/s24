@@ -1,5 +1,5 @@
-# CHASE LOTITO - NANOTECHNOLOGY LAB RESEARCH
-# REVIEW NOTES - BETA-GALLIUM-OXIDE POWER ELECTRONICS
+# NOTES - BETA-GALLIUM-OXIDE POWER ELECTRONICS
+Chase Lotito - SIUC Undergraduate - Spring 2024
 
 ## A. Questions
 1. Differences between substrates and epitaxial wafers?
@@ -17,7 +17,9 @@
 13. Explaining what a two-dimensional electron gas (2DEG) is?
     13a. If 2DEG causes increased electron mobility. Is this related to the 2D quantum confinement, where the 2D density-of-states is constant and related to the effective mass of the electron?
 14. How does anisotropy effect electrical properties? Is it exploitable?
-15. 
+15. Is it favorable to have a diode with the same forward and reverse I-V characteristics? 
+16. What is the Reduded Surface Field Effect (RESURF)?
+
 
 ## 0. IMPORTANT TERMINOLOGY
  
@@ -54,6 +56,8 @@
 16. MONOCLINIC CRYSTAL SYSTEM - The crystal is described by 3 vectors of unequal lengths, with 2 perpendicular.
 
 17. TWO-DIMENSIONAL ELECTRON GAS (2DEG) - a layer or sheet of electrons that can only move in two-dimensions caused by the junction of two differing semiconductor materials. The special quantum confinement of 2DEG can reduce the effective mass of the electron. Less electron scattering compared to 3D confinement. 
+
+18. SCHOTTKY BARRIER DIODE (SBD) - a diode created by the junction of a metal and a semiconductor, where there is a potential barrier formed from the difference of the two material's work functions.
 
 --I have notes for the previous sections I and II on paper--
 
@@ -205,10 +209,10 @@ Trap characterization?
 Finding electrically-active defects with deep-level transient and optical spectroscopy (DLTS/DLOS) and admittance spectroscopy (AS).  
 
 These techniques can give electronic information about defect type, so we can simulate the trap impacts on:
-    1. Leakage-CURRENT
-    2. Dynamic On-RESISTANCE
-    3. Threshold Voltage Instability
-    4. Linearity.
+1. Leakage-CURRENT
+2. Dynamic On-RESISTANCE
+3. Threshold Voltage Instability
+4. Linearity.
 
 There exist several traps in all bandgaps, but the location and number of traps is completely dependent on the growth method.
     -> This is a problem since power devices need low-doping levels which exacerbate the issues caused by traps and defects.
@@ -234,7 +238,28 @@ The ab initio computational technique was able to accurately predict room temp e
 Using heterostructures like AlGaO/Ga203 to make high 2DEG densities can increase electron mobility.
 
 
+## XI: SCHOTTKY BARRIER DIODES
 
+Vertical B-Ga203 schottky barrier diodes.
+    -> High breakdown voltage ~= 3000V
+    -> Baliga FOM 1GW/sq.cm.
+    -> Fast switching
+    -> Near identical forward and reverse IV characteristics (WHY GOOD?)
 
+Reduced Surface Field Effect (WHAT?)
+    -> reduces reverse leakage current
+
+Reverse Edge Field Termination Techniques:
+    -> Field plating
+    -> Implanted terminations
+
+Reducing power loss either by increasing device area or introducting Junction Barrier Schottky diode structures (JBS).
+    -> Increasing chip area reduces on-resistance but increases device capacitance
+
+## XII: VERTICAL DEVICES
+
+Photodetectors (PDs) absorb photons and then sweep the resulting mobile charge carriers away using an external bias or a built-in potential caused by a junction.
+
+M-S-M PDs made with B-Ga203 can absorb >90% of photons with energy greater than its bandgap.
 
 
