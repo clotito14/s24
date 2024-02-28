@@ -74,31 +74,31 @@ What affects the economic model for B-Ga203 for power-devices?
     1. Price per unit current (wafer price and current density)
 
 B-Ga203's Baliga FOM is higher than that of SiC and GaN.
--> Due to B-Ga203 bulk growth.
--> The on-resistance is expected to be reduced for transistors and diodes, THEREFORE, current density can be increased for the same voltage.
+* Due to B-Ga203 bulk growth.
+* The on-resistance is expected to be reduced for transistors and diodes, THEREFORE, current density can be increased for the same voltage.
 
 ### 1. SUBSTRATES
 
 CHALLENGE 1: LOSS OF PRECIOUS METAL CRUCIBLES IN EFG AND CZ.
--> Iridium is used for crucible (low 02)
-    -> Small amounts of Ga react with Ir during casting (loss).
-    -> This is exacerbated for larger growths bc more Ga.
-    -> Higher temps also increase this reaction.
--> VB method can control temps better and cause less of this reaction.
-    -> Lower temps (better concentrated).
-    -> High 02 levels, so use Pt-Rh alloy crucible.
-    -> Crucible still needs recasting.
+* Iridium is used for crucible (low 02)
+    * Small amounts of Ga react with Ir during casting (loss).
+    * This is exacerbated for larger growths bc more Ga.
+    * Higher temps also increase this reaction.
+* VB method can control temps better and cause less of this reaction.
+    * Lower temps (better concentrated).
+    * High 02 levels, so use Pt-Rh alloy crucible.
+    * Crucible still needs recasting.
 
 CHALLENGE 2: INCREASE SUBSTRATES IN WAFER FABRICATION
--> Thickness of substrate must be reduced.
--> B-Ga203 can be cleaved on (100) and (001) planes
-    -> xz-plane and xy-plane.
--> B-Ga203 has crystal structure of a monoclinic system with low symmetry, THEREFORE high accuracy is needed.
+* Thickness of substrate must be reduced.
+* B-Ga203 can be cleaved on (100) and (001) planes
+    * xz-plane and xy-plane.
+* B-Ga203 has crystal structure of a monoclinic system with low symmetry, THEREFORE high accuracy is needed.
 
 The commerically available crystallographic planes for B-Ga203 are (100) (010) and (001). 
 
 CHALLENGE 3: SUBSTRATE WASTE THROUGH MATERIAL SCRAPING
--> During Chemical Mechanical Polishing (CMP), it is necessary to remove a region thicker than the damaged layer generated in the previous step. WASTEFUL.
+* During Chemical Mechanical Polishing (CMP), it is necessary to remove a region thicker than the damaged layer generated in the previous step. WASTEFUL.
 
 Intrinsic Material Properties
     1. Transport (isotropic)
@@ -158,8 +158,8 @@ Ge-doping has higher mobility but less control due to necessary growth condition
 Si-doping is best but struggles to be made with MBE bc of source oxidation causing drift of Si Flux. (??)
 
 What exactly is unintentional doping (UID)? (Related to Si0 and Si).
--> I think during the doping process, unintentional Si comes from Si0 and the quartz cavity of the oxygen plasma source. 
--> The electron concentration is lowest but has the highest Hall mobility 
+* I think during the doping process, unintentional Si comes from Si0 and the quartz cavity of the oxygen plasma source. 
+* The electron concentration is lowest but has the highest Hall mobility 
 
 To fix this? Ga polishing or intentionally doping Fe. (Fe is the deep acceptor?)
 
@@ -168,10 +168,10 @@ Thick UID buffer layers can help FET performance by reducing acceptor concentrat
 ### B-3. EPITAXY: CRYSTALLINITY AND EXTENDED DEFECTS
 
 The monoclinic structure can lead to defects:
--> Twin formation (?) on (100) and (201)
-    -> Due to:
-        -> double positioning of Ga atmosphere
-        -> Island coalescence??
+* Twin formation (?) on (100) and (201)
+    * Due to:
+        * double positioning of Ga atmosphere
+        * Island coalescence??
 
 Island coalescence can trap electrons which is terrible for mobility.
 
@@ -184,8 +184,8 @@ Good for lateral and vertical devices.
 Rapid advances for B-Ga203 and B-(AlxGa1-x)203 in vertical power device applications. 
 
 Growth rates for (010) up to 10um/hr (166.7 nm/min?)
--> UID low as 7.4e15 cm^-3
--> 300K mobility = 176 cm^2/Vs
+* UID low as 7.4e15 cm^-3
+* 300K mobility = 176 cm^2/Vs
 
 Max mobility reported of 194 cm^2/Vs with n_e = 8e15 cm^-3.
 
@@ -198,7 +198,7 @@ This method allows for very low concentrations (<1e-15)
 MVPE grown B-Ga203 doped with Si in the (001) plane showed +100 cm^2/Vs mobility with concentrations as low as 1e15 cm^-3.
 
 Low Pressure Chemical Vapor Deposition (LPCVD).
- -> This with MVPE are good for growing thick films, good for Schottky-Barrier diodes.
+ * This with MVPE are good for growing thick films, good for Schottky-Barrier diodes.
 
 ## IX: CHARACTERIZATION
 
@@ -215,11 +215,11 @@ These techniques can give electronic information about defect type, so we can si
 4. Linearity.
 
 There exist several traps in all bandgaps, but the location and number of traps is completely dependent on the growth method.
--> This is a problem since power devices need low-doping levels which exacerbate the issues caused by traps and defects.
--> This also causes general problems with controlling the doping concentration.
+* This is a problem since power devices need low-doping levels which exacerbate the issues caused by traps and defects.
+* This also causes general problems with controlling the doping concentration.
 
 Low concentrations of traps can cause dynamic on-resistance in transistors.
--> bc Voltage switching causes the quasi-Fermi levels to move through the bandgap of the device.
+* bc Voltage switching causes the quasi-Fermi levels to move through the bandgap of the device.
 
 There are modulations in trap occupancies. Since the Fermi Levels swing, there are trap emissions and also captures of charge carriers. So in a transient setting, the local charge densities change and so do the terminal characteristics of a device.
 
@@ -241,20 +241,20 @@ Using heterostructures like AlGaO/Ga203 to make high 2DEG densities can increase
 ## XI: SCHOTTKY BARRIER DIODES
 
 Vertical B-Ga203 schottky barrier diodes.
--> High breakdown voltage ~= 3000V
--> Baliga FOM 1GW/sq.cm.
--> Fast switching
--> Near identical forward and reverse IV characteristics (WHY GOOD?)
+* High breakdown voltage ~= 3000V
+* Baliga FOM 1GW/sq.cm.
+* Fast switching
+* Near identical forward and reverse IV characteristics (WHY GOOD?)
 
 Reduced Surface Field Effect (WHAT?)
--> reduces reverse leakage current
+* reduces reverse leakage current
 
 Reverse Edge Field Termination Techniques:
--> Field plating
--> Implanted terminations
+* Field plating
+* Implanted terminations
 
 Reducing power loss either by increasing device area or introducting Junction Barrier Schottky diode structures (JBS).
--> Increasing chip area reduces on-resistance but increases device capacitance
+* Increasing chip area reduces on-resistance but increases device capacitance
 
 ## XII: VERTICAL DEVICES
 
