@@ -20,6 +20,9 @@ Chase Lotito - SIUC Undergraduate - Spring 2024
 15. Is it favorable to have a diode with the same forward and reverse I-V characteristics? 
 16. What is the Reduded Surface Field Effect (RESURF)?
 17. Using different doping techniques and RESURF, is it possible to doping layers around the inert films to reduce the E-field and then prevent premature breakdown?
+18. What is delta doping?
+
+
 
 ## 0. IMPORTANT TERMINOLOGY
  
@@ -329,15 +332,21 @@ The ulitmate goal -> Self-Aligned Gate-to-Source (SAG) $`\beta -Ga_2 O_3`$ trans
 * Poised for fast-switching power converters.
 
 Huang's Unipolar Material FOM:
-* $`HMFOM = E_max \cdot \mu^{0.5}`$
+* $`HMFOM = E_{max} \cdot \mu^{0.5}`$
 
 Intrinsic Transconductance:
 * $`g_m \approx v_{int} \cdot C_G/L_G`$
 
 Extrinsic Transconductance ($`R_S`$ is the source access resistance):
-* $`G_M = g_M \cdot ( 1 + R_S \cdot g_m ) - 1`$
+* $`G_M = g_m \cdot ( 1 + R_S \cdot g_m ) - 1`$
 
+> Device design is very sensitive to the gate-source distance $`L_{GS}`$.
 
+So to improve performance either increase $`E_{max}`$ or $`\mu`$.
+* Getting a high sheet charge density with a 2DEG
+    * A $`(Al_x Ga_{1-x})_2 / Ga_2 O_3`$ with $`x=0.18`$ showed a 2DEG electron mobility $`\mu = 180 cm^2 / Vs`$.
+
+## XIV. DIELECTRIC ENGINEERING
 
 
 
