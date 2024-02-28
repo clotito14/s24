@@ -187,7 +187,7 @@ Growth rates for (010) up to 10um/hr (166.7 nm/min?)
 * UID low as 7.4e15 cm^-3
 * 300K mobility = 176 cm^2/Vs
 
-Max mobility reported of 194 cm^2/Vs with n_e = 8e15 cm^-3.
+Max mobility reported of 194 cm^2/Vs with \(n_e = 8 \cross 15 cm^{-3}\).
 
 (100) problems with two-dimensional islands can be migitated with a 6 to 2 degree miscut toward [001]. 
 
@@ -195,7 +195,7 @@ This method allows for very low concentrations (<1e-15)
 
 ## VIII. OTHER GROWTH STUFF
     
-MVPE grown B-Ga203 doped with Si in the (001) plane showed +100 cm^2/Vs mobility with concentrations as low as 1e15 cm^-3.
+MVPE grown B-Ga203 doped with Si in the (001) plane showed +100 cm^2/Vs mobility with concentrations as low as \(1 \cross 15 cm^{-3}}\).
 
 Low Pressure Chemical Vapor Deposition (LPCVD).
  * This with MVPE are good for growing thick films, good for Schottky-Barrier diodes.
@@ -242,7 +242,7 @@ Using heterostructures like AlGaO/Ga203 to make high 2DEG densities can increase
 
 Vertical B-Ga203 schottky barrier diodes.
 * High breakdown voltage ~= 3000V
-* Baliga FOM 1GW/sq.cm.
+* Baliga FOM \(1GW/cm^2\).
 * Fast switching
 * Near identical forward and reverse IV characteristics (WHY GOOD?)
 
