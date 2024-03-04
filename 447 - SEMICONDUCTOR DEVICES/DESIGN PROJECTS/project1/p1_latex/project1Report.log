@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.2.23)  23 FEB 2024 18:24
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.2.23)  4 MAR 2024 01:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -493,7 +493,7 @@ ot1-tlf.enc} <./EgVLz.png>]
 <derivativeOfEgVLz.png, id=20, 392.96812pt x 327.47343pt>
 File: derivativeOfEgVLz.png Graphic file (type png)
 <use derivativeOfEgVLz.png>
-Package pdftex.def Info: derivativeOfEgVLz.png  used on input line 108.
+Package pdftex.def Info: derivativeOfEgVLz.png  used on input line 111.
 (pdftex.def)             Requested size: 170.71652pt x 142.26491pt.
  (project1Report.bbl) [2
 
@@ -505,13 +505,13 @@ L3 programming layer <2024-01-22>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 6123 strings out of 474541
- 87447 string characters out of 5741085
+ 6124 strings out of 474541
+ 87457 string characters out of 5741085
  1937978 words of memory out of 5000000
- 28268 multiletter control sequences out of 15000+600000
+ 28269 multiletter control sequences out of 15000+600000
  621836 words of font info for 155 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,7n,65p,463b,425s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 57i,7n,65p,477b,430s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/Chase Lotito/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx
 /NewTXMI.pfb><C:/Users/Chase Lotito/AppData/Local/Programs/MiKTeX/fonts/type1/p
 ublic/newtx/NewTXMI5.pfb><C:/Users/Chase Lotito/AppData/Local/Programs/MiKTeX/f
@@ -524,7 +524,7 @@ s/Chase Lotito/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><
 C:/Users/Chase Lotito/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri
 8a.pfb><C:/Users/Chase Lotito/AppData/Local/Programs/MiKTeX/fonts/type1/public/
 newtx/ztmr.pfb>
-Output written on project1Report.pdf (2 pages, 454587 bytes).
+Output written on project1Report.pdf (2 pages, 458929 bytes).
 PDF statistics:
  70 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

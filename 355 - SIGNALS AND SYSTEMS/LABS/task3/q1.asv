@@ -1,0 +1,10 @@
+% Chase Lotito - SIUC Undergrad - ECE355L
+% Task 3 - Q1 - Plotting with subplots
+
+t = -25:0.001:25;
+fa = ((1/6)*t - 2).*rectpuls(t - 0.5); % + ((-1/18)*t + (4/3))*rectpuls(t-9);
+
+r = rectpuls(t - 0.5);
+rd = rectpuls(t)
+
+subplot(3,1,1), plot(t, fa), axis([-25,25,-5,5]), grid on;

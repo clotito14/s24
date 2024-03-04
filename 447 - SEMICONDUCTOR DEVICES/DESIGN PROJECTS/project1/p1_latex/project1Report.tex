@@ -66,7 +66,7 @@ Ultimately, we achieve this by manipulating the volume of a cube \(GaN\) nanocry
 \section{Design Method}
 % [i.e. the simulator used and a reference to it.]
 
-From nanoHUB, the \textit{Nanoscale Solid-State Lighting Device Simulator} \cite{simulator} from Southern Illinois University Carbondale, can simulate GaN nanocrystals of different shapes, calculating the 3-D wavefunctions for the device.
+From nanoHUB, the \textit{Nanoscale Solid-State Lighting Device Simulator} \cite{simulator} from Southern Illinois University Carbondale, we can simulate GaN nanocrystals of different shapes, calculating the 3-D wavefunctions for the device.
 
 We will sweep the height of the nanocrystal \(L_z\) from 1nm-6nm, and use Microsoft EXCEL to find a polynomial regression \(E_g(L_z)\) that approximates the bandgap energy \(E_g\) with respect to \(L_z\).
 
@@ -82,10 +82,11 @@ From our sweep across values of \(L_z\), we were able to get the following polyn
 \end{multline}
 
 % Graph of bandgap function
-\begin{figure}[!h]
+\begin{figure}[!h] 
     \centering
     \includegraphics*[width = 6cm]{EgVLz.png}
     \caption{\(E_g\) versus \(L_z\)}
+    \label{fig:func}
 \end{figure}    
 
 Using MATLAB, we can find when \(L_z = 2.3nm\), \(E_g(2.3) = 3.545eV\).
@@ -102,16 +103,33 @@ This is the region that the quantum confinement is stronger than the natural con
 
 We would need a better approximation for Eq. \ref{bandgap}, but we can predict that as \(L_z \to \infty\), we would find \(E_g \to E_{g0}\), where \(E_{g0}\) is the \textit{bulk bandgap energy} of \(GaN\) .
 
+
+
 % Graph of the derivative
-\begin{figure}[!h] \label{fig:derivative}
+\begin{figure}[!h] 
     \centering
     \includegraphics*[width = 6cm]{derivativeOfEgVLz.png}
     \caption{\(dE_g \ dL_z\)}
+    \label{fig:derivative}
 \end{figure}    
 
+\subsection{Why does the bandgap vary with \( L_z \)?}
 
+Remember for the wavefunction solved for a electron in an infinite potential well, the wavenumber \(k_n\) was:
 
+\begin{equation}
+    k_n = \frac{n \pi}{L}
+\end{equation}
 
+This equation showing that the wavenumber is inversely proportional to the dimensions of the quantum confinement. And, in the k-space, energyis inversely proportional to that dimension squared.
+
+\begin{equation}
+    E \propto 1/L^2
+\end{equation}
+
+This proportionality follows with what we have in Fig. \ref{fig:func}. Differences in the actual bandgap energy function we simulated comes from the specific crystal lattice with crystal potential \(U_c\).
+
+Speaking in terms of the Heisenberg Uncertainty principle, the narrower the confinement of our electrons, the more certain their position can be in all of space, and this causes a larger spread for the electron's momentum. As \(\Delta p \propto \Delta E\), we get more energy for more localized particles. Then, by providing different dimensional constraints on the electron, we can engineer the correct bandgap energy for 350nm light.
 
 \section{Conclusion}
 % [State what you have learned].
