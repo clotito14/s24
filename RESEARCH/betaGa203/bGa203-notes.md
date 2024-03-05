@@ -349,7 +349,10 @@ So to improve performance either increase $`E_{max}`$ or $`\mu`$.
 ## XIV. DIELECTRIC ENGINEERING
 
 
+# $`\beta - Ga_2 O_3`$ Parameters
+This holds different material parameters that are listed for $`\beta Ga_2 O_3`$ in the paper.
 
+Critical Electric Field: $`E_C = 8`$ MV/cm
 
 
 
