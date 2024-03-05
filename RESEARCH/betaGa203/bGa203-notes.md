@@ -379,7 +379,7 @@ N Doping:
 Sn Doping (tin):
 
 * High electron donor concentrations
-* $`n^+ - Ga_2 O_3`$
+* $`n^+ - Ga_2 O_3`$ (this needs to be fact checked)
 
 <br>
 
