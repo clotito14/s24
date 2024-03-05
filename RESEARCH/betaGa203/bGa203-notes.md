@@ -349,10 +349,14 @@ So to improve performance either increase $`E_{max}`$ or $`\mu`$.
 ## XIV. DIELECTRIC ENGINEERING
 
 
-# $`\beta - Ga_2 O_3`$ Parameters
-This holds different material parameters that are listed for $`\beta Ga_2 O_3`$ in the paper.
+## $`\beta - Ga_2 O_3`$ Parameters
+This holds different material parameters that are listed for $`\beta - Ga_2 O_3`$ in the paper.
 
-Critical Electric Field: $`E_C = 8`$ MV/cm
+Critical Electric Field: $`E_C = 8 MV/cm`$
+Mobility: $`\mu = 200 cm^2/Vs`$
+Richardson Constant (related to thermionic emission): $`A_G = 37 A/cm^2 K^2`$
+Tunneling Effective Mass: $`m^* = 0.31 m_o`$
+Relative Dielectric Constant: $`\kappa = \epsilon_r = 10`$
 
 
 
