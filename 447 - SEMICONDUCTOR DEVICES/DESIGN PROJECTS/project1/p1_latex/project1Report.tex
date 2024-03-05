@@ -93,11 +93,15 @@ Using MATLAB, we can find when \(L_z = 2.3nm\), \(E_g(2.3) = 3.545eV\).
 
 Now, the simulator only calculates the wavefunction for integer multiples of \(0.5nm\), so we cannot verify our value for \(L_z\), but a close approximation is fine. 
 
+For this reason, the height we will use in the simulator will be \(L_z = 2.5nm\), and this gets us a bandgap \(E_g = 3.552eV\) (this means \(\lambda = 349.33nm \approx 350nm\)).
+
 % Talking about the derivative
+
+\subsection{First Derivative of \(E_g\)}
 
 We can also use MATLAB to graph the derivative of Eq. \ref{bandgap}. 
 
-What we find is large changes in the bandgap energy for values of \(L_z\) between \(0nm - 2nm\).
+What we find is the bandgap is most sensitive to changes in the nanocrystal height for values of \(L_z\) between \(0nm - 2nm\).
 
 This is the region that the quantum confinement is stronger than the natural confinement that a bulk piece of \(GaN\) provides to an electron. 
 
@@ -131,7 +135,29 @@ This proportionality follows with what we have in Fig. \ref{fig:func}. Differenc
 
 Speaking in terms of the Heisenberg Uncertainty principle, the narrower the confinement of our electrons, the more certain their position can be in all of space, and this causes a larger spread for the electron's momentum. As \(\Delta p \propto \Delta E\), we get more energy for more localized particles. Then, by providing different dimensional constraints on the electron, we can engineer the correct bandgap energy for 350nm light.
 
-\section{Conclusion}
+\subsection{Absorption}
+
+Figure \ref{fig:absorption} shows the changes in light absorption when sweeping the light source from \(0^\circ\) to \(360^\circ\). The curve that shows the most absorption is at \(\phi \approx 92.5^\circ\).
+
+Absorption describes the which wavelengths of light are actually transmitted when incident on a device or material. For nanoscale optoelectronics, the devices should absorb the most light at energies equal to the bandgap or above.
+
+Figure \ref{fig:absorption} shows absorption across all light energy levels, therefore all frequencies, with peaks at 3.552 eV, 3.583 eV, and 3.672 eV. 
+
+The differences and broadening of the absorption curve can be explained by the asymmetry or anisotropy of the device, and by Pauli's Exclusion Principle.
+
+The anisotropy of \(GaN\) means light will interact differently with the device when incident from different angles since device characteristics will measure differently based on direction. 
+
+Also, Pauli's Exclusion Principle dictates that no two electrons can have the same quantum numbers. So, when our \(GaN\) atoms are closely-packed in our nanoscale crystal, the multitude of electrons enter hybridized orbitals and are separated into slightly different energy levels. A splitting of energy levels occurs. This causes the spread of absorption levels.
+
+% Absorption with phi parameteric sweep
+\begin{figure}[!h] 
+    \centering
+    \includegraphics*[width = 6cm]{AbsorptionSweepAnglephi.png}
+    \caption{Absorption with \(\phi\) paramteric sweep.}
+    \label{fig:absorption}
+\end{figure}    
+
+ \section{Conclusion}
 % [State what you have learned].
 
 % REFERENCES!
