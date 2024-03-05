@@ -70,7 +70,7 @@ Chase Lotito - SIUC Undergraduate - Spring 2024
 
 ## I. INTRODUCTION
 
-## II. AN OUTLOOK TO THE COMMERCIAL MARKET OPPORTUNITIES OF $`\bea -Ga_2 O_3`$ BASED ON POWER DEVICES
+## II. AN OUTLOOK TO THE COMMERCIAL MARKET OPPORTUNITIES OF $`\beta -Ga_2 O_3`$ BASED ON POWER DEVICES
 
 ## III. DEFENSE BASED POWER CONVERTER APPLICATIONS
 
@@ -352,11 +352,11 @@ So to improve performance either increase $`E_{max}`$ or $`\mu`$.
 ## $`\beta - Ga_2 O_3`$ Parameters
 This holds different material parameters that are listed for $`\beta - Ga_2 O_3`$ in the paper.
 
-Critical Electric Field: $`E_C = 8 MV/cm`$
-Mobility: $`\mu = 200 cm^2/Vs`$
-Richardson Constant (related to thermionic emission): $`A_G = 37 A/cm^2 K^2`$
-Tunneling Effective Mass: $`m^* = 0.31 m_o`$
-Relative Dielectric Constant: $`\kappa = \epsilon_r = 10`$
+* Critical Electric Field: $`E_C = 8 MV/cm`$
+* Mobility: $`\mu = 200 cm^2/Vs`$
+* Richardson Constant (related to thermionic emission): $`A_G = 37 A/cm^2 K^2`$
+* Tunneling Effective Mass: $`m^* = 0.31 m_o`$
+* Relative Dielectric Constant: $`\kappa = \epsilon_r = 10`$
 
 
 
