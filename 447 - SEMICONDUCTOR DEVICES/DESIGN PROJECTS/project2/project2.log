@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.2.23)  4 MAR 2024 20:50
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.2.23)  4 MAR 2024 20:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**./project1Report.tex
-(project1Report.tex
+**./project2.tex
+(project2.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
 
@@ -371,118 +371,79 @@ Package: xurl 2022/01/09 v 0.10 modify URL breaks
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 ))
-(C:\Users\Chase Lotito\AppData\Local\Programs\MiKTeX\tex/latex/listings\listing
-s.sty
-\lst@mode=\count285
-\lst@gtempboxa=\box55
-\lst@token=\toks28
-\lst@length=\count286
-\lst@currlwidth=\dimen175
-\lst@column=\count287
-\lst@pos=\count288
-\lst@lostspace=\dimen176
-\lst@width=\dimen177
-\lst@newlines=\count289
-\lst@lineno=\count290
-\lst@maxwidth=\dimen178
-
-(C:\Users\Chase Lotito\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc
-.sty
-File: lstmisc.sty 2023/02/27 1.9 (Carsten Heinz)
-\c@lstnumber=\count291
-\lst@skipnumbers=\count292
-\lst@framebox=\box56
-)
-(C:\Users\Chase Lotito\AppData\Local\Programs\MiKTeX\tex/latex/listings\listing
-s.cfg
-File: listings.cfg 2023/02/27 1.9 listings configuration
-))
-Package: listings 2023/02/27 1.9 (Carsten Heinz)
-
-(C:\Users\Chase Lotito\AppData\Local\Programs\MiKTeX\tex/latex/graphics\color.s
-ty
-Package: color 2022/01/06 v1.3d Standard LaTeX Color (DPC)
-
-(C:\Users\Chase Lotito\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\col
-or.cfg
-File: color.cfg 2016/01/02 v1.6 sample color configuration
-)
-Package color Info: Driver file: pdftex.def on input line 149.
-
-(C:\Users\Chase Lotito\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcol
-or.ltx))
 (C:\Users\Chase Lotito\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3back
 end-pdftex.def
 File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count293
-\l__pdf_internal_box=\box57
-) (project1Report.aux)
-\openout1 = `project1Report.aux'.
+\l__color_backend_stack_int=\count285
+\l__pdf_internal_box=\box55
+)
+No file project2.aux.
+\openout1 = `project2.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/ntxmi/m/it on input line 24.
+LaTeX Font Info:    Checking defaults for OML/ntxmi/m/it on input line 18.
 LaTeX Font Info:    Trying to load font information for OML+ntxmi on input line
- 24.
+ 18.
 
 (C:\Users\Chase Lotito\AppData\Local\Programs\MiKTeX\tex/latex/newtx\omlntxmi.f
 d
 File: omlntxmi.fd 2015/08/25 Fontinst v1.933 font definitions for OML/ntxmi.
 )
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 18.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 18.
 LaTeX Font Info:    Trying to load font information for U+ntxexa on input line 
-24.
+18.
 
 (C:\Users\Chase Lotito\AppData\Local\Programs\MiKTeX\tex/latex/newtx\untxexa.fd
 File: untxexa.fd 2012/04/16 Fontinst v1.933 font definitions for U/ntxexa.
 )
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for LMS/ntxsy/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for LMS/ntxsy/m/n on input line 18.
 LaTeX Font Info:    Trying to load font information for LMS+ntxsy on input line
- 24.
+ 18.
 
 (C:\Users\Chase Lotito\AppData\Local\Programs\MiKTeX\tex/latex/newtx\lmsntxsy.f
 d
 File: lmsntxsy.fd 2016/07/02 Fontinst v1.933 font definitions for LMS/ntxsy.
 )
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 18.
 LaTeX Font Info:    Trying to load font information for LMX+ntxexx on input lin
-e 24.
+e 18.
 
 (C:\Users\Chase Lotito\AppData\Local\Programs\MiKTeX\tex/latex/newtx\lmxntxexx.
 fd
 File: lmxntxexx.fd 2016/07/03 Fontinst v1.933 font definitions for LMX/ntxexx.
 )
-LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    ... okay on input line 18.
 
 -- Lines per column: 58 (exact).
-LaTeX Info: Command `\dddot' is already robust on input line 24.
-LaTeX Info: Command `\ddddot' is already robust on input line 24.
+LaTeX Info: Command `\dddot' is already robust on input line 18.
+LaTeX Info: Command `\ddddot' is already robust on input line 18.
 
 (C:\Users\Chase Lotito\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp
 -pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count294
-\scratchdimen=\dimen179
-\scratchbox=\box58
-\nofMPsegments=\count295
-\nofMParguments=\count296
-\everyMPshowfont=\toks29
-\MPscratchCnt=\count297
-\MPscratchDim=\dimen180
-\MPnumerator=\count298
-\makeMPintoPDFobject=\count299
-\everyMPtoPDFconversion=\toks30
+\scratchcounter=\count286
+\scratchdimen=\dimen175
+\scratchbox=\box56
+\nofMPsegments=\count287
+\nofMParguments=\count288
+\everyMPshowfont=\toks28
+\MPscratchCnt=\count289
+\MPscratchDim=\dimen176
+\MPnumerator=\count290
+\makeMPintoPDFobject=\count291
+\everyMPtoPDFconversion=\toks29
 )
 (C:\Users\Chase Lotito\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\eps
 topdf-base.sty
@@ -493,127 +454,33 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 (C:\Users\Chase Lotito\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopd
 f-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
-))
-\c@lstlisting=\count300
-
-(C:\Users\Chase Lotito\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang
-1.sty
-File: lstlang1.sty 2023/02/27 1.9 listings language file
-)
-LaTeX Font Info:    Trying to load font information for OT1+minntx on input lin
-e 49.
-
-(C:\Users\Chase Lotito\AppData\Local\Programs\MiKTeX\tex/latex/newtx\ot1minntx.
-fd
-File: ot1minntx.fd 2023/09/09 v1.1 font definition file for OT1/minntx
-)
-LaTeX Font Info:    Trying to load font information for U+ntxmia on input line 
-49.
-
-(C:\Users\Chase Lotito\AppData\Local\Programs\MiKTeX\tex/latex/newtx\untxmia.fd
-File: untxmia.fd 2018/04/14 Fontinst v1.933 font definitions for U/ntxmia.
-)
-LaTeX Font Info:    Trying to load font information for U+ntxsym on input line 
-49.
-
-(C:\Users\Chase Lotito\AppData\Local\Programs\MiKTeX\tex/latex/newtx\untxsym.fd
-File: untxsym.fd 2023/08/16 Fontinst v1.933 font definitions for U/ntxsym.
-)
-LaTeX Font Info:    Trying to load font information for U+ntxsyc on input line 
-49.
-
-(C:\Users\Chase Lotito\AppData\Local\Programs\MiKTeX\tex/latex/newtx\untxsyc.fd
-File: untxsyc.fd 2012/04/12 Fontinst v1.933 font definitions for U/ntxsyc.
-)
-LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 1
-09.
-
-(C:\Users\Chase Lotito\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1pcr.fd
-File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
-) [1{C:/Users/Chase Lotito/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:
-/Users/Chase Lotito/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}
+)) [1{C:/Users/Chase Lotito/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C
+:/Users/Chase Lotito/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}
 
 
-{C:/Users/Chase Lotito/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/newtx/ntx-
-ot1-tlf.enc}]
-<EgVLz.png, id=15, 414.04688pt x 338.76563pt>
-File: EgVLz.png Graphic file (type png)
-<use EgVLz.png>
-Package pdftex.def Info: EgVLz.png  used on input line 134.
-(pdftex.def)             Requested size: 170.71652pt x 139.68051pt.
-<derivativeOfEgVLz.png, id=18, 392.96812pt x 327.47343pt>
-File: derivativeOfEgVLz.png Graphic file (type png)
-<use derivativeOfEgVLz.png>
-Package pdftex.def Info: derivativeOfEgVLz.png  used on input line 164.
-(pdftex.def)             Requested size: 170.71652pt x 142.26491pt.
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<AbsorptionSweepAnglephi.png, id=20, 401.5pt x 401.5pt>
-File: AbsorptionSweepAnglephi.png Graphic file (type png)
-<use AbsorptionSweepAnglephi.png>
-Package pdftex.def Info: AbsorptionSweepAnglephi.png  used on input line 204.
-(pdftex.def)             Requested size: 170.71652pt x 170.71794pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<energyone.jpg, id=22, 334.24875pt x 363.3575pt>
-File: energyone.jpg Graphic file (type jpg)
-<use energyone.jpg>
-Package pdftex.def Info: energyone.jpg  used on input line 213.
-(pdftex.def)             Requested size: 170.71652pt x 185.58708pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<energytwo.jpg, id=24, 334.24875pt x 363.3575pt>
-File: energytwo.jpg Graphic file (type jpg)
-<use energytwo.jpg>
-Package pdftex.def Info: energytwo.jpg  used on input line 222.
-(pdftex.def)             Requested size: 170.71652pt x 185.58708pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[2 <./EgVLz.png> <./derivativeOfEgVLz.png>]
-<IntegratedAbsorption2.jpg, id=34, 401.5pt x 401.5pt>
-File: IntegratedAbsorption2.jpg Graphic file (type jpg)
-<use IntegratedAbsorption2.jpg>
-Package pdftex.def Info: IntegratedAbsorption2.jpg  used on input line 237.
-(pdftex.def)             Requested size: 170.71652pt x 170.71794pt.
- [3 <./AbsorptionSweepAnglephi.png> <./energyone.jpg> <./energytwo.jpg> <./Inte
-gratedAbsorption2.jpg>]
-(project1Report.bbl) [4
-
-] (project1Report.aux)
+] (project2.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 8540 strings out of 474541
- 119918 string characters out of 5741085
- 2048978 words of memory out of 5000000
- 30659 multiletter control sequences out of 15000+600000
- 622947 words of font info for 159 fonts, out of 8000000 for 9000
+ 5901 strings out of 474541
+ 83163 string characters out of 5741085
+ 1924978 words of memory out of 5000000
+ 28098 multiletter control sequences out of 15000+600000
+ 588514 words of font info for 85 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,7n,72p,522b,2203s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/Chase Lotito/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx
-/NewTXMI.pfb><C:/Users/Chase Lotito/AppData/Local/Programs/MiKTeX/fonts/type1/p
-ublic/newtx/NewTXMI5.pfb><C:/Users/Chase Lotito/AppData/Local/Programs/MiKTeX/f
-onts/type1/public/newtx/NewTXMI7.pfb><C:/Users/Chase Lotito/AppData/Local/Progr
-ams/MiKTeX/fonts/type1/public/newtx/txmiaX.pfb><C:/Users/Chase Lotito/AppData/L
-ocal/Programs/MiKTeX/fonts/type1/public/newtx/txsys.pfb><C:/Users/Chase Lotito/
-AppData/Local/Programs/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb><C:/Users/Chas
-e Lotito/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Use
-rs/Chase Lotito/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb
-><C:/Users/Chase Lotito/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utm
-r8a.pfb><C:/Users/Chase Lotito/AppData/Local/Programs/MiKTeX/fonts/type1/urw/ti
-mes/utmri8a.pfb><C:/Users/Chase Lotito/AppData/Local/Programs/MiKTeX/fonts/type
-1/public/newtx/ztmr.pfb>
-Output written on project1Report.pdf (4 pages, 636805 bytes).
+ 57i,6n,65p,253b,193s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/Chase Lotito/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/ut
+mb8a.pfb><C:/Users/Chase Lotito/AppData/Local/Programs/MiKTeX/fonts/type1/urw/t
+imes/utmbi8a.pfb><C:/Users/Chase Lotito/AppData/Local/Programs/MiKTeX/fonts/typ
+e1/urw/times/utmr8a.pfb><C:/Users/Chase Lotito/AppData/Local/Programs/MiKTeX/fo
+nts/type1/urw/times/utmri8a.pfb>
+Output written on project2.pdf (1 page, 36535 bytes).
 PDF statistics:
- 93 PDF objects out of 1000 (max. 8388607)
+ 27 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 67 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
