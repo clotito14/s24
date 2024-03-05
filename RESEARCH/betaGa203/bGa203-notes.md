@@ -360,4 +360,19 @@ This holds different material parameters that are listed for $`\beta - Ga_2 O_3`
 * Bandgap Energy: $`E_G = 4.8 eV`$
 * 
 
+## Doping $`\beta - Ga_2 O_3`$
+
+Si Doping:
+* $`n^- - Ga_2 O_3`$
+* $`n = 5 \times 10^{-19} cm^{-3}`$
+    * forms decent ohmic electrodes
+N Doping:
+* Deep Acceptor
+* Nitrogen is closest to O for ionic size and electronic structure (1 e difference)
+* Can be used to dope current blocking layers (CBLs)
+    * Better annealing --> less leakage current compared to Mg
+Sn Doping (tin):
+* High electron donor concentrations
+* $`n^+ - Ga_2 O_3`$
+Fe Doping (iron):
 
