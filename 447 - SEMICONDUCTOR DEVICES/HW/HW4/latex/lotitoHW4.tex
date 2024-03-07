@@ -9,7 +9,7 @@
 \usepackage{amsmath, amsfonts, amssymb, amsthm}
 \usepackage{braket}
 \usepackage{listings}
-\usepackage[margin=1.0in]{geometry}
+\usepackage{geometry}
 \usepackage{xcolor}
 \usepackage{textcomp}
 \usepackage{graphicx}
@@ -18,6 +18,7 @@
 %%%%%%%%%%%%%%
 
 \graphicspath{{./images}}
+\setlength\parindent{0pt}       % globally supress indentation
 
 %% LISTINGS CONFIG %%
 
@@ -48,7 +49,46 @@
 \fancyhead{}
 \fancyhead[CH]{\normalsize{SOUTHERN ILLINOIS ECE / Chase Lotito / Spring 2024}}
 
-\section{Problem 3.12}
+%% THE HOMEWORK BEGINS HERE %%
+
+\section*{A. Thought Experiment}
+
+Three orthogonal and degenerate energy valleys in bulk silicon have one electron each. The electric field is applied along the \(y\)-direction to which all three electrons respond giving rise to a current \(I_1\). Now, some amount of tensile strain is applied in the material causing all three electrons located in the transverse valleys and producing a current flow of \(I_2\). Given that \(I \propto 1/m^*\) and \(m^*_l \propto 4m^*_t\) what will be the ratio of \(I_2 / I_1\)? \bigskip
+
+\textbf{Solution}
+
+For the first current \(I_1\), in the presence of the electric field \(\vec{E} = \hat{y}E\), we will get the \(k_y\) electron along the semimajor axis of its energy valley, and the \(k_x\) and \(k_z\) electrons will move along the semiminor axis of their respective energy valleys. This tells us to use \(m^*_l\) for \(k_y\), and \(m^*_t\) for \(k_x\) and \(k_z\).
+
+We can then find the average effective mass \(m^*_1\):
+
+\begin{align*}
+    m^*_1 = \frac{1}{3} ( m^*_l + 2m^*_t ) \\
+    = \frac{1}{3} ( 4m^*_t + 2m^*_t ) \\
+    = 2m^*_t
+\end{align*}
+
+Then we can do the same, finding the average effective mass, for when all of the electrons are located in transverse valleys.
+
+\begin{align*}
+    m^*_2 = \frac{1}{3} ( 3m^*_t ) \\
+    = m^*_t
+\end{align*}
+
+Using the inverse relationship between current and effective mass:
+
+\begin{align*}
+    \boxed{
+        \frac{I_2}{I_1} \propto \frac{1 / m^*_t}{1 / 2m^*_t} = 2
+    }
+\end{align*}
+
+So, from adding tensile strain and forcing our electrons into their transverse valleys, we can effectively \textbf{double} the current.
+
+\section*{Problem 3.12}
+
+Plot \(E_g = E_g(0) - \frac{\alpha T^2}{(\beta + T)}\) \bigskip
+
+\textbf{Solution}
 
 I implemented the following plot for \(E_g(T)\) using python's library \textit{matplotlib.pyplot}.
 
@@ -100,12 +140,14 @@ plt.legend()
 plt.show()
 \end{lstlisting}
 
-\begin{figure}[!h] 
+\begin{figure}[!ht] 
     \centering
-    \includegraphics[width = 15cm]{bandgapTempPlot.png}
+    \includegraphics[width = 10cm]{bandgapTempPlot.png}
     \caption{\(E_G\) versus \(T\)}
     \label{fig:bandgapTemp}
 \end{figure}
+
+\bigskip
 
 For \(T = 300K\), we see that the bangap energy of Silicon is 1.1245 eV, which is the textbook bandgap for Silicon at room temperature.
 
