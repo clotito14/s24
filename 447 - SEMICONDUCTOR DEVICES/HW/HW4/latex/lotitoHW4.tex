@@ -12,8 +12,12 @@
 \usepackage[margin=1.0in]{geometry}
 \usepackage{xcolor}
 \usepackage{textcomp}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
 
 %%%%%%%%%%%%%%
+
+\graphicspath{{./images}}
 
 %% LISTINGS CONFIG %%
 
@@ -36,12 +40,17 @@
 \begin{document}
 
 %%%%%%%%%%%%%%%%%%%%%
-
-\begin{document}
+\pagestyle{fancy}
 
 \maketitle
 
+% attempt to make nice header
+\fancyhead{}
+\fancyhead[CH]{\normalsize{SOUTHERN ILLINOIS ECE / Chase Lotito / Spring 2024}}
+
 \section{Problem 3.12}
+
+I implemented the following plot for \(E_g(T)\) using python's library \textit{matplotlib.pyplot}.
 
 \begin{lstlisting}{language = {Python}}
 import matplotlib.pyplot as plt
@@ -93,9 +102,11 @@ plt.show()
 
 \begin{figure}[!h] 
     \centering
-    \includegraphics*[width = 6cm]{Lotito - Eg v T Plot - Q312.png}
+    \includegraphics[width = 15cm]{bandgapTempPlot.png}
     \caption{\(E_G\) versus \(T\)}
     \label{fig:bandgapTemp}
 \end{figure}
+
+For \(T = 300K\), we see that the bangap energy of Silicon is 1.1245 eV, which is the textbook bandgap for Silicon at room temperature.
 
 \end{document}
