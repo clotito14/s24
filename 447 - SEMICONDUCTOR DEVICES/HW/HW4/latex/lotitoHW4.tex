@@ -84,6 +84,76 @@ Using the inverse relationship between current and effective mass:
 
 So, from adding tensile strain and forcing our electrons into their transverse valleys, we can effectively \textbf{double} the current.
 
+\section*{B. Negative Differential Resistance}
+
+Explain the origin (from the bandstructure point of view) of negative differential resistance (NDR) is GaAs or GaN? How could you use this phenomenon in device applications?
+
+\bigskip
+
+\textbf{Solution}
+
+For a free electron, its energy as a function of its wavenumber \(k\), or momentum \(p\), resembles a parabola. Which says that in the conduction band, as the electron gains momentum in the positive or negative direction, then the electron will also gain energy.
+
+\smallskip
+
+However, the periodic potential \(U_c\) from a semiconductor material destroys this perfect picture. Instead the energy in the bands fluctates aperiodically depending on the speed and direction of the particle. For an electron in GaAs or GaN, the crystal lattice does not look the same in all directions, so depending on where it is travelling in the crystal, it will behave differently.
+
+\smallskip
+
+From the derivation of effective mass, we found the first derivative of energy with respect to wavenumber was directly proportional to the velocity of the electron/particle.
+
+\begin{align*}
+    \frac{dE}{dk} \propto v
+\end{align*}
+
+If we imagine the slopes of the tangent lines along the conduction band for GaAs from the textbook, we find that the derivative in the lower energy valley is larger than the derivative in the higher energy valley. \textbf{The electron slows down as energy increases.}
+
+\smallskip
+
+The energy the electron feels is from our external voltage bias. So, as voltage increases, the conduction electrons lose speed.
+
+\begin{align*}
+    I = q n A v
+\end{align*}
+
+From the model for current in a conductor, if the electron's velocity drops, so does the current in the semiconductor.
+
+\smallskip
+
+For positive changes in voltage, the GaAs or GaN device will experience negative changes in current, hence negative differential resistance. 
+
+\begin{align*}
+    \frac{\Delta v}{\Delta i} < 0
+\end{align*}
+
+Since we have a differential resistance, devices utilizing this dynamic range can be amplifiers---the basis of small-signal analysis is dependent on the differential conductance of a device (\(r \propto 1/g\)). Also, a device with NDR can be used an oscillator without the need for a feedback loop (like an oscillating op-amp circuit) since we can leverage the small decreases in current due to small increases in the bias voltage.
+
+
+\section*{C. E-k Diagram Characterization}
+
+E-k diagram of a new semiconductor material (possibly \(MoS_2\)) is shown. Identify (and comment on) a few important parameters/features of this material.
+
+\bigskip
+
+\textbf{Solution}
+
+Assuming \(T = 300 K\), the bandgap of this material is is over half an electronvolt larger than the bandgap for Silicon. Larger bandgaps allow engineers more play in the devices they can build. 
+
+\smallskip
+
+The valence band's curvature is much shallower than the curvature of the conduction bands. This tells us that:
+
+\begin{align*}
+    m^*_p > m^*_n
+\end{align*}
+
+Current being inversely proportional to effective mass would mean for this material, holes do not contribute to current as much as electrons.
+However, the valence band experiences nearly zero degeneracy, but the conduction bands are much more energetically alike. This will make it much harder to place the electrons in the conduction band exactly as planned.
+
+\smallskip
+
+We also see that the valence band peak happens at \(\Gamma\), but the conduction band minimum occurs at \(K\). Since the bandgap is not local to the same direction in \(MoS_2\), this device will not be good for optoelectronics, as deenergizing electrons have to drastically change their momentum to easily reach the valence band. 
+
 \section*{Problem 3.12}
 
 Plot \(E_g = E_g(0) - \frac{\alpha T^2}{(\beta + T)}\) \bigskip

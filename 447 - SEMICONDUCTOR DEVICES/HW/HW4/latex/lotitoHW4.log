@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.2.23)  7 MAR 2024 12:50
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.2.23)  7 MAR 2024 19:26
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -354,18 +354,19 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
 {C:/Users/Chase Lotito/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
+[2] [3]
 LaTeX Font Info:    Trying to load font information for TS1+cmtt on input line 
-125.
+195.
 
 (C:\Users\Chase Lotito\AppData\Local\Programs\MiKTeX\tex/latex/base\ts1cmtt.fd
 File: ts1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
-) [2]
-<./images/bandgapTempPlot.png, id=22, 462.528pt x 346.896pt>
+)
+<./images/bandgapTempPlot.png, id=24, 462.528pt x 346.896pt>
 File: ./images/bandgapTempPlot.png Graphic file (type png)
 <use ./images/bandgapTempPlot.png>
-Package pdftex.def Info: ./images/bandgapTempPlot.png  used on input line 145.
+Package pdftex.def Info: ./images/bandgapTempPlot.png  used on input line 215.
 (pdftex.def)             Requested size: 284.52756pt x 213.40593pt.
- [3 <./images/bandgapTempPlot.png>] (lotitoHW4.aux)
+[4 <./images/bandgapTempPlot.png>] [5] (lotitoHW4.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
@@ -374,7 +375,7 @@ L3 programming layer <2024-01-22>
 Here is how much of TeX's memory you used:
  5778 strings out of 474541
  83900 string characters out of 5741085
- 1978978 words of memory out of 5000000
+ 1957978 words of memory out of 5000000
  27954 multiletter control sequences out of 15000+600000
  566436 words of font info for 69 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -396,9 +397,9 @@ sy10.pfb><C:/Users/Chase Lotito/AppData/Local/Programs/MiKTeX/fonts/type1/publi
 c/amsfonts/cm/cmsy7.pfb><C:/Users/Chase Lotito/AppData/Local/Programs/MiKTeX/fo
 nts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/Chase Lotito/AppData/Local/Pr
 ograms/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on lotitoHW4.pdf (3 pages, 190012 bytes).
+Output written on lotitoHW4.pdf (5 pages, 204339 bytes).
 PDF statistics:
- 85 PDF objects out of 1000 (max. 8388607)
+ 91 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 

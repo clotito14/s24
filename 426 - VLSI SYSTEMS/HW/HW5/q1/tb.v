@@ -17,13 +17,13 @@ end
 
 // I/O
 wire out;
-reg reset, clk, in;
+reg reset, clk, w;
 
 // Initial Conditions
 initial begin : initalConditions
     clk = 0;
     reset = 0;
-    in = 0;
+    w = 0;
 end
 
 // Clock
@@ -32,18 +32,20 @@ always begin
 end
 
 // Stimulus
-always begin : Stimulus
-    repeat(10)
-        in = #5 ~in;
+initial begin : Stimulus
+    repeat(20)
+        w = #10 ~w;
+
+    reset <= #50 1'b1;
     #100 $finish;
 end
 
 // Instantiate the FSM
-sequence U1 (
+mealyFSM U1 (
     .clk(clk),
     .reset(reset),
-    .out(out),
-    .in(in)
+    .w(w),
+    .out(out)
 );
 
 endmodule

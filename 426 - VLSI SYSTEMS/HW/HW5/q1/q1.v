@@ -5,41 +5,49 @@
 
 `timescale 1us / 1us
 
-module sequence (
-    clk, reset, out, in
+module mealyFSM (
+    clk, reset, w, out
 );
 
 // I/O
-input reset, clk, in;
-output out;
+input clk, reset, w;
+output out;             // wire for continuous assignment
 
-reg out;
 reg [1:0] present, next; // p for present-state, n for next-state
 
 // Parameters for cases
 // 3 cases, so lets use 2-bits
-parameter A = 2'b01, B = 2'b10, C = 2'b11;  // we will count 1, 2, 3
-
+parameter A = 2'b01, B = 2'b10, C = 2'b11;  // we will count 1, 2, 3 
+// Initial Conditions
 initial begin
-    present = A;    // at the start we being at A
+    present = A;
 end
 
-// No specific requirements, so let's go synchronous reset
-always @ (posedge clk) begin
-    if (reset == 1'b1)
-        next = A;
+// Console log
+always @ (w, out) begin
+    $monitor("[PRESENT] = %d | [NEXT] = %d, w = %b | [OUTPUT] = %b \n", present, next, w, out);
+end
 
-    case(present)
-        A: next = in ? B : C;
-        B: next = in ? B : C;
-        C: next = in ? B : C;
+// Next-State Combinational Logic
+always @ (w, present) begin
+    case (present)
+        A: next = w ? C : B;
+        B: next = w ? C : B;
+        C: next = w ? C : B;
         default: next = 2'bxx;
     endcase
-
-    // 
-
-    // Output Logic
-    out = next;
 end
+
+// Sequential Logic
+// using posedge reset because not specified in problem statement.
+always @ (posedge clk, posedge reset) begin
+    if (reset == 1'b1)
+        present <= A;
+    else
+        present <= next;
+end
+
+// Output Logic
+assign out = ( (present == B) && (w == 1'b0) ) || ( (present == C) && (w == 1'b1) );
 
 endmodule
