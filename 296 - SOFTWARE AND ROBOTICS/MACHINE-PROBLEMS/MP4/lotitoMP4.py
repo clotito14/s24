@@ -11,7 +11,7 @@ MP4 - Bisection Method
 # calculate the midpoint c
 # eval func at all 3 points to determine where the root is
 
-from math import *
+import math
 
 def bisect(f, lower, upper, eps=1e-12, imax=100):
     """
@@ -81,4 +81,8 @@ def bisect(f, lower, upper, eps=1e-12, imax=100):
     # return final answer
     return root 
 
+# Run the function just to test
 bisect('exp(-x) - sin(pi * x / 2)', 0, 1)
+
+
+
