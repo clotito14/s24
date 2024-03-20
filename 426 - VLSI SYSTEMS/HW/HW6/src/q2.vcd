@@ -1,0 +1,50 @@
+$date
+	Wed Mar 20 00:47:18 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module tb $end
+$var wire 9 ! dctq [8:0] $end
+$var reg 12 " dct [11:0] $end
+$scope module U1 $end
+$var wire 12 # dct [11:0] $end
+$var wire 9 $ dctq [8:0] $end
+$upscope $end
+$scope begin GTKWAVE $end
+$upscope $end
+$scope begin stimmy $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 $
+b0 #
+b0 "
+b0 !
+$end
+#10
+b1 !
+b1 $
+b1000 "
+b1000 #
+#20
+b1000 !
+b1000 $
+b1000000 "
+b1000000 #
+#30
+b1100100 !
+b1100100 $
+b1100100000 "
+b1100100000 #
+#40
+b10100000 !
+b10100000 $
+b10100000000 "
+b10100000000 #
+#50

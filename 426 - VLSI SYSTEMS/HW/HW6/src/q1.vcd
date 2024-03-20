@@ -1,0 +1,62 @@
+$date
+	Wed Mar 20 00:32:51 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module tb $end
+$var wire 12 ! product_15 [11:0] $end
+$var wire 12 " product_11 [11:0] $end
+$var reg 8 # data [7:0] $end
+$scope module U1 $end
+$var wire 8 $ data [7:0] $end
+$var wire 12 % product_15 [11:0] $end
+$var wire 12 & product_11 [11:0] $end
+$upscope $end
+$scope begin GTKWAVE $end
+$upscope $end
+$scope begin stimmy $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 &
+b0 %
+b0 $
+b0 #
+b0 "
+b0 !
+$end
+#10
+b1011 "
+b1011 &
+b1111 !
+b1111 %
+b1 #
+b1 $
+#20
+b110111 "
+b110111 &
+b1001011 !
+b1001011 %
+b101 #
+b101 $
+#30
+b1100011 "
+b1100011 &
+b10000111 !
+b10000111 %
+b1001 #
+b1001 $
+#40
+b10100101 "
+b10100101 &
+b11100001 !
+b11100001 %
+b1111 #
+b1111 $
+#50
