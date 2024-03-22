@@ -1,0 +1,142 @@
+% Chase Lotito - ECE426 HW 5 - Latex
+
+\documentclass{article}
+
+\title{Relating oxygen vacancies to \(\beta-Ga_2 O_3\) unintentional n-type doping}
+\author{Chase Lotito - SIUC UNDERGRADUATE}
+\date{}
+
+%% PACKAGES %%
+
+\usepackage{amsmath, amsfonts, amssymb, amsthm}
+\usepackage{braket}
+\usepackage{listings}
+\usepackage{geometry}
+\usepackage{xcolor}
+\usepackage{textcomp}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{sourcecodepro}
+\usepackage{multirow}
+
+%%%%%%%%%%%%%%
+
+\graphicspath{{./images}}
+\setlength\parindent{0pt}       % globally supress indentation
+
+%% LISTINGS CONFIG %%
+
+\definecolor{purple2}{RGB}{153,0,153} % there's actually no standard purple
+\definecolor{green2}{RGB}{0,153,0} % a darker green
+
+\lstset{
+  basicstyle=\normalsize\ttfamily,   % size of the fonts for the code
+  frame = single,
+  % Color settings to match IDLE style
+  keywordstyle=\color{orange},       % core keywords
+  keywordstyle={[2]\color{purple2}}, % built-ins
+  stringstyle=\color{green2},%
+  showstringspaces=false,
+  commentstyle=\color{red},%
+  upquote=true,                      % requires textcomp
+  numbers=left,
+  breaklines=true,
+}
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%
+\pagestyle{fancy}
+
+\maketitle
+
+% attempt to make nice header
+\fancyhead{}
+\fancyhead[CH]{\normalsize{SIUC / Chase Lotito / Spring 2024}}
+
+Reading from \textit{"Recent progress on the electronic structure, defect, and doping properties of \(Ga_2 O_3\)"} by Jiaye Zhang and others, they have a section on unintentional n-type doping in \(\beta - Ga_2 O_3\). They then describe how there is no consensus on why this occurs, but give some merit to oxygen vacancies (\(V_o\)).
+
+\subsection{Oxygen Vacancies}
+
+Oxygen vacancies in metal-oxide semiconductors would occur during the crystal-growth process. In Floating Zone (FZ) growth, the growth environment would have some level of oxygen that can be controlled. Experimental data in the paper plotted the grown \(\beta-Ga_2 O_3\) crsytal's oconductivity to be inversely proportional to the oxygen flow rate in the growth environment, which could be related to the partial pressure of oxygen in the growth environment (\(P_{O_2}\)). 
+
+\begin{equation}
+        \sigma \propto \frac{1}{P_{O_2}}
+\end{equation}
+
+So the question is, why does this cause, or how can we show mathematically why oxygen vacancies (\(V_o\)) cause n-type conductivity. 
+
+\bigskip
+
+But, it can be explained with the Fermi Level \(E_F\).
+
+\subsection{The Fermi Level}
+
+In the textbook, we can describe the distance between the Fermi Level and the energy in the conduction band with this equation:
+
+\begin{equation}
+    E_c - E_F = kT \ln{\frac{N_c}{n_0}}
+\end{equation}
+
+Where we know that as the Fermi Level approaches the conduction band, as in \(E_c - E_F \to 0\), the material becomes n-type conductive.
+
+\smallskip
+
+Assuming that temperature is stable, we can see what happens to the effective density of states function in the conduction band \(N_c\). This parameter describing what energy states the electrons (our material's majority carrier) have to work with within the conduction band. 
+
+\subsubsection{Connecting \(N_c\) to \(V_o\)}
+
+Empirically, we see larger conductivities for lower oxygen rates, or more oxygen vacancies.
+
+\begin{equation}
+    \uparrow V_o \implies \uparrow \sigma
+\end{equation}
+
+Then we know that increases in electric conductivity is directly proportional to electron mobility.
+
+\begin{equation}
+    \sigma \propto \mu_n
+\end{equation}
+
+Electron mobility is given by this equation in the textbook:
+
+\begin{equation}
+    \mu_n = \frac{q \tau}{m^*_n}
+\end{equation}
+
+And given this equation for the effective density of states function in the conduction band from the textbook:
+
+\begin{equation}
+    N_c = 2 \left( \frac{2 \pi m^*_n k T}{h^2}\right)^{3/2}
+\end{equation}
+
+Which shows \(N_c \propto (m^*_n)^{3/2}\). So now we can make this connection.
+
+\begin{equation}
+    \uparrow V_o \implies \uparrow \sigma \implies \uparrow \mu_n \implies \downarrow m^*_n \implies \downarrow N_c \\
+\end{equation}
+
+Or:
+
+\begin{equation} 
+    V_o \propto 1 / N_c
+\end{equation}
+
+\subsubsection{Evaluating \(N_c \to n_0\)}
+
+From experimental data \(N_c \sim 10^{19}\) and \(n_0 \sim 10^{17}\) for \(\beta-Ga_2 O_3\); if not, \(N_c > n_0\), generally.
+
+\smallskip
+
+If we assume this we can perform a limit on the distance between the conduction band and the Fermi level as \(N_c \to n_0\), which mimics the relationship of \(V_o\) and \(N_c\).
+
+\begin{equation} 
+    \lim_{N_c \to n_0} \left( E_c - E_F \right) \\ 
+    = \lim_{N_c \to n_0} \left( kT \ln \frac{N_c}{n_0} \right) \\
+    = k T \ln 1 \\
+    = 0 \\
+\end{equation}
+
+So, the oxygen vanancies \(V_o\) cause the Fermi Level \(E_F\) to approach the conduction band energy \(E_c\), which is the property of a n-type material.
+
+\end{document}
