@@ -28,8 +28,8 @@ def tunnelProb(x, a):
     # find numerator and denominator of fraction
     numerator = v0_J**2 * (np.sinh(k * a))**2 
     denominator = 4 * energy * (v0_J - energy)
+    
     ans = 1 + (numerator / denominator)
-
     #return final answer (reciprocal)
     return (1 / ans)
 
@@ -60,7 +60,7 @@ plt.ylabel('Tunneling Coefficient')
 plt.title('Tunneling Coefficient for 5Å and 15Å Well')
 
 # Axis formatting
-plt.xlim(0,0.3)
+plt.xlim(0,4)
 
 # Show the plot
 plt.legend()
