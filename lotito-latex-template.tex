@@ -1,0 +1,55 @@
+\documentclass{article}
+%% PACKAGES %%
+
+\usepackage{amsmath, amsfonts, amssymb, amsthm}
+\usepackage{braket}
+\usepackage{listings}
+\usepackage{geometry}
+\usepackage{xcolor}
+\usepackage{textcomp}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{sourcecodepro}
+\usepackage{multirow}
+
+%%%%%%%%%%%%%%
+
+\graphicspath{{./images}}
+\setlength\parindent{0pt}       % globally supress indentation
+
+%% LISTINGS CONFIG %%
+
+\definecolor{purple2}{RGB}{153,0,153} % there's actually no standard purple
+\definecolor{green2}{RGB}{0,153,0} % a darker green
+
+\lstset{
+  language=MATLAB,                   % the language
+  basicstyle=\normalsize\ttfamily,   % size of the fonts for the code
+  frame = single,
+  % Color settings to match IDLE style
+  keywordstyle=\color{orange},       % core keywords
+  keywordstyle={[2]\color{purple2}}, % built-ins
+  stringstyle=\color{green2},%
+  showstringspaces=false,
+  commentstyle=\color{red},%
+  upquote=true,                      % requires textcomp
+  numbers=left,
+  breaklines=true,
+}
+
+% Title Stuff
+\title{\vspace{-3cm} Title }
+\author{Chase A. Lotito, \textit{SIUC Undergraduate}}
+\date{}
+
+\begin{document}
+
+\pagestyle{fancy}
+
+% attempt to make nice header
+\fancyhead{}
+\fancyhead[CH]{\normalsize{LOTITO - SIUC ECE - SPRING 2024}}
+
+\maketitle % Makes the title
+
+\end{document}
