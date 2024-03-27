@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex project2"] 1711485362.71827 "project2.aux" "project2.bbl" "project2" 1711485371.23417 0
-  "./project2Bib.bib" 1711477967 194 1965756057d45942256f60f5aac9e9a3 ""
+["bibtex project2"] 1711510563.61477 "project2.aux" "project2.bbl" "project2" 1711510567.3196 0
+  "./project2Bib.bib" 1711508051 353 7027778ee9bb03611594c6a4e0ce4641 ""
   "C:/Users/cloti/AppData/Local/Programs/MiKTeX/bibtex/bst/ieeetran/IEEEtran.bst" 1708029450 57748 7c8250ecf02814ce6ddc0cdbb63df1dd ""
-  "project2.aux" 1711485364 2330 1e79f0209c1028ba88368b38d82fac8f "pdflatex"
+  "project2.aux" 1711510565 3232 2743b5ada2db170ecfaf787c36cc1f6a "pdflatex"
   (generated)
   "project2.bbl"
   "project2.blg"
   (rewritten before read)
-["pdflatex"] 1711485363.26543 "project2.tex" "project2.pdf" "project2" 1711485371.23417 0
+["pdflatex"] 1711510564.21302 "project2.tex" "project2.pdf" "project2" 1711510567.32054 0
   "C:/Users/cloti/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1711483710 168717 68e003168ec277a44a7cc2fc75574876 ""
   "C:/Users/cloti/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1707798959 24225046 29315bcb98eb1a201c0dfa0e6330096b ""
   "C:/Users/cloti/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc" 1458473887 4993 80dc9bab7f31fb78a000ccfed0e27cab ""
@@ -22,6 +22,7 @@
   "C:/Users/cloti/AppData/Local/Programs/MiKTeX/fonts/tfm/adobe/times/ptmri7t.tfm" 1136793854 2288 f478fc8fed18759effb59f3dad7f3084 ""
   "C:/Users/cloti/AppData/Local/Programs/MiKTeX/fonts/tfm/adobe/times/ptmri8r.tfm" 1136793854 4640 532ca3305aad10cc01d769f3f91f1029 ""
   "C:/Users/cloti/AppData/Local/Programs/MiKTeX/fonts/tfm/public/newtx/NewTXMI.tfm" 1707588428 1408 ef71a9098da4d5a1a85b5920860b6731 ""
+  "C:/Users/cloti/AppData/Local/Programs/MiKTeX/fonts/tfm/public/newtx/NewTXMI7.tfm" 1707588428 1556 4df22ac3e5cc03ff0898d83d8817c6cf ""
   "C:/Users/cloti/AppData/Local/Programs/MiKTeX/fonts/tfm/public/newtx/ntx-Regular-tlf-ot1.tfm" 1707588428 3008 ca0c83ca288d9f1c5d2fca0e8e268f10 ""
   "C:/Users/cloti/AppData/Local/Programs/MiKTeX/fonts/tfm/public/newtx/ntx-Regular-tlf-ot1r.tfm" 1707588428 3056 db59b44fb00cc29b676bd92c4dc6750f ""
   "C:/Users/cloti/AppData/Local/Programs/MiKTeX/fonts/tfm/public/newtx/ntxexa.tfm" 1707588428 760 e8ec875a87aa119f1af7ea4be48da9e8 ""
@@ -41,6 +42,7 @@
   "C:/Users/cloti/AppData/Local/Programs/MiKTeX/fonts/tfm/public/newtx/txmiaX.tfm" 1707588428 1716 a6b113dfe808a82f532d14b1f370053f ""
   "C:/Users/cloti/AppData/Local/Programs/MiKTeX/fonts/tfm/public/newtx/txsys.tfm" 1707588428 1660 d580b6f461bbd2ab53b1fd3851108c0e ""
   "C:/Users/cloti/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/NewTXMI.pfb" 1707588428 32409 eee1344d05b8bec92e60a2ec9a7f49e3 ""
+  "C:/Users/cloti/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/NewTXMI7.pfb" 1707588428 34733 61fa3c01fac511e451670c1b454ff211 ""
   "C:/Users/cloti/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/txmiaX.pfb" 1707588428 56686 3d6d86b0a770bb2c243f4c4351685fc2 ""
   "C:/Users/cloti/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/txsys.pfb" 1707588428 45943 7899c7ea4fdd83f3625178689816dcee ""
   "C:/Users/cloti/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/ztmr.pfb" 1707588428 286816 c3d030d8c7fd436565d9670f5ca64aa0 ""
@@ -55,6 +57,7 @@
   "C:/Users/cloti/AppData/Local/Programs/MiKTeX/fonts/vf/adobe/times/ptmri7t.vf" 1136793854 1384 a9d8adaf491ce34e5fba99dc7bbe5f39 ""
   "C:/Users/cloti/AppData/Local/Programs/MiKTeX/fonts/vf/public/newtx/ntx-Regular-tlf-ot1.vf" 1707588428 956 44be8e0aea9c6d145fc21c9948a6b4b5 ""
   "C:/Users/cloti/AppData/Local/Programs/MiKTeX/fonts/vf/public/newtx/ntxmi.vf" 1707588428 2612 4fd3785b7e98639f68f908a08c642071 ""
+  "C:/Users/cloti/AppData/Local/Programs/MiKTeX/fonts/vf/public/newtx/ntxmi7.vf" 1707588428 2576 4000b56c7179792370b883556f71007a ""
   "C:/Users/cloti/AppData/Local/Programs/MiKTeX/fonts/vf/public/newtx/ntxmia.vf" 1707588428 2056 17a96727a1080b515c483edfb4650902 ""
   "C:/Users/cloti/AppData/Local/Programs/MiKTeX/fonts/vf/public/newtx/ntxsy.vf" 1707588428 1804 0d5405efa3655e9ce85ebf4efa9b7f0b ""
   "C:/Users/cloti/AppData/Local/Programs/MiKTeX/fonts/vf/public/newtx/ntxsy7.vf" 1707588428 1932 eb3a33127536e5b93d4fbe6076112b0d ""
@@ -98,6 +101,7 @@
   "C:/Users/cloti/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/cloti/AppData/Local/Programs/MiKTeX/tex/latex/xkeyval/xkeyval.sty" 1656236919 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
   "C:/Users/cloti/AppData/Local/Programs/MiKTeX/tex/latex/xurl/xurl.sty" 1641733940 4675 e4b8c405820368c2dfb03526e16d725a ""
+  "images/brillouinZone.png" 1711506711 34758 45e5e6146886e551d8159933491ef6f8 ""
   "images/gaas-bands-firstset.png" 1711476449 15518 62e216a03129e6cec25f6fb82077bcd0 ""
   "images/gaas-bands-secondset.png" 1711476449 17339 3542de4491abf29ed0a39c9656cd97cc ""
   "images/ge-bands-firstset.png" 1711476449 16870 21e95bac37affba445bac8847f768b23 ""
@@ -105,9 +109,9 @@
   "images/si-bands-firstset.png" 1711476449 16128 154b9bad5852eec4b877637cb5c52f41 ""
   "images/si-bands-secondset.png" 1711476449 14201 8ff929a5f96a07985337cb5673d40782 ""
   "images/si-bands-thirdset.png" 1711476450 14783 843d3037c22728d1128f70444097da2b ""
-  "project2.aux" 1711485364 2330 1e79f0209c1028ba88368b38d82fac8f "pdflatex"
-  "project2.bbl" 1711485363 1025 be348c27fb6d60e41b43d89438786848 "bibtex project2"
-  "project2.tex" 1711485358 6171 c4bf84721051edf47271d251a65dee3a ""
+  "project2.aux" 1711510565 3232 2743b5ada2db170ecfaf787c36cc1f6a "pdflatex"
+  "project2.bbl" 1711510564 1146 0dee2607e11da442e8cbbe71af667f82 "bibtex project2"
+  "project2.tex" 1711510559 9760 9dab95d9002dfec14c12ef0cc9c1e1e9 ""
   (generated)
   "project2.aux"
   "project2.log"

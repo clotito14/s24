@@ -52,13 +52,50 @@ For discussions regarding effective mass:
 
 \textbf{The First Set - No Spin-Orbit Coupling}
 
+\subsubsection{Effective Mass and Direct/Indirect Bandgap}
+
 We can see the bandstructure for silicon is Figure \ref{fig:si-first-set}. The yellow curve is the edge of the conduction band. Along this curve, it appears to have the tightest curvature at point W, which means the electron effective mass is smallest at point W. Silicon shows itself to be a indirect-bandgap. This is due to the conduction band minimum (CBM) occurring at a different point in \(k\)-space than the valence band maximum (VBM). For Si, the CBM occurs at \(k \approx 10 ~ nm^{-1}\), and the VBM occurs at \(\Gamma\).
 
 Figure \ref{fig:ge-first-set} shows the Germanium bandstructure. The conduction-band curvature is the narrowest at \(\Gamma\), so the electron effective mass is the smallest at \(\Gamma\). Also, the CBM occurs at \(L\), and the VBM occurs at \(\Gamma\), therefore Ge is an indirect-bandgap.
 
 Figure \ref{fig:gaas-first-set} shows the Gallium Arsenide bandstructure. The conduction-band curvature is the narrowest at \(\Gamma\), so the electron effective mass is the smallest at \(\Gamma\). Also, the CBM and VBM occur at \(\Gamma\), therefore Ge is a direct-bandgap. 
 
+\subsubsection{Negative Electron Effective Mass}
+
 Given Eq. \ref{eq:curvature-effective-mass}, negative values for electron effective mass occur when the curvature of the conduction band is negative (concave down). For Si, this occurs at \(\Gamma\) and W. For Ge and GaAs, this occurs before and after \(\Gamma\) and \(k \approx 16 ~ nm^{-1}\). Physically, for an electron to have a negative mass, at that particular direction in the crystal, the electron will appear to accelerate upwards--float.
+
+% TODO: Comment on the shape (spherical or ellipsoidal) of the constant energy surface for the conduction band minima
+
+\subsubsection{Shape of Constant Energy Surfaces}
+
+To talk about the shapes of the constant energy surfaces for the conduction band minima, we need to see where the conduction band minima occur in the Brillouin Zone, and their curvature.
+
+The Brillouin Zone, depicted in Figure \ref{fig:brillouin}, represents the semiconductor lattice in \(k\)-space (or reciprocal space) for a face-centered cubic crystal \cite{brillouin}.
+
+For Silicon, the CBM occurs in its entirety near point \(X\), which occurs at 6 faces perpendicular to \(k_x\), \(k_y\), and \(k_z\). Since the bandstructure we calculated is 1D, if we imagine revolving the shallow parabola around the Si CBM to achieve a 3D shape, we would get 6 ellipsoids at the \(X\)-point in the Brillouin Zone. 
+
+For Germanium, the CBM occurs at the \(L\)-point, which translates to 8 diagonally-facing faces in the Brillouin Zone. The curve around the CBM is also a shallow parabola, so when revolved into a 3D shape, we get 8 ellipsoids.
+
+For Gallium Arsenide, the CBM occurs directly at the \(\Gamma\)-point, and its curvature is similar to a semicircle. When translated into 3D \(k-space\), the constant energy level would be spherical.
+
+\begin{figure}[!ht] 
+    \centering
+    \includegraphics*[width = 6cm]{brillouinZone.png}
+    \caption{Brillouin Zone}
+    \label{fig:brillouin}
+\end{figure}    
+
+% Comment on the degeneracy of the valence bands
+
+\subsubsection{Degeneracy in Valence Bands}
+
+Observing closely, 3 bands overlap at the VBM for Ge, so Ge has three-fold degeneracy in the valence band. The same occurs for Si and GaAs. All of these semiconductors showing heavy-holes and light-holes at \(\Gamma\).
+
+% Which material offers the smallest hole effective mass? 
+
+\subsubsection{Smallest Hole Effective Mass}
+
+Again from Figure \ref{fig:ge-first-set}, we can see that the red curve, which shows the light-holes in the valence band for Ge, has the narrowest curvature as compared to both Si and GaAs; therefore, Ge has the smallest hole effective mass.
 
 % Graph of Si Bandstucture - First Set
 \begin{figure}[!ht] 
@@ -86,7 +123,7 @@ Given Eq. \ref{eq:curvature-effective-mass}, negative values for electron effect
 
 \textbf{The Second Set - With Spin-Orbit Coupling}
 
-When zooming in, the valence band structure at locations of degeneracy show small gaps inbetween, this is most prominent at the VBM for all materials. From a distance it seems unnoticeable, the gaps are very small. I suspect these small delineations in energy are caused by Pauli's Exclusion principle detecting similar carrier spins, and forcing their energies to split.
+When zooming in, the valence band structure at locations of degeneracy show small gaps inbetween, this is most prominent at the VBM for all materials. From a distance it seems unnoticeable, the gaps are very small--without spin-orbit coupling the bands were touching, therefore degenerate. I suspect these small delineations in energy are caused by Pauli's Exclusion principle detecting similar carrier spins, and forcing their energies to split.
 
 \begin{figure}[!ht] 
     \centering
@@ -113,6 +150,10 @@ When zooming in, the valence band structure at locations of degeneracy show smal
 
 \textbf{The Third Set - With Uniaxial Strain}
 
+% TODO: Show that the strain breaks the degeneracy in the valence band. What implications does this finding have on hole transport (current) in a device?
+
+For the third set, we apply a strain of \(\epsilon = -0.05\), which represents a compressive strain, in the [100] direction. In Figure \ref{fig:si-third-set}, we see distinctly the once degenerate valence bands have now separated. This is important for hole transport in a device since separating degenerate valence bands with different curvatures allows for engineering a semiconductor to have a more preferrable hole effective mass. If we can move the heavy-hole band away from the light-hole band, then we can increase the number of light-holes in the device, which would increase mobility and increase current.
+
 \begin{figure}[!ht] 
     \centering
     \includegraphics*[width = 6cm]{si-bands-thirdset.png}
@@ -121,6 +162,18 @@ When zooming in, the valence band structure at locations of degeneracy show smal
 \end{figure}    
 
 \subsection{Silicon Nanowire}
+
+% TODO: consider a silicon nanowire and [100] transport direction.
+% [] silicon nanowire [100]
+%       [] vary diameter from 1nm to 7nm (step of 1nm)
+%       [] extract bandgap and electron effective mass
+%       [] plot versus diameter, comment on findings
+
+% TODO: consider silicon nanowire [110], and repeat above steps
+%       [] Which nanowire has smallest effective mass?
+%       [] How does this mass compare to the bulk counterpart?
+
+
 
 \section{Conclusion}
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.2.12)  26 MAR 2024 15:36
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.2.12)  26 MAR 2024 22:36
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -457,23 +457,28 @@ LaTeX Font Info:    Trying to load font information for U+ntxsyc on input line
 (C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex/latex/newtx\untxsyc.fd
 File: untxsyc.fd 2012/04/12 Fontinst v1.933 font definitions for U/ntxsyc.
 )
-<./images/si-bands-firstset.png, id=1, 401.5pt x 401.5pt>
+<./images/brillouinZone.png, id=1, 361.35pt x 361.35pt>
+File: ./images/brillouinZone.png Graphic file (type png)
+<use ./images/brillouinZone.png>
+Package pdftex.def Info: ./images/brillouinZone.png  used on input line 83.
+(pdftex.def)             Requested size: 170.71652pt x 170.71672pt.
+<./images/si-bands-firstset.png, id=4, 401.5pt x 401.5pt>
 File: ./images/si-bands-firstset.png Graphic file (type png)
 <use ./images/si-bands-firstset.png>
-Package pdftex.def Info: ./images/si-bands-firstset.png  used on input line 66.
-
+Package pdftex.def Info: ./images/si-bands-firstset.png  used on input line 103
+.
 (pdftex.def)             Requested size: 170.71652pt x 170.71794pt.
-<./images/ge-bands-firstset.png, id=3, 401.5pt x 401.5pt>
+<./images/ge-bands-firstset.png, id=6, 401.5pt x 401.5pt>
 File: ./images/ge-bands-firstset.png Graphic file (type png)
 <use ./images/ge-bands-firstset.png>
-Package pdftex.def Info: ./images/ge-bands-firstset.png  used on input line 73.
-
+Package pdftex.def Info: ./images/ge-bands-firstset.png  used on input line 110
+.
 (pdftex.def)             Requested size: 170.71652pt x 170.71794pt.
-<./images/gaas-bands-firstset.png, id=5, 401.5pt x 401.5pt>
+<./images/gaas-bands-firstset.png, id=8, 401.5pt x 401.5pt>
 File: ./images/gaas-bands-firstset.png Graphic file (type png)
 <use ./images/gaas-bands-firstset.png>
-Package pdftex.def Info: ./images/gaas-bands-firstset.png  used on input line 8
-0.
+Package pdftex.def Info: ./images/gaas-bands-firstset.png  used on input line 1
+17.
 (pdftex.def)             Requested size: 170.71652pt x 170.71794pt.
 
 [1{C:/Users/cloti/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/cl
@@ -481,59 +486,64 @@ oti/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}
 
 
 {C:/Users/cloti/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/newtx/ntx-ot1-tlf
-.enc} <./images/si-bands-firstset.png> <./images/ge-bands-firstset.png>]
-<./images/si-bands-secondset.png, id=21, 401.5pt x 401.5pt>
+.enc}]
+<./images/si-bands-secondset.png, id=23, 401.5pt x 401.5pt>
 File: ./images/si-bands-secondset.png Graphic file (type png)
 <use ./images/si-bands-secondset.png>
-Package pdftex.def Info: ./images/si-bands-secondset.png  used on input line 93
-.
-(pdftex.def)             Requested size: 170.71652pt x 170.71794pt.
-<./images/ge-bands-secondset.png, id=23, 401.5pt x 401.5pt>
-File: ./images/ge-bands-secondset.png Graphic file (type png)
-<use ./images/ge-bands-secondset.png>
-Package pdftex.def Info: ./images/ge-bands-secondset.png  used on input line 10
+Package pdftex.def Info: ./images/si-bands-secondset.png  used on input line 13
 0.
 (pdftex.def)             Requested size: 170.71652pt x 170.71794pt.
-<./images/gaas-bands-secondset.png, id=25, 401.5pt x 401.5pt>
+<./images/ge-bands-secondset.png, id=25, 401.5pt x 401.5pt>
+File: ./images/ge-bands-secondset.png Graphic file (type png)
+<use ./images/ge-bands-secondset.png>
+Package pdftex.def Info: ./images/ge-bands-secondset.png  used on input line 13
+7.
+(pdftex.def)             Requested size: 170.71652pt x 170.71794pt.
+<./images/gaas-bands-secondset.png, id=27, 401.5pt x 401.5pt>
 File: ./images/gaas-bands-secondset.png Graphic file (type png)
 <use ./images/gaas-bands-secondset.png>
 Package pdftex.def Info: ./images/gaas-bands-secondset.png  used on input line 
-107.
+144.
 (pdftex.def)             Requested size: 170.71652pt x 170.71794pt.
-<./images/si-bands-thirdset.png, id=27, 401.5pt x 401.5pt>
+ [2 <./images/brillouinZone.png> <./images/si-bands-firstset.png> <./images/ge-
+bands-firstset.png> <./images/gaas-bands-firstset.png> <./images/si-bands-secon
+dset.png> <./images/ge-bands-secondset.png>]
+<./images/si-bands-thirdset.png, id=39, 401.5pt x 401.5pt>
 File: ./images/si-bands-thirdset.png Graphic file (type png)
 <use ./images/si-bands-thirdset.png>
-Package pdftex.def Info: ./images/si-bands-thirdset.png  used on input line 118
+Package pdftex.def Info: ./images/si-bands-thirdset.png  used on input line 159
 .
 (pdftex.def)             Requested size: 170.71652pt x 170.71794pt.
- (project2.bbl) [2 <./images/gaas-bands-firstset.png> <./images/si-bands-second
-set.png> <./images/ge-bands-secondset.png> <./images/gaas-bands-secondset.png> 
-<./images/si-bands-thirdset.png>] (project2.aux)
+ (project2.bbl) [3
+
+ <./images/gaas-bands-secondset.png> <./images/si-bands-thirdset.png>] (project
+2.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 6825 strings out of 474486
- 96342 string characters out of 5743755
- 1937542 words of memory out of 5000000
- 29024 multiletter control sequences out of 15000+600000
- 614561 words of font info for 138 fonts, out of 8000000 for 9000
+ 6841 strings out of 474486
+ 96706 string characters out of 5743755
+ 1942542 words of memory out of 5000000
+ 29038 multiletter control sequences out of 15000+600000
+ 616379 words of font info for 142 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 79i,6n,93p,566b,477s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 79i,6n,93p,650b,482s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/cloti/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/NewTXM
-I.pfb><C:/Users/cloti/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/tx
-miaX.pfb><C:/Users/cloti/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx
-/txsys.pfb><C:/Users/cloti/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/
-utmb8a.pfb><C:/Users/cloti/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/
-utmbi8a.pfb><C:/Users/cloti/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times
-/utmr8a.pfb><C:/Users/cloti/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times
-/utmri8a.pfb><C:/Users/cloti/AppData/Local/Programs/MiKTeX/fonts/type1/public/n
-ewtx/ztmr.pfb>
-Output written on project2.pdf (2 pages, 182410 bytes).
+I.pfb><C:/Users/cloti/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/Ne
+wTXMI7.pfb><C:/Users/cloti/AppData/Local/Programs/MiKTeX/fonts/type1/public/new
+tx/txmiaX.pfb><C:/Users/cloti/AppData/Local/Programs/MiKTeX/fonts/type1/public/
+newtx/txsys.pfb><C:/Users/cloti/AppData/Local/Programs/MiKTeX/fonts/type1/urw/t
+imes/utmb8a.pfb><C:/Users/cloti/AppData/Local/Programs/MiKTeX/fonts/type1/urw/t
+imes/utmbi8a.pfb><C:/Users/cloti/AppData/Local/Programs/MiKTeX/fonts/type1/urw/
+times/utmr8a.pfb><C:/Users/cloti/AppData/Local/Programs/MiKTeX/fonts/type1/urw/
+times/utmri8a.pfb><C:/Users/cloti/AppData/Local/Programs/MiKTeX/fonts/type1/pub
+lic/newtx/ztmr.pfb>
+Output written on project2.pdf (3 pages, 226328 bytes).
 PDF statistics:
- 72 PDF objects out of 1000 (max. 8388607)
+ 85 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 78 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 89 words of extra memory for PDF output out of 10000 (max. 10000000)
 
