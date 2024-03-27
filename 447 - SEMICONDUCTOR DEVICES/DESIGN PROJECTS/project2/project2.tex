@@ -1,10 +1,14 @@
 \documentclass{IEEEtran}
 
+\hbadness=99999
+
 % Packages
 \usepackage{amsmath}
+\usepackage{physics}
 \usepackage[cmintegrals]{newtxmath}
 \usepackage{graphicx}
 \usepackage{xurl} % Makes urls better
+\graphicspath{{./images}}
 
 % Title Stuff
 \title{Semiconductor Bandstructures and Engineering Related Parameters}
@@ -22,15 +26,106 @@ it{et al.}}: A Novel Tin Can Link}
 % ABSTRACT
 \begin{abstract}
     % [A brief statement on what you plan to do in this project.]
-    This experiment
+    This experiment is oriented around the bandstructure of a semiconductor, and what factors can change it. Using the "Band Structure Lab" from nanoHUB.org, we calculate and plot the bandstructures for bulk Si, Ga, and GaAs, and nanowire Si. We observe the different energies for a carrier's momentum, the degeneracy in the valence and conduction bands, and how applying strain to a semiconductor can change all of these.
 \end{abstract}
 
 \section{Introduction}
 
+The bandstructure of a semiconductor, which is derived from solutions to the Schr\"{o}dinger equation, shows the energies a charge carrier occupies for given a given momentum. From the bandstructure, you also find the bandgap energy (direct or indirect), effective mass, degeneracy, and other properties about the semiconductor.
+
 \section{Design Method}
+% [i.e. the simulator used and a reference to it.]
+For this bandstructure experiment, the \textit{Band Structure Lab} from nanoHUB.org was used \cite{sim}.
+
+This simulator allows calculations of the bandstructure for bulk materials, nanowires, and ultra-thin bodies. Within each simulation we can specify spin-orbit coupling, uniaxial strain (among other types), the regions in \(k\)-space we are interested in, and how fine we want the results.
+
+For discussions regarding effective mass:
+
+\begin{equation}\label{eq:curvature-effective-mass}
+    \pdv[2]{E}{k} \propto \frac{1}{m^*}
+\end{equation}
 
 \section{Discussion on Design and Analysis}
+% [Describe design and analysis. attach necessary graphs, snapshots of simulator pages, and/or codes if used.]
+
+\subsection{Bulk Materials}
+
+\textbf{The First Set - No Spin-Orbit Coupling}
+
+We can see the bandstructure for silicon is Figure \ref{fig:si-first-set}. The yellow curve is the edge of the conduction band. Along this curve, it appears to have the tightest curvature at point W, which means the electron effective mass is smallest at point W. Silicon shows itself to be a indirect-bandgap. This is due to the conduction band minimum (CBM) occurring at a different point in \(k\)-space than the valence band maximum (VBM). For Si, the CBM occurs at \(k \approx 10 ~ nm^{-1}\), and the VBM occurs at \(\Gamma\).
+
+Figure \ref{fig:ge-first-set} shows the Germanium bandstructure. The conduction-band curvature is the narrowest at \(\Gamma\), so the electron effective mass is the smallest at \(\Gamma\). Also, the CBM occurs at \(L\), and the VBM occurs at \(\Gamma\), therefore Ge is an indirect-bandgap.
+
+Figure \ref{fig:gaas-first-set} shows the Gallium Arsenide bandstructure. The conduction-band curvature is the narrowest at \(\Gamma\), so the electron effective mass is the smallest at \(\Gamma\). Also, the CBM and VBM occur at \(\Gamma\), therefore Ge is a direct-bandgap. 
+
+Given Eq. \ref{eq:curvature-effective-mass}, negative values for electron effective mass occur when the curvature of the conduction band is negative (concave down). For Si, this occurs at \(\Gamma\) and W. For Ge and GaAs, this occurs before and after \(\Gamma\) and \(k \approx 16 ~ nm^{-1}\). Physically, for an electron to have a negative mass, at that particular direction in the crystal, the electron will appear to accelerate upwards--float.
+
+% Graph of Si Bandstucture - First Set
+\begin{figure}[!ht] 
+    \centering
+    \includegraphics*[width = 6cm]{si-bands-firstset.png}
+    \caption{Silicon bandstructure, bulk, no spin-orbit coupling}
+    \label{fig:si-first-set}
+\end{figure}    
+
+\begin{figure}[!ht] 
+    \centering
+    \includegraphics*[width = 6cm]{ge-bands-firstset.png}
+    \caption{Germanium bandstructure, bulk, no spin-orbit coupling}
+    \label{fig:ge-first-set}
+\end{figure}    
+
+\begin{figure}[!ht] 
+    \centering
+    \includegraphics*[width = 6cm]{gaas-bands-firstset.png}
+    \caption{Gallium Arsenide bandstructure, bulk, no spin-orbit coupling}
+    \label{fig:gaas-first-set}
+\end{figure}    
+
+\bigskip
+
+\textbf{The Second Set - With Spin-Orbit Coupling}
+
+When zooming in, the valence band structure at locations of degeneracy show small gaps inbetween, this is most prominent at the VBM for all materials. From a distance it seems unnoticeable, the gaps are very small. I suspect these small delineations in energy are caused by Pauli's Exclusion principle detecting similar carrier spins, and forcing their energies to split.
+
+\begin{figure}[!ht] 
+    \centering
+    \includegraphics*[width = 6cm]{si-bands-secondset.png}
+    \caption{Silicon bandstructure, bulk, with spin-orbit coupling}
+    \label{fig:si-second-set}
+\end{figure}    
+
+\begin{figure}[!ht] 
+    \centering
+    \includegraphics*[width = 6cm]{ge-bands-secondset.png}
+    \caption{Germanium bandstructure, bulk, with spin-orbit coupling}
+    \label{fig:ge-second-set}
+\end{figure}    
+
+\begin{figure}[!ht] 
+    \centering
+    \includegraphics*[width = 6cm]{gaas-bands-secondset.png}
+    \caption{Gallium Arsenide bandstructure, bulk, with spin-orbit coupling}
+    \label{fig:gaas-second-set}
+\end{figure}    
+
+\bigskip
+
+\textbf{The Third Set - With Uniaxial Strain}
+
+\begin{figure}[!ht] 
+    \centering
+    \includegraphics*[width = 6cm]{si-bands-thirdset.png}
+    \caption{Silicon bandstructure, bulk, with spin-orbit coupling, with strain}
+    \label{fig:si-third-set}
+\end{figure}    
+
+\subsection{Silicon Nanowire}
 
 \section{Conclusion}
+
+% REFERENCES!
+\bibliographystyle{IEEEtran}
+\bibliography{project2Bib.bib}
 
 \end{document}
