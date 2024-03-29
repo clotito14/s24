@@ -19,7 +19,7 @@ class Restaurant:
         """Opens restaurant"""
         return self.restaurant_name + ' is now open!'
 
-# Program stuff
+# Do stuff with the class...
 
 # initialize Restaurant class 3 times
 r1 = Restaurant('Olive Garden', 'Italian')
@@ -27,3 +27,17 @@ r2 = Restaurant('Bombay Olive', 'Indian')
 r3 = Restaurant('Chili\'s', 'Tex-Mex')
 
 # print all three restaurant's attributes
+print(r1.restaurant_name)
+print(r1.cuisine_type)
+print(r2.restaurant_name)
+print(r2.cuisine_type)
+print(r3.restaurant_name)
+print(r3.cuisine_type)
+
+# call both methods of each instance
+print(r1.describe_restaurant())
+print(r1.open_restaurant())
+print(r2.describe_restaurant())
+print(r2.open_restaurant())
+print(r3.describe_restaurant())
+print(r3.open_restaurant())
