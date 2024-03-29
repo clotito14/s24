@@ -42,7 +42,7 @@ This simulator allows calculations of the bandstructure for bulk materials, nano
 For discussions regarding effective mass:
 
 \begin{equation}\label{eq:curvature-effective-mass}
-    \pdv[2]{E}{k} \propto \frac{1}{m^*}
+    \pdv[2]{E}{k} = \frac{\hbar^2}{m^*}
 \end{equation}
 
 \section{Discussion on Design and Analysis}
@@ -119,11 +119,9 @@ Again from Figure \ref{fig:ge-first-set}, we can see that the red curve, which s
     \label{fig:gaas-first-set}
 \end{figure}    
 
-\bigskip
-
 \textbf{The Second Set - With Spin-Orbit Coupling}
 
-When zooming in, the valence band structure at locations of degeneracy show small gaps inbetween, this is most prominent at the VBM for all materials. From a distance it seems unnoticeable, the gaps are very small--without spin-orbit coupling the bands were touching, therefore degenerate. I suspect these small delineations in energy are caused by Pauli's Exclusion principle detecting similar carrier spins, and forcing their energies to split.
+When zooming in, the valence band structure at locations of degeneracy show small gaps in-between, this is most prominent at the VBM for all materials. From a distance it seems unnoticeable, the gaps are very small--without spin-orbit coupling the bands were touching, therefore degenerate. I suspect these small delineations in energy are caused by Pauli's Exclusion principle detecting similar carrier spins, and forcing their energies to split.
 
 \begin{figure}[!ht] 
     \centering
@@ -146,8 +144,6 @@ When zooming in, the valence band structure at locations of degeneracy show smal
     \label{fig:gaas-second-set}
 \end{figure}    
 
-\bigskip
-
 \textbf{The Third Set - With Uniaxial Strain}
 
 % TODO: Show that the strain breaks the degeneracy in the valence band. What implications does this finding have on hole transport (current) in a device?
@@ -169,13 +165,65 @@ For the third set, we apply a strain of \(\epsilon = -0.05\), which represents a
 %       [] extract bandgap and electron effective mass
 %       [] plot versus diameter, comment on findings
 
+Now, what if we consider Silicon nanowire? The \textit{Band Structure Lab} simulator allows us to calculate the bandstructures for such devices, and we can vary the diameter of the nanowire, and the direction in which the nanowire is built. So, we can vary diameter from 1nm-7nm for (100) and (110) direction nanowires.
+
+Using Microsoft EXCEL, we can import the \(E-k\) data from \textit{nanoHUB}, and through some post-processing find \(E_g\) and \(m_n^*\) as functions of the nanowire diameter. Finding \(E_g\) is easy, we just subtract the CBM by the VBM. Finding \(m_n^*\) is requires more work.
+
+Converting the \(E-k\) data to SI-units, we can plot the conduction band. From here, EXCEL makes a \(2^{nd}\)-degree polynomial trendline, which using Eq. \ref{eq:curvature-effective-mass} we can use calculate for the effective mass.
+
+From Figure \ref{fig:bandgap-si-100}, we see that as the nanowire diameter increases, the bandgap energy \(E_g\) approaches 1.12eV.
+
+\begin{figure}[!ht] 
+    \centering
+    \includegraphics*[width = 8cm]{bandgap-si-100.png}
+    \caption{Bandgap versus Nanowire Diameter - Silicon (100)}
+    \label{fig:bandgap-si-100}
+\end{figure}    
+
+From Figure \ref{fig:effmass-si-100}, as the nanowire diameter increases, the electron effective mass \(m_n^*\) increases. 
+
+\begin{figure}[!ht] 
+    \centering
+    \includegraphics*[width = 8cm]{effmass-si-100.png}
+    \caption{Electron Effective Mass versus Nanowire Diameter, Silicon (100)}
+    \label{fig:effmass-si-100}
+\end{figure}    
+
 % TODO: consider silicon nanowire [110], and repeat above steps
 %       [] Which nanowire has smallest effective mass?
 %       [] How does this mass compare to the bulk counterpart?
 
+From Figure \ref{fig:bandgap-si-110}, we can also see that as the nanowire diameter increases, the bandgap energy \(E_g\) approaches 1.12eV.
 
+\begin{figure}[!ht] 
+    \centering
+    \includegraphics*[width = 8cm]{bandgap-si-110.png}
+    \caption{Bandgap versus Nanowire Diameter - Silicon (110)}
+    \label{fig:bandgap-si-110}
+\end{figure}    
+
+From Figure \ref{fig:effmass-si-110}, as the nanowire diameter increases, the electron effective mass \(m_n^*\) increases--quite drastically. From the bandstructures, the band around the CBM flattened greatly as nanowire diameter increased in the (110)-direction. 
+
+\begin{figure}[!ht] 
+    \centering
+    \includegraphics*[width = 8cm]{effmass-si-110.png}
+    \caption{Electron Effective Mass versus Nanowire Diameter, Silicon (110)}
+    \label{fig:effmass-si-110}
+\end{figure}    
+
+It is reasonable to see \(E_g\) decrease, or relax, as we increase nanowire diameter. Silicon electrons in small nanowires experience large amounts of quantum confinement, and this confinement increases for smaller and smaller nanowires. Given a confinement width \(L\), we know from the Schr\"{o}dinger Equation, that \(k_n \propto 1/L\) and \(E_n \propto k^2 \), so \(E_n \propto 1 / L^2\), where \(E_n\) is a quantized energy state. This relationship follows as our nanowire diameter increases, the spatial confinement the electron feels increases, so energy decreases.
+
+To explain the increase in electron effective mass, observe the density of states function in one-dimension:
+
+\begin{equation}\label{eq:dos-1D}
+    g(E)_{1D} = \frac{1}{\pi\hbar} \sqrt{\frac{m^*}{2E}}
+\end{equation}
+
+Increasing the size of the nanowire leads to more states for electrons to fill, but the states themselves do not change in concentration. However, the bandgap energy does decrease when the diameter increases. This means our electrons need less energy \(E\), and to compensate to keep \(g(E)\) the same, our effective mass must increase. This increase happens drastically in the (110)-direction, which relates to the K-point in the Brillouin zone--a place electrons are unlikely to be in Silicon. The increase in the (100)-direction settles around \(m_n^* \approx 1.6m_0\); the (100)-direction corresponds to the X-point, where the CBM naturally occurs for Silicon.
 
 \section{Conclusion}
+
+This lab is a perfect crash-course in learning how to interpret semiconductor properties from their bandstructure diagrams. I learned how to identify direct and indirect bandgap semiconductors, identifying negative electron effective mass, determining the shape of a semiconductor\'s constant energy surfaces, identifying and engineering degeneracy in the energy bands, determining hole properties in the valence band, and how all of this changes going from bulk semiconductors to nanowire semiconductors.
 
 % REFERENCES!
 \bibliographystyle{IEEEtran}
