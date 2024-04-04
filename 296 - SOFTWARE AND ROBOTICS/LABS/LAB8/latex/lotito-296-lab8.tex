@@ -1,0 +1,61 @@
+\documentclass{IEEEtran}
+%% PACKAGES %%
+
+\usepackage{amsmath, amsfonts, amssymb, amsthm}
+\usepackage{braket}
+\usepackage{listings}
+\usepackage{geometry}
+\usepackage{xcolor}
+\usepackage{textcomp}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{sourcecodepro}
+\usepackage{multirow}
+
+%%%%%%%%%%%%%%
+
+\graphicspath{{./images}}
+\setlength\parindent{0pt}       % globally supress indentation
+
+%% LISTINGS CONFIG %%
+
+\definecolor{purple2}{RGB}{153,0,153} % there's actually no standard purple
+\definecolor{green2}{RGB}{0,153,0} % a darker green
+
+\lstset{
+  basicstyle=\normalsize\ttfamily,   % size of the fonts for the code
+  frame = single,
+  % Color settings to match IDLE style
+  keywordstyle=\color{orange},       % core keywords
+  keywordstyle={[2]\color{purple2}}, % built-ins
+  stringstyle=\color{green2},%
+  showstringspaces=false,
+  commentstyle=\color{red},%
+  upquote=true,                      % requires textcomp
+  numbers=left,
+  breaklines=true,
+}
+
+% Title Stuff
+\title{ECE296 Lab 8 - Arduino DC Motor Controller}
+\author{Chase A. Lotito, \textit{SIUC Undergraduate}}
+\date{}
+
+\begin{document}
+
+\maketitle % Makes the title
+
+\section{Introduction} 
+% (Brief description of how the lab was setup and the steps you took while completing the tasks given)
+
+\section{Assessment of Design}
+% (How did it work in the end? Any problems or missteps along the way? Explain key aspects of design. Attach images of working design.)
+
+\section{Conclusion}
+% (What did you learn during this lab? Final thoughts or findings? Did you meet the objectives? Answer any questions given in the lab manual here.)
+
+\section*{Appendix A: Hardware Schematic}
+
+\section*{Appendix B: Code for the Software Developed}
+
+\end{document}

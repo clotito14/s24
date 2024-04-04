@@ -1,0 +1,131 @@
+\documentclass{IEEEtran}
+%% PACKAGES %%
+
+\usepackage{amsmath, amsfonts, amssymb, amsthm}
+\usepackage{braket}
+\usepackage{listings}
+\usepackage{geometry}
+\usepackage{xcolor}
+\usepackage{textcomp}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{sourcecodepro}
+\usepackage{multirow}
+
+%%%%%%%%%%%%%%
+
+\graphicspath{{./images}}
+\setlength\parindent{0pt}       % globally supress indentation
+
+%% LISTINGS CONFIG %%
+
+\definecolor{purple2}{RGB}{153,0,153} % there's actually no standard purple
+\definecolor{green2}{RGB}{0,153,0} % a darker green
+
+\lstset{
+  basicstyle=\normalsize\ttfamily,   % size of the fonts for the code
+  frame = single,
+  % Color settings to match IDLE style
+  keywordstyle=\color{orange},       % core keywords
+  keywordstyle={[2]\color{purple2}}, % built-ins
+  stringstyle=\color{green2},%
+  showstringspaces=false,
+  commentstyle=\color{red},%
+  upquote=true,                      % requires textcomp
+  breaklines=true,
+}
+
+% Title Stuff
+\title{ECE296 Lab 7 - Arduino Color Detector}
+\author{Chase A. Lotito, \textit{SIUC Undergraduate}}
+\date{}
+
+\begin{document}
+
+\maketitle % Makes the title
+
+\section{Introduction} 
+% (Brief description of how the lab was setup and the steps you took while completing the tasks given)
+
+\section{Assessment of Design}
+% (How did it work in the end? Any problems or missteps along the way? Explain key aspects of design. Attach images of working design.)
+
+\section{Conclusion}
+% (What did you learn during this lab? Final thoughts or findings? Did you meet the objectives? Answer any questions given in the lab manual here.)
+
+\section*{Appendix A: Hardware Schematic}
+
+\section*{Appendix B: Code for the Software Developed}
+
+\begin{lstlisting}
+int red, blue, green;
+int delay_time = 100;
+int sensor;
+
+void setup() {
+    pinMode(2, OUTPUT); // Red
+    pinMode(3, OUTPUT); // Blue
+    pinMode(4, OUTPUT); // Green
+    Serial.begin(9600);
+}
+
+void loop() {
+    digitalWrite(2,HIGH);
+    digitalWrite(3,LOW);
+    digitalWrite(4,LOW);
+    delay(delay_time);
+    red = analogRead(A0);
+    red = map(red, 230, 670, 0, 255);
+
+    digitalWrite(2,LOW);
+    digitalWrite(3,HIGH);
+    digitalWrite(4,LOW);
+    delay(delay_time);
+    blue = analogRead(A0);
+    blue = map(blue, 340, 675, 0, 255);
+
+    digitalWrite(2,LOW);
+    digitalWrite(3,LOW);
+    digitalWrite(4,HIGH);
+    delay(delay_time);
+    green = analogRead(A0);
+    green = map(green, 240, 666, 0, 255);
+
+    Serial.print("red = ");
+    Serial.println(red);
+    Serial.print("blue = ");
+    Serial.println(blue);
+    Serial.print("green = ");
+    Serial.println(green);
+
+    if (red > 175 && blue < 176 && green > 168){
+        Serial.println("RED");
+    }
+    else if (red < 183 && blue > 170 && green < 180){
+        Serial.println("GREEN");
+    }
+    else if (red > 180 && blue > 205 && green < 182){
+        Serial.println("CYAN");
+    }
+    else if (red < 200 && blue < 186 && green > 182){
+        Serial.println("MAGENTA");
+    }
+    else if (red < 85 && blue < 85 && green > 35){
+        Serial.println("BLUE");
+    }
+    else if (red < 245 && blue < 240 && green > 229) {
+        Serial.println("YELLOW");
+    }
+    else if (red < 30 && blue < 2 && green < 0) {
+        Serial.println("BLACK");
+    }
+    else if (red > 240 && blue > 240 && green < 255) {
+        Serial.println("WHITE");
+    }
+    else {
+        Serial.println("UNKNOWN COLOR");
+    }
+}
+\end{lstlisting}
+
+\end{document}
