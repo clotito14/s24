@@ -58,45 +58,48 @@ always @ (n1_mag or n2_mag) begin
         71: product = 28;
         72: product = 32;
         // 5 * n2_mag
-        81 : product =;
-        82: product =;
-        83: product =;
-        84: product =;
-        85: product =;
-        86: product =;
-        87: product =;
-        88: product =;
+        81 : product = 5;
+        82: product = 10;
+        83: product = 15;
+        84: product = 20;
+        85: product = 25;
+        86: product = 30;
+        87: product = 35;
+        88: product = 40;
         // 6 * n2_mag
-        97 : product =;
-        98: product =;
-        99: product =;
-        100: product =;
-        101: product =;
-        102: product =;
-        103: product =;
-        104: product =;
+        97 : product = 6;
+        98: product = 12;
+        99: product = 18;
+        100: product = 24;
+        101: product = 30;
+        102: product = 36;
+        103: product = 42;
+        104: product = 48;
         // 7 * n2_mag
-        113: product =;
-        114: product =;
-        115: product =;
-        116: product =;
-        117: product =;
-        118: product =;
-        119: product =;
-        120: product =;
+        113: product = 7;
+        114: product = 14;
+        115: product = 21;
+        116: product = 28;
+        117: product = 35;
+        118: product = 42;
+        119: product = 49;
+        120: product = 56;
         // 8 * n2_mag
-        129: product =;
-        130: product =;
-        131: product =;
-        132: product =;
-        133: product =;
-        134: product =;
-        135: product =;
-        136: product =;
+        129: product = 8;
+        130: product = 16;
+        131: product = 24;
+        132: product = 32;
+        133: product = 40;
+        134: product = 48;
+        135: product = 56;
+        136: product = 64;
         default : product = 0 ; // Clear the result.
     endcase
 end
 
-assign result = ;
+// check if result should be signed or not via xnor
+// if + then give positive product
+// if - then give negative product
+assign result = (~(n1[3] == 1 ^ n2[3] == 1)) ? product : (~product + 1);
 
 endmodule
