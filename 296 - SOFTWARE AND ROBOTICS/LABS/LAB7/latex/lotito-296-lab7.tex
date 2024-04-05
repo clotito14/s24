@@ -15,7 +15,6 @@
 %%%%%%%%%%%%%%
 
 \graphicspath{{./images}}
-\setlength\parindent{0pt}       % globally supress indentation
 
 %% LISTINGS CONFIG %%
 
@@ -23,9 +22,8 @@
 \definecolor{green2}{RGB}{0,153,0} % a darker green
 
 \lstset{
-  basicstyle=\normalsize\ttfamily,   % size of the fonts for the code
+  basicstyle=\small\ttfamily,   % size of the fonts for the code
   frame = single,
-  % Color settings to match IDLE style
   keywordstyle=\color{orange},       % core keywords
   keywordstyle={[2]\color{purple2}}, % built-ins
   stringstyle=\color{green2},%
@@ -47,13 +45,48 @@
 \section{Introduction} 
 % (Brief description of how the lab was setup and the steps you took while completing the tasks given)
 
+This experiment is the next step after the night light lab. Now, we replace the monochromatic LED with a RGB LED (Red-Green-Blue). The RGB LED will flash its colors against an object with a color that we wish to detect, and the photoresistor will see how much red, green, and blue the object reflects. Based on the intensities of reflection, we can set ranges for various colors--which let us tune the color detector accordingly.
+
 \section{Assessment of Design}
 % (How did it work in the end? Any problems or missteps along the way? Explain key aspects of design. Attach images of working design.)
+
+Figure \ref{fig:design} shows the physical implementation of the color detector. 
+
+\begin{figure}[!ht] 
+    \centering
+    \includegraphics[width = 6cm]{color-detector-physical.jpeg}
+    \caption{Color Detector Design}
+    \label{fig:design}
+\end{figure}
+
+The circuit itself was difficult to tune; the sample colors were shown off of a phone screen, which caused volatility in brightness. However, the circuit was able to detect all 12 colors. 
+
+The Arduino code flashes the LED red, then green, then blue, repeatedly in 100ms increments. Each individual pulse, we read the voltage between the photoresistor and \(10k\Omega\)-resistor, which via voltage-division should be between 0 and 5V. The \textit{analogRead()} function will translate this as an integer value between 0 and 1023. 
+
+I personally kept this range intact, instead of using \textit{map()}, and this gave me a larger range to work with. The RGB values between successive colors tended to be small, so having a large range allowed more room for tolerances.
+
+Finally, we collect the current RGB values detected from the photoresistor and send them through the \textit{if-else} conditional logic to find the correct color. The ranges for these can be referenced in the code in \textit{Appendix B}. The color detection is displayed on the Serial Monitor, and those can be seen in Figure \ref{fig:colorsDetected}.
+
+\begin{figure}[!ht] 
+    \centering
+    \includegraphics[width = 6cm]{colors-detected.png}
+    \caption{All colors detected by circuit}
+    \label{fig:colorsDetected}
+\end{figure}
 
 \section{Conclusion}
 % (What did you learn during this lab? Final thoughts or findings? Did you meet the objectives? Answer any questions given in the lab manual here.)
 
+Overall, this lab displayed the power of using solid-state devices with the Arduino to create useful sensors. Color detection seems like an extremely difficult task that would require AI image models, but all you need are simple passive components.
+
 \section*{Appendix A: Hardware Schematic}
+
+\begin{figure}[!ht] 
+    \centering
+    \includegraphics[width = 7cm]{color-circuit-diagram.png}
+    \caption{Color Detector circuit diagram}
+    \label{fig:colorCircuit}
+\end{figure}
 
 \section*{Appendix B: Code for the Software Developed}
 
