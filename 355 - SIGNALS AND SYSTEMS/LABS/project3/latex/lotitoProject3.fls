@@ -1,4 +1,4 @@
-PWD C:\Users\cloti\OneDrive\Desktop\SCHOOL\SIUC\SPRING 2024\355 - SIGNALS AND SYSTEMS\LABS\TASK6\latex
+PWD C:\Users\cloti\OneDrive\Desktop\SCHOOL\SIUC\SPRING 2024\355 - SIGNALS AND SYSTEMS\LABS\project3\latex
 INPUT C:\Users\cloti\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
 INPUT lotitoProject3.tex
 OUTPUT lotitoProject3.log
@@ -139,6 +139,7 @@ INPUT C:\Users\cloti\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\sym
 INPUT C:\Users\cloti\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecti1200.tfm
 INPUT C:\Users\cloti\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecrm1440.tfm
 INPUT C:\Users\cloti\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecbx1440.tfm
+INPUT C:\Users\cloti\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecbx1200.tfm
 INPUT C:\Users\cloti\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecbx1000.tfm
 INPUT .\images\plot1.png
 INPUT .\images\plot1.png
@@ -182,11 +183,22 @@ INPUT C:\Users\cloti\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\sourcecodepro
 INPUT C:\Users\cloti\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\sourcecodepro\SourceCodePro-Regular-tlf-ts1.vf
 INPUT C:\Users\cloti\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\sourcecodepro\SourceCodePro-Regular-tlf-ts1--base.tfm
 INPUT C:\Users\cloti\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\sourcecodepro\a_bzs6pp.enc
+INPUT C:\Users\cloti\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecti1000.tfm
+INPUT .\images\audio-plot.png
+INPUT .\images\audio-plot.png
+INPUT .\images\audio-plot.png
+INPUT .\images\audio-plot.png
+INPUT .\images\audio-plot.png
+INPUT .\images\audio-plot.png
 INPUT lotitoProject3.aux
+INPUT C:\Users\cloti\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecti1000.pk
+INPUT C:\Users\cloti\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecti1000.pk
 INPUT C:\Users\cloti\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1000.pk
 INPUT C:\Users\cloti\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1000.pk
 INPUT C:\Users\cloti\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1000.pk
 INPUT C:\Users\cloti\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1000.pk
+INPUT C:\Users\cloti\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1200.pk
+INPUT C:\Users\cloti\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1200.pk
 INPUT C:\Users\cloti\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1440.pk
 INPUT C:\Users\cloti\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1440.pk
 INPUT C:\Users\cloti\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecti1200.pk
@@ -203,5 +215,9 @@ INPUT C:\Users\cloti\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\c
 INPUT C:\Users\cloti\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi10.pfb
 INPUT C:\Users\cloti\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr10.pfb
 INPUT C:\Users\cloti\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr10.pfb
+INPUT C:\Users\cloti\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr7.pfb
+INPUT C:\Users\cloti\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr7.pfb
 INPUT C:\Users\cloti\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
 INPUT C:\Users\cloti\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
+INPUT C:\Users\cloti\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy7.pfb
+INPUT C:\Users\cloti\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy7.pfb
