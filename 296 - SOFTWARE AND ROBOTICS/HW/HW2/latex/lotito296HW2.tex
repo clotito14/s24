@@ -1,0 +1,89 @@
+\documentclass{IEEEtran}
+%% PACKAGES %%
+
+\usepackage{amsmath, amsfonts, amssymb, amsthm}
+\usepackage{braket}
+\usepackage{listings}
+\usepackage{geometry}
+\usepackage{xcolor}
+\usepackage{textcomp}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{sourcecodepro}
+\usepackage{multirow}
+
+%%%%%%%%%%%%%%
+
+\graphicspath{{./images}}
+
+%% LISTINGS CONFIG %%
+
+\definecolor{purple2}{RGB}{153,0,153} % there's actually no standard purple
+\definecolor{green2}{RGB}{0,153,0} % a darker green
+
+\lstset{
+  language=MATLAB,                   % the language
+  basicstyle=\normalsize\ttfamily,   % size of the fonts for the code
+  frame = single,
+  % Color settings to match IDLE style
+  keywordstyle=\color{orange},       % core keywords
+  keywordstyle={[2]\color{purple2}}, % built-ins
+  stringstyle=\color{green2},%
+  showstringspaces=false,
+  commentstyle=\color{red},%
+  upquote=true,                      % requires textcomp
+  numbers=left,
+  breaklines=true,
+}
+
+% Title Stuff
+\title{ECE296 Homework 2}
+\author{Chase A. Lotito, \textit{SIUC Undergraduate}}
+\date{}
+
+\begin{document}
+
+\pagestyle{fancy}
+
+% attempt to make nice header
+\fancyhead{}
+\fancyhead[CH]{\normalsize{LOTITO - SIUC ECE - SPRING 2024}}
+
+\maketitle % Makes the title
+
+\section{Question 1}
+% Assume the ultrasonic ranging system is employed in air traffic control. What is the importance of having a short response time in terms of public health, safety, and welfare, as well as global, cultural, social, environmental, and economic considerations? Discuss all that apply.
+
+Air Traffic control is a zero margin-of-error field, where the speed and accuracy of information from sensors is mission critical. 
+
+Short response time from the ultrasonic ranging system could be the difference between life and death for civilians in a commerical flight. 
+
+A quick ranging system can provide air traffic controllers with enough information about the planes in the sky, such that they can make more efficient routes, which could reduce fuel costs, and or increase passenger safety.
+
+In general, the global economy relies on flight for tourism and the global supply chain, so a more efficient system will inevitably boost economic growth reliant on air transport.
+
+\section{Question 2}
+% Develop a set of requirements the ultrasonic ranging system needed to achieve (e.g., track five objects and keep track of the closest object).
+
+Ultrasonic Ranging System Requirements:
+
+\begin{enumerate}
+    \item Accurately measure distance from sensor to object.
+    \item Sweep sensor \(0^\circ\) to \(180^\circ\) both clockwise and counterclockwise.
+    \item When each incremental rotation is finished, a reading must be made before the next incremental rotation.
+    \item Distance measurement must be displayed on LCD screen, along with the current angle of rotation.
+    \item A history of measurements must be saved to actively track and display which object is closest, and where that object is located in degrees.
+\end{enumerate}
+
+\section{Question 3}
+% What benefits do you see in simplifying the design (both hardware and software)? Consider designs with different servo rotation speeds. Discuss and evaluate the tradeoffs between more power usage versus better monitoring of moving targets as well as the tradeoff between accurate field view versus individual target distance measurements.
+
+Any time a design can be simplified and still deliver on functionality is a win, since less complexity would decrease cost and increase repairability.
+
+The servo in our design moved in \(15^\circ\) rotations, which works nicely since the ultrasonic sensor transmits and recieves signals in a \(15^\circ\) cone. However, it would be better to rotate the servo in smaller increments to get more accurate locations for any object in its field-of-view.
+
+If we did use smaller servo rotations, this would require more PWM signals to be sent to the servo, and therefore increase power usage. However, for usage areas like Air Traffic Control, accuracy is paramount above cost, since lives would be dependent on the technology.
+
+Also, smaller servo rotations would cause nearby objects to be measured multiple times, but this is fine since a three-dimensional object will have portions that are closer to the sensor and vice versa. Multiple measurements like these could possibly give information on the kind of object in sight, or even the orientation of the object. However, this would require much more sophisticated software.
+
+\end{document}
