@@ -53,21 +53,48 @@ A series combination of NO and or NC contacts requires both to be 1 for continui
 
 Figure \ref{fig:ladderlogic} shows these principles applied to Eq. \ref{eq:logicgates}.
 
-%\begin{figure}[!ht] 
-%    \centering
-%    \includegraphics[width = 7cm]{}
-%    \caption{}
-%    \label{fig:}
-%\end{figure}
+Overall, the design works as expected. 
+
+Figures \ref{fig:state0}-\ref{fig:state3} below show the 4 possible states that the switches can be in (00, 01, 10, 11). The lights from left to right are blue (AND), green (OR), and yellow (XOR).
+
+\begin{figure}[!ht] 
+    \centering
+    \includegraphics[width = 4cm]{state0.jpg}
+    \caption{State 0 (SW1 = 0, SW2 = 0)}
+    \label{fig:state0}
+\end{figure}
+
+\begin{figure}[!ht] 
+    \centering
+    \includegraphics[width = 4cm]{state1.jpg}
+    \caption{State 1 (SW1 = 1, SW2 = 0)}
+    \label{fig:state1}
+\end{figure}
+
+\begin{figure}[!ht] 
+    \centering
+    \includegraphics[width = 4cm]{state2.jpg}
+    \caption{State 2 (SW1 = 0, SW2 = 1)}
+    \label{fig:state2}
+\end{figure}
+
+\begin{figure}[!ht] 
+    \centering
+    \includegraphics[width = 4cm]{state3.jpg}
+    \caption{State 3 (SW1 = 1, SW2 = 1)}
+    \label{fig:state3}
+\end{figure}
 
 \section{Conclusion}
 % (What did you learn during this lab? Final thoughts or findings? Did you meet the objectives? Answer any questions given in the lab manual here.)
+
+This lab effectively gives a brief introduction using PLCs and how to use ladder logic with NO and NC contacts in order to do logic operations. These skills can now be used further to implement more complex systems, which fundamentally work on bitwise logic operations.
 
 \section*{Appendix A: Ladder Logic}
 
 \begin{figure}[!ht] 
     \centering
-    \includegraphics[width = 7.3cm]{ladderlogic.png}
+    \includegraphics[width = 7cm]{ladderlogic.png}
     \caption{Ladder Logic for Logic Gates}
     \label{fig:ladderlogic}
 \end{figure}

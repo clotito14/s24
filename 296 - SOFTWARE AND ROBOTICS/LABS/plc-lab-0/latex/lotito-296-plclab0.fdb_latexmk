@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1713408565.14166 "lotito-296-plclab0.tex" "lotito-296-plclab0.pdf" "lotito-296-plclab0" 1713408568.20946 0
+["pdflatex"] 1713468831.12384 "lotito-296-plclab0.tex" "lotito-296-plclab0.pdf" "lotito-296-plclab0" 1713468834.39219 0
   "C:/Users/cloti/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1711655088 168717 68e003168ec277a44a7cc2fc75574876 ""
   "C:/Users/cloti/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1707798959 24225046 29315bcb98eb1a201c0dfa0e6330096b ""
   "C:/Users/cloti/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc" 1458473887 4993 80dc9bab7f31fb78a000ccfed0e27cab ""
@@ -78,8 +78,12 @@
   "C:/Users/cloti/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1700127522 55487 80a65caedd3722f4c20a14a69e785d8f ""
   "C:/Users/cloti/AppData/Local/Programs/MiKTeX/tex/latex/xkeyval/xkeyval.sty" 1656236919 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
   "images/ladderlogic.png" 1713408379 11396 0d9d951b583377f83d54e3f7e4bfefa8 ""
-  "lotito-296-plclab0.aux" 1713408567 552 0e4415a96b0b19b3d3e55e07f267ae34 "pdflatex"
-  "lotito-296-plclab0.tex" 1713408562 2825 b937f6ff1e121b3d0a38b01d3f3edc3b ""
+  "images/state0.jpg" 1713408513 1539120 6c733a18d8bdbe36289bbb63cce93172 ""
+  "images/state1.jpg" 1713408527 1554673 7c97c385ceeb308e4b64ad10458eccb8 ""
+  "images/state2.jpg" 1713408535 1554822 fa79fba3809cac419fc590eed8a6f694 ""
+  "images/state3.jpg" 1713408545 1342043 1b78bfc574986e87ce596fdac9ae9c3b ""
+  "lotito-296-plclab0.aux" 1713468833 1212 3192797bc921cf96d8be62bcefb2bb87 "pdflatex"
+  "lotito-296-plclab0.tex" 1713468830 3876 36bb5aefb9eb8933dcfdb843bfefb259 ""
   (generated)
   "lotito-296-plclab0.aux"
   "lotito-296-plclab0.log"
