@@ -1,0 +1,156 @@
+$date
+	Fri Apr 19 22:19:42 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1us
+$end
+$scope module rom_b_tb $end
+$var wire 12 ! sq_root [11:0] $end
+$var reg 4 " n [3:0] $end
+$scope module U1 $end
+$var wire 4 # n [3:0] $end
+$var wire 2 $ sq_root_int [1:0] $end
+$var wire 10 % sq_root_dp [9:0] $end
+$var reg 12 & sq_root [11:0] $end
+$upscope $end
+$scope begin GTKWAVE $end
+$upscope $end
+$scope begin stimulus $end
+$scope begin $ivl_for_loop0 $end
+$var integer 32 ' i [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b0 '
+bx &
+bx %
+bx $
+bx #
+bx "
+bx !
+$end
+#10
+b0 $
+b0 %
+b0 !
+b0 &
+b1 '
+b0 "
+b0 #
+#20
+b1 $
+b10000000000 !
+b10000000000 &
+b10 '
+b1 "
+b1 #
+#30
+b110011110 %
+b10110011110 !
+b10110011110 &
+b11 '
+b10 "
+b10 #
+#40
+b1011011100 %
+b11011011100 !
+b11011011100 &
+b100 '
+b11 "
+b11 #
+#50
+b10 $
+b0 %
+b100000000000 !
+b100000000000 &
+b101 '
+b100 "
+b100 #
+#60
+b11101100 %
+b100011101100 !
+b100011101100 &
+b110 '
+b101 "
+b101 #
+#70
+b111000010 %
+b100111000010 !
+b100111000010 &
+b111 '
+b110 "
+b110 #
+#80
+b1010000110 %
+b101010000110 !
+b101010000110 &
+b1000 '
+b111 "
+b111 #
+#90
+b1100111100 %
+b101100111100 !
+b101100111100 &
+b1001 '
+b1000 "
+b1000 #
+#100
+b11 $
+b0 %
+b110000000000 !
+b110000000000 &
+b1010 '
+b1001 "
+b1001 #
+#110
+b10100010 %
+b110010100010 !
+b110010100010 &
+b1011 '
+b1010 "
+b1010 #
+#120
+b100111101 %
+b110100111101 !
+b110100111101 &
+b1100 '
+b1011 "
+b1011 #
+#130
+b111010000 %
+b110111010000 !
+b110111010000 &
+b1101 '
+b1100 "
+b1100 #
+#140
+b1001011110 %
+b111001011110 !
+b111001011110 &
+b1110 '
+b1101 "
+b1101 #
+#150
+b1011100110 %
+b111011100110 !
+b111011100110 &
+b1111 '
+b1110 "
+b1110 #
+#160
+b1101101001 %
+b111101101001 !
+b111101101001 &
+b10000 '
+b1111 "
+b1111 #
+#170
