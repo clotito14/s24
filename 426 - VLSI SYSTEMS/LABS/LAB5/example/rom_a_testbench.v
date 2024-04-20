@@ -17,6 +17,11 @@ rom_a  u1 (   // Invoke the design.
 
 integer count ;
 
+initial begin : GTKWAVE
+    $dumpfile("rom_a.vcd");
+    $dumpvars(0, rom_a_test);
+end
+
 initial 
 
 begin

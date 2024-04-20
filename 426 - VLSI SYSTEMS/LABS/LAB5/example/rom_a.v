@@ -2,7 +2,7 @@
 
 module rom_a (n, sign, square); 
 
-input [3:0] n ;	  // Signed number. 
+input [3:0] n ;	  // Signed number.
 
 input sign ;	 // Signed number if it is high and unsigned otherwise. 
 
