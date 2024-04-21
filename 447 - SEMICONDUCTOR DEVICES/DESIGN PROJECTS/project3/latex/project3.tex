@@ -136,7 +136,7 @@ Once the simulator have solved for the diode device characteristics, we see that
            & \therefore ~ \boxed{V_{bi} = 0.870~\text{V}}
 \end{align*}
 
-\textbf{What is the maximum electrical field, \(E_{max}\)?}
+\textbf{What is the maximum electric field, \(E_{max}\)?}
 
 For the doping concentration in Silicon, \(E_{max} = 4\times10^5 ~ \text{V}/\text{cm}\).
 
@@ -150,7 +150,19 @@ The currents are the same once I varied the p-type and n-type lengths in the sim
 
 \textbf{What happens to the I-V curve if the temperature is increased to 500K? Why?}
 
+When re-simulating with \(T = 500\text{K}\), the I-V curve drastically increases in value. The new forward-bias diode current density for the same forward-bias voltage is \(J_D = 1176.59 ~ \text{A}/\text{cm}^2 \), which means the forward-bias diode current is \(I_D = 35.3 ~\text{A}\).
+
+This is because the diode current is proportional to the intrinsic carrier density squared, and the intrinsic carrier density is exponentially dependent on temperature.
+
+\begin{equation*}
+    I_D \propto n_i^2 \propto e^{-E_g / kT}
+\end{equation*}
+
 \textbf{Using simulations, discuss what happens to the I-V curve if carrier lifetimes are increased by a factor of 100 (that is recombination is suppressed). }
+
+Re-simulating the device with \(\tau_0 = 2 \times 10^{-5} ~\text{s}\), and \(T = 300\text{K}\), the forward-bias diode current density for the same forward-bias voltage is \(J_D = 1.62108 ~ \text{A}/\text{cm}^2 \), which means the forward-bias diode current is \(I_D = 48.6 ~\text{mA}\). Which is a slight decrease to our original current.
+
+This is expected since the reverse saturation current is inversely dependent on the square roots of the minority carrier lifetimes. 
 
 % REFERENCES!
 \bibliographystyle{IEEEtran}
