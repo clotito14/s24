@@ -26,18 +26,18 @@ it{et al.}}: A Novel Tin Can Link}
 % ABSTRACT
 \begin{abstract}
     % [A brief statement on what you plan to do in this project.]
-    Design of a diode to have a breakdown voltage of at least 60V both analytically and via simulation.
+For this lab, the goal is to design a one-sided abrupt silicon pn-junction diode. This diode must have a breakdown voltage of at least 60V with a forward-bias current of 50mA when applying 0.625V. We know that the minority carrier lifetimes are \(\tau_0 = 2 \times 10^{-7} s\). The parameters to engineer are doping density and cross-sectional area.
 \end{abstract}
 
 \section*{Introduction}
-
-For this lab, the goal is to design a one-sided abrupt silicon pn-junction diode. This diode must have a breakdown voltage of at least 60V with a forward-bias current of 50mA when applying 0.625V. We know that the minority carrier lifetimes are \(\tau_0 = 2 \times 10^{-7} s\). The parameters to engineer are doping density and cross-sectional area.
 
 For this pn-junction experiment, the \textit{PN Junction Lab} from nanoHUB.org was used \cite{sim}.
 
 \section*{Part I: Analytical Design}
 
-First off, using the Shockley diode equation, we can back-solve for the reverse saturation current \(I_s\) in our diode:
+Since we are using silicon, \(\mu_n = 1350 ~ \text{cm}^2/\text{Vs}\) and \(\mu_p = 480 ~ \text{cm}^2/\text{Vs}\). And, I assume \(T=300 ~ \text{K}\).
+
+Using the Shockley diode equation, we can back-solve for the reverse saturation current \(I_s\) in our diode:
 
 \begin{align*}
     I_D &= I_s(e^{V_D/V_{th}} - 1) \\
@@ -93,8 +93,28 @@ Now, we can find the cross-sectional area \(A\), since \(I_s = AJ_s\).
 
 \section*{Part II: Verification using nanoHUB simulations}
 
+\begin{figure}[!ht] 
+    \centering
+    \includegraphics[width = 6cm]{inputs.jpg}
+    \caption{Input Parameters in Simulator}
+    \label{fig:inputs}
+\end{figure}
 
-\section*{Conclusion}
+\begin{figure}[!ht] 
+    \centering
+    \includegraphics[width = 6cm]{doping.jpg}
+    \caption{Doping Profile in Simulator}
+    \label{fig:doping}
+\end{figure}
+
+\begin{figure}[!ht] 
+    \centering
+    \includegraphics[width = 6cm]{current.jpg}
+    \caption{IV-Characteristics in Simulator}
+    \label{fig:current}
+\end{figure}
+
+\section*{Answers to Questions}
 
 % REFERENCES!
 \bibliographystyle{IEEEtran}
