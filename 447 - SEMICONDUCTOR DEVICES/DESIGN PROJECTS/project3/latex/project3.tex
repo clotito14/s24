@@ -93,6 +93,8 @@ Now, we can find the cross-sectional area \(A\), since \(I_s = AJ_s\).
 
 \section*{Part II: Verification using nanoHUB simulations}
 
+In the \textit{PN Junction Lab} simulator, the input parameters are in Figure \ref{fig:inputs}, and the doping profile derived in Part I is shown in Figure \ref{fig:doping}.
+
 \begin{figure}[!ht] 
     \centering
     \includegraphics[width = 6cm]{inputs.jpg}
@@ -107,6 +109,15 @@ Now, we can find the cross-sectional area \(A\), since \(I_s = AJ_s\).
     \label{fig:doping}
 \end{figure}
 
+Once the simulator have solved for the diode device characteristics, we see that for \(V_D = 0.625~\text{V}\) that \(J_D = 1.71751~\text{A} / \text{cm}^2 \). If we use the cross-sectional area from Part I, \(A = 0.03 ~ \text{cm}^2\), then we get the forward-bias diode current to be:
+
+\begin{align*}
+    I_D &= AJ_D \\
+        &= (0.03)(1.71751) \\
+        &= 0.0515 \\
+        & \boxed{I_D = 51.5 ~ \text{mA}}
+\end{align*}
+
 \begin{figure}[!ht] 
     \centering
     \includegraphics[width = 6cm]{current.jpg}
@@ -115,6 +126,31 @@ Now, we can find the cross-sectional area \(A\), since \(I_s = AJ_s\).
 \end{figure}
 
 \section*{Answers to Questions}
+
+\textbf{What is the built-in potential in equilibrium, \(V_{bi}\)?}
+
+\begin{align*}
+    V_{bi} &= V_t \ln \left( \frac{N_a N_d}{n_i^2}  \right) \\
+           &= (0.0259)\ln \left( \frac{(8.633\times10^{15})(1\times10^{19})}{(1.5\times10^{10})^2}  \right) \\ 
+           &= 0.870 \\
+           & \therefore ~ \boxed{V_{bi} = 0.870~\text{V}}
+\end{align*}
+
+\textbf{What is the maximum electrical field, \(E_{max}\)?}
+
+For the doping concentration in Silicon, \(E_{max} = 4\times10^5 ~ \text{V}/\text{cm}\).
+
+\textbf{Is it possible to arbitrarily increase doping concentration?}
+
+It is not practical to do so. Like I mentioned in Part I, \(J_s\) approaches a finite value as \(N_d \to \infty\). So, it is most efficient to choose the lowest possible doping density to achieve the current necessary, since it will be most cost-effective.
+
+\textbf{Do you obtain the same forward-bias current from these two calculations? Why or why not?}
+
+The currents are the same once I varied the p-type and n-type lengths in the simulator. In this case, the p-type region was \(11 \mu m\) and the n-type region was \(7 \mu m\). My guess is this changes the lengths over which the charge carriers diffuse in the diode, which is directly proportional to the current in the device.
+
+\textbf{What happens to the I-V curve if the temperature is increased to 500K? Why?}
+
+\textbf{Using simulations, discuss what happens to the I-V curve if carrier lifetimes are increased by a factor of 100 (that is recombination is suppressed). }
 
 % REFERENCES!
 \bibliographystyle{IEEEtran}
