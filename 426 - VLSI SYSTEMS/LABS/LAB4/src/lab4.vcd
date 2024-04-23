@@ -1,5 +1,5 @@
 $date
-	Sun Mar 17 15:26:09 2024
+	Tue Apr 23 13:55:33 2024
 $end
 $version
 	Icarus Verilog
@@ -58,6 +58,9 @@ $scope begin GTKWAVE $end
 $upscope $end
 $upscope $end
 $enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
 #0
 $dumpvars
 0=

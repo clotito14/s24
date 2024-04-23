@@ -1,0 +1,95 @@
+\documentclass{article}
+%% PACKAGES %%
+
+\usepackage{amsmath, amsfonts, amssymb, amsthm}
+\usepackage{braket}
+\usepackage{listings}
+\usepackage{geometry}
+\usepackage{xcolor}
+\usepackage{textcomp}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{sourcecodepro}
+\usepackage{multirow}
+\usepackage{import}
+%%%%%%%%%%%%%%
+
+\graphicspath{{./images}}
+\setlength\parindent{0pt}       % globally supress indentation
+
+%% LISTINGS CONFIG %%
+
+\definecolor{purple2}{RGB}{153,0,153} % there's actually no standard purple
+\definecolor{green2}{RGB}{0,153,0} % a darker green
+
+\lstset{
+  language=Verilog,                   % the language
+  basicstyle=\normalsize\ttfamily,   % size of the fonts for the code
+  frame = single,
+  % Color settings to match IDLE style
+  keywordstyle=\color{orange},       % core keywords
+  keywordstyle={[2]\color{purple2}}, % built-ins
+  stringstyle=\color{green2},%
+  showstringspaces=false,
+  commentstyle=\color{red},%
+  upquote=true,                      % requires textcomp
+  numbers=left,
+  breaklines=true,
+}
+
+% Title Stuff
+\title{\vspace{-3cm}Arithmetic Circuit Designs with Pipelines \\ {\normalsize \textit{Verilog Lab 6}}}
+\author{Chase A. Lotito, \textit{SIUC Undergraduate}}
+\date{}
+
+\begin{document}
+
+\pagestyle{fancy}
+
+% attempt to make nice header
+\fancyhead{}
+\fancyhead[CH]{\normalsize{LOTITO - SIUC ECE - ECE426 LAB 6}}
+
+\maketitle % Makes the title
+
+\section*{Section A: 16-bit adder without pipelining.}
+
+\lstinputlisting{../src/adder_a.v}
+
+\lstinputlisting{../src/adder_a_testbench.v}
+
+%\begin{figure}[!ht] 
+%    \centering
+%    \includegraphics*[width = 15.1cm]{}
+%    \caption{}
+%    \label{}
+%\end{figure}    
+%
+%\begin{figure}[!ht] 
+%    \centering
+%    \includegraphics*[width = 15.1cm]{}
+%    \caption{}
+%    \label{}
+%\end{figure}    
+
+\section*{Section B: 16-bit adder with pipelining.}
+
+\lstinputlisting{../src/adder_b.v}
+
+\lstinputlisting{../src/adder_b_testbench.v}
+
+%\begin{figure}[!ht] 
+%    \centering
+%    \includegraphics*[width = 15.1cm]{}
+%    \caption{}
+%    \label{}
+%\end{figure}    
+%
+%\begin{figure}[!ht] 
+%    \centering
+%    \includegraphics*[width = 15.1cm]{}
+%    \caption{}
+%    \label{}
+%\end{figure}    
+
+\end{document}
