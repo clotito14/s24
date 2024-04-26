@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex project3"] 1713723809.41733 "project3.aux" "project3.bbl" "project3" 1713725046.13722 0
+["bibtex project3"] 1713723809.41733 "project3.aux" "project3.bbl" "project3" 1713928977.03621 0
   "./project3Bib.bib" 1713560948 188 d0772b290539146c2e314774b2dd9344 ""
   "C:/Users/Chase Lotito/AppData/Local/Programs/MiKTeX/bibtex/bst/ieeetran/IEEEtran.bst" 1440622569 57748 7c8250ecf02814ce6ddc0cdbb63df1dd ""
-  "project3.aux" 1713725044 698 da900947db40cd75b2b385b4d886703f "pdflatex"
+  "project3.aux" 1713928975 698 da900947db40cd75b2b385b4d886703f "pdflatex"
   (generated)
   "project3.bbl"
   "project3.blg"
   (rewritten before read)
-["pdflatex"] 1713725043.79702 "project3.tex" "project3.pdf" "project3" 1713725046.13831 0
+["pdflatex"] 1713928974.62199 "project3.tex" "project3.pdf" "project3" 1713928977.03734 0
   "C:/Users/Chase" 1708145956 18928 2303c844763820208425319a66eac16a ""
   "C:/Users/Chase Lotito/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1711779309 168717 68e003168ec277a44a7cc2fc75574876 ""
   "C:/Users/Chase Lotito/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1708733400 24214168 92db86824313c5c590f8595efb2a1af3 ""
@@ -112,9 +112,9 @@
   "images/current.jpg" 1713679622 21436 f0413e6105a23f8cde1a4c417db3c624 ""
   "images/doping.jpg" 1713679644 19856 bfe751ee29d660ae0ef81cfdc216bdb6 ""
   "images/inputs.jpg" 1713680870 21063 17dd071c024cf8d114ca57d48894f89d ""
-  "project3.aux" 1713725044 698 da900947db40cd75b2b385b4d886703f "pdflatex"
+  "project3.aux" 1713928975 698 da900947db40cd75b2b385b4d886703f "pdflatex"
   "project3.bbl" 1713723809 1019 6da072b1c4f26b94f54bbbec82d65e89 "bibtex project3"
-  "project3.tex" 1713725045 8104 9b68bd725d16c004e724429f32c00652 ""
+  "project3.tex" 1713928973 8104 9b68bd725d16c004e724429f32c00652 ""
   (generated)
   "project3.aux"
   "project3.log"
