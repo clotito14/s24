@@ -11,7 +11,7 @@
 \graphicspath{{./images}}
 
 % Title Stuff
-\title{}
+\title{Design of a MOS Capacitor structure adjacent to finFET}
 \author{Chase A. Lotito, \textit{SIUC Undergraduate}}
 \date{}
 
@@ -29,17 +29,88 @@ it{et al.}}: A Novel Tin Can Link}
     This experiment is to design a dual-gate MOS capacitor with a threshold voltage \(V_{th} = 0.7V\).     
 \end{abstract}
 
-\section*{Introduction}
+\section{Introduction}
+% why this project and related device is important
 
+This project is an important case study in engineering the threshold voltage in a MOS capacitor (MOSCAP). Specifically, a dual-gate MOSCAP which resembles the active channel region in a finFET device. finFETs are transistors with better gate control and low power consumption, and they're an extremely prominent device in current industry.   
 
-
-\section*{Part I: Analytical Design}
+\section{Design Method}
+% the simulator used and reference to it
 
 For this MOSCAP experiment, the \textit{SCHRED 1.0} simulator from nanoHUB.org was used \cite{sim}.
 
-\section*{Part II: Verification using nanoHUB simulations}
+The MOSCAP must:
+\begin{enumerate}
+    \item Threshold voltage \(V_{th}\) of 0.7V (\(\pm 10\%\)). \\
+    \item Body thickness \(T_b\) of 5nm. \\
+    \item \(2 \times 10^{17} \text{cm}^{-3} \leq N_A \leq  6 \times 10^{17} \text{cm}^{-3}\) \\
+    \item Hf\(O_2\) as gate dielectric. \\
+    \item Aluminum as gate contact material. \\
+    \item Silicon wafer in (100) orientation.
+\end{enumerate}
 
-\section*{Answers to Questions}
+
+\section{Discussions on Design and Analysis}
+% describe design and analysis, attach necessary graphs
+
+To simulate Hf\(O_2\), the gate oxide dielectric constant \(\epsilon_r = 25.1\). To simulate aluminum, the necessary work function \(\phi_{Al} = 4.28\text{eV}\). 
+
+I chose an iterative approach to find the proper device parameters. Where the capacitance of the function seemed to be a weak function of the doping density, so I set the acceptor doping density \(N_A = 4 \times 10^{17} \text{cm}^{-3}\). Then, I varied the oxide thickness, and I always kept \(t_{ox} = t_{box}\) to better follow a finFET. 
+
+Figure \ref{fig:cv} shows at \(V_g = 2\text{V}\), we get \(C_{tot} = 4.429 \mu F/\text{cm}^2\), and at \(V_g = 0.7V\) we get \(C_{tot} = 3.965 \mu F/\text{cm}^2\); here, this capacitance is 89.5\% the 2V value, so we have designed for \(V_{th} = 0.7V\). The green C-V curve in Figure \ref{fig:cv} shows the curve of the MOSCAP with \(t_{ox} = 8\text{nm}\). 
+
+\begin{figure}[!ht] 
+    \centering
+    \includegraphics*[width = 6cm]{cvCharacteristics.png}
+    \caption{C-V Characteristics of MOSCAPs, sweep of \(t_{ox}\).}
+    \label{fig:cv}
+\end{figure}    
+
+Figures \ref{fig:conduction} and \ref{fig:electricfield} show the biased MOSCAP's conduction band and electric field across the device. The \(E\)-field spikes at the locations of inversion in the conduction band near the oxide-semiconductor interfaces. Via \(E = -dV/dx\), we see the large drop in potential at 0nm, a spike in the \(E\)-field, and the same occurs at the next oxide-semiconductor interface, but instead a large potential increase leads to a negative \(E\)-field spike. 
+
+\begin{figure}[!ht] 
+    \centering
+    \includegraphics*[width = 5cm]{ConductionBandBiased.png}
+    \caption{Conduction band for biased MOSCAP.}
+    \label{fig:conduction}
+\end{figure}    
+
+
+\begin{figure}[!ht] 
+    \centering
+    \includegraphics*[width = 5cm]{ElectricFieldBiased.png}
+    \caption{Electric field profile in biased MOSCAP.}
+    \label{fig:electricfield}
+\end{figure}    
+
+Figure \ref{fig:quantized} shows the difference between the classical conduction band partnered with the quantized energy states. At full bias, the CBM is at -539meV, but the lowest quantized energy state is at -128meV. This difference of near 400meV will cause the threshold voltage to inevitably increase, and shift the C-V curve to the right.
+
+\begin{figure}[!ht] 
+    \centering
+    \includegraphics*[width = 5cm]{SpatialSubbands.png}
+    \caption{Conduction band minimum and quantum energy states.}
+    \label{fig:quantized}
+\end{figure}    
+
+Rerunning the simulation with the \textit{Semiclassical} charge model, we get at \(V_g = 2V\), \(C_{tot} = 4.941 \mu F/\text{cm}^2\). 90\% of that capacitance is found at \(Vg=V_T = 0.5V\). With respect to the quantum mechanical charge model, the semiclassical gives a threshold voltage 0.2V lower.
+
+Figure \ref{fig:plot} shows the decrease in capacitance as the body gets thicker, which follows as \(C = \epsilon_0 A / d\). But, we know that \(C \sim V_T\), so increases in body thickness cause decreases in the threshold voltage for a device. This is also shown in the C-V characteristic curve shifting to the left as the body thickness increases. 
+
+\begin{figure}[!ht] 
+    \centering
+    \includegraphics*[width = 5cm]{capvbody.png}
+    \caption{Capacitance versus Body Thickness}
+    \label{fig:plot}
+\end{figure}    
+
+\section{Conclusion}
+% state what you have learned
+
+Interestingly, increases in device size lead to decreased threshold voltages---better control even with more device to operate. Here, we are fighting with the nanoscale quantum effects, and the increases in energy that are caused by compacting charge carriers. 
+
+We have to have a thick oxide layer since the permittivity of Hf\(O_2\) is so much greater than conventional oxide materials. This is good since we want to decrease leakage currents, and this also causes decreases in device capacitance. Ultimately, this is also good since we now require less energy to switch our device. Also, for digital circuits, this device could operate at higher frequencies as compared to thinner-oxide devices.
+
+So, if we want to design a finFET, then we want thicker gate-oxides that can still permit the proper amount of electric flux into the channel region as before. This is so we can reduce capacitance to take advantage of greater gate control. 
 
 % REFERENCES!
 \bibliographystyle{IEEEtran}
