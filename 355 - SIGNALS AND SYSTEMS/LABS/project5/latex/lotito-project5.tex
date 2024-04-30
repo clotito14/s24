@@ -1,6 +1,8 @@
 \documentclass{IEEEtran}
 %% PACKAGES %%
 
+\hbadness=99999
+
 \usepackage{amsmath, amsfonts, amssymb, amsthm}
 \usepackage{braket}
 \usepackage{listings}
@@ -15,7 +17,6 @@
 %%%%%%%%%%%%%%
 
 \graphicspath{{./images}}
-\setlength\parindent{0pt}       % globally supress indentation
 
 %% LISTINGS CONFIG %%
 
@@ -38,7 +39,7 @@
 }
 
 % Title Stuff
-\title{\vspace{-3cm} Filter Design}
+\title{\vspace{-3cm} FIR and IIR Filter Design}
 \author{Chase A. Lotito, \textit{SIUC Undergraduate}}
 \date{}
 
@@ -81,6 +82,14 @@
 
 \section{Discussion}
 % Please discuss your understanding of the digital filter design with considerations of public health, safety, and welfare, as well as global, cultural, social, environmental, and economic factors. (This discussion could be in general and should not be limited to the tasks of IIR and FIR filters design).
+
+Butterworth filters have smooth and flat passbands with slow roll-off in the stopband, and Chebyshev filters have ripples in their pass and stopbands but quicker rolloff \cite{textbook}. For the Chebyshev filter, we implemented a Type I, which has the ripples in the passband. Both filters here are implemented as low-pass filters, which pass low-frequency signals and stop high-frequency signals.
+
+Essentially, Butterworth filters are critical for applications that need smooth frequency response, and Chebyshev filters are critical for applications that need a sharp cutoff, or strongly restricted stopband.
+
+Butterworth filters are best in applications like audio processing, since for desired frequencies, there won't be moments of unnecessary attenuation. Culturally and socially, robust audio-systems allow for enhanced communication and entertainment---these systems fundamentally produce and propogate modern culture. Also, in applications like air-traffic control, it is necessary that audio-based communications retain as much fidelity as possible to ensure clear lines of information can be sent, which is paramount for the safety of pilots and passengers. 
+
+Chebyshev filters are more suited for high-frequency, radar, and other sensing applications. The steeper roll-off allows cleaner distinctions between the desired low-frequencies and undesirable high-frequencies. This can be critical in noise-reduction for medical applications (i.e. pacemakers), and for public saftey in meterological radar systems.
 
 % TODO: put references
 \bibliographystyle{IEEEtran}

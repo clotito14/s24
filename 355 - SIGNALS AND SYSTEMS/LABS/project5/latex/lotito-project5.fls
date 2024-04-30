@@ -212,6 +212,9 @@ INPUT .\images\chebyshev.png
 INPUT .\images\chebyshev.png
 INPUT .\images\chebyshev.png
 INPUT .\images\chebyshev.png
+INPUT .\lotito-project5.bbl
+INPUT .\lotito-project5.bbl
+INPUT lotito-project5.bbl
 INPUT C:\Users\cloti\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\times\ptmr8t.vf
 INPUT C:\Users\cloti\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmr8r.tfm
 INPUT C:\Users\cloti\AppData\Local\MiKTeX\fonts\map\pdftex\pdftex.map
@@ -228,6 +231,9 @@ INPUT C:\Users\cloti\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmr8r.
 INPUT C:\Users\cloti\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\times\ptmri8t.vf
 INPUT C:\Users\cloti\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmri8r.tfm
 INPUT C:\Users\cloti\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\times\ptmr8t.vf
+INPUT C:\Users\cloti\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\times\ptmr8t.vf
+INPUT C:\Users\cloti\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\times\ptmri8t.vf
+INPUT C:\Users\cloti\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmri8r.tfm
 INPUT lotito-project5.aux
 INPUT C:\Users\cloti\AppData\Local\Programs\MiKTeX\fonts\type1\urw\times\utmr8a.pfb
 INPUT C:\Users\cloti\AppData\Local\Programs\MiKTeX\fonts\type1\urw\times\utmr8a.pfb

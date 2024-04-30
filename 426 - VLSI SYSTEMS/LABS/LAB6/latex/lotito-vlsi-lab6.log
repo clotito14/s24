@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.2.12)  23 APR 2024 14:44
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.2.12)  27 APR 2024 16:59
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -555,32 +555,78 @@ p.enc}]
 Package textcomp Info: Symbol \textasciigrave not provided by
 (textcomp)             font family SourceCodePro-TLF in TS1 encoding.
 (textcomp)             Default family used instead on input line 41.
-) (../src/adder_b.v [2])
-(../src/adder_b_testbench.v
+)
+<./images/adder_a.png, id=14, 566.86781pt x 100.87688pt>
+File: ./images/adder_a.png Graphic file (type png)
+<use ./images/adder_a.png>
+Package pdftex.def Info: ./images/adder_a.png  used on input line 63.
+(pdftex.def)             Requested size: 429.63678pt x 76.45787pt.
+<./images/adder_a_circuit.png, id=17, 941.76843pt x 463.7325pt>
+File: ./images/adder_a_circuit.png Graphic file (type png)
+<use ./images/adder_a_circuit.png>
+Package pdftex.def Info: ./images/adder_a_circuit.png  used on input line 71.
+(pdftex.def)             Requested size: 429.63678pt x 211.55762pt.
+<./images/adder_a_area.png, id=19, 280.79906pt x 332.74312pt>
+File: ./images/adder_a_area.png Graphic file (type png)
+<use ./images/adder_a_area.png>
+Package pdftex.def Info: ./images/adder_a_area.png  used on input line 78.
+(pdftex.def)             Requested size: 429.63678pt x 509.14099pt.
+<./images/adder_a_timing.png, id=21, 371.88937pt x 368.1253pt>
+File: ./images/adder_a_timing.png Graphic file (type png)
+<use ./images/adder_a_timing.png>
+Package pdftex.def Info: ./images/adder_a_timing.png  used on input line 85.
+(pdftex.def)             Requested size: 429.63678pt x 425.3012pt.
+ [2 <./images/adder_a.png>] [3 <./images/adder_a_circuit.png>] [4 <./images/add
+er_a_area.png>] [5 <./images/adder_a_timing.png>] (../src/adder_b.v) [6
+
+] (../src/adder_b_testbench.v
 Package textcomp Info: Symbol \textasciigrave not provided by
 (textcomp)             font family SourceCodePro-TLF in TS1 encoding.
 (textcomp)             Default family used instead on input line 3.
 Package textcomp Info: Symbol \textasciigrave not provided by
 (textcomp)             font family SourceCodePro-TLF in TS1 encoding.
 (textcomp)             Default family used instead on input line 4.
- [3]
 Package textcomp Info: Symbol \textasciigrave not provided by
 (textcomp)             font family SourceCodePro-TLF in TS1 encoding.
-(textcomp)             Default family used instead on input line 35.
-) [4] (lotito-vlsi-lab6.aux)
+(textcomp)             Default family used instead on input line 41.
+)
+<./images/adder_b.png, id=46, 543.53062pt x 105.39375pt>
+File: ./images/adder_b.png Graphic file (type png)
+<use ./images/adder_b.png>
+Package pdftex.def Info: ./images/adder_b.png  used on input line 100.
+(pdftex.def)             Requested size: 429.63678pt x 83.3132pt.
+ [7]
+<./images/adder_b_circuit.png, id=52, 1023.07219pt x 437.38406pt>
+File: ./images/adder_b_circuit.png Graphic file (type png)
+<use ./images/adder_b_circuit.png>
+Package pdftex.def Info: ./images/adder_b_circuit.png  used on input line 108.
+(pdftex.def)             Requested size: 429.63678pt x 183.67336pt.
+<./images/adder_b_area.png, id=54, 281.55188pt x 344.03531pt>
+File: ./images/adder_b_area.png Graphic file (type png)
+<use ./images/adder_b_area.png>
+Package pdftex.def Info: ./images/adder_b_area.png  used on input line 115.
+(pdftex.def)             Requested size: 429.63678pt x 525.01793pt.
+<./images/adder_b_timing.png, id=56, 375.65344pt x 350.05782pt>
+File: ./images/adder_b_timing.png Graphic file (type png)
+<use ./images/adder_b_timing.png>
+Package pdftex.def Info: ./images/adder_b_timing.png  used on input line 122.
+(pdftex.def)             Requested size: 429.63678pt x 400.38937pt.
+ [8 <./images/adder_b.png> <./images/adder_b_circuit.png>] [9 <./images/adder_b
+_area.png>]
+[10 <./images/adder_b_timing.png>] (lotito-vlsi-lab6.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 6881 strings out of 474486
- 103700 string characters out of 5743755
- 2228542 words of memory out of 5000000
- 29037 multiletter control sequences out of 15000+600000
+ 6963 strings out of 474486
+ 105992 string characters out of 5743755
+ 2207542 words of memory out of 5000000
+ 29119 multiletter control sequences out of 15000+600000
  569707 words of font info for 67 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,12n,72p,394b,1759s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 57i,11n,72p,394b,1652s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\cloti\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tctt
 1000.pk> <C:\Users\cloti\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi60
 0\ecrm1000.pk> <C:\Users\cloti\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec
@@ -590,9 +636,9 @@ pen/ec/dpi600\ecti1200.pk> <C:\Users\cloti\AppData\Local\MiKTeX\fonts/pk/ljfour
 ljfour/jknappen/ec/dpi600\ecti1000.pk> <C:\Users\cloti\AppData\Local\MiKTeX\fon
 ts/pk/ljfour/jknappen/ec/dpi600\ecrm1728.pk><C:/Users/cloti/AppData/Local/Progr
 ams/MiKTeX/fonts/type1/adobe/sourcecodepro/SourceCodePro-Regular.pfb>
-Output written on lotito-vlsi-lab6.pdf (4 pages, 100601 bytes).
+Output written on lotito-vlsi-lab6.pdf (10 pages, 405565 bytes).
 PDF statistics:
- 152 PDF objects out of 1000 (max. 8388607)
+ 225 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 89 words of extra memory for PDF output out of 10000 (max. 10000000)
 

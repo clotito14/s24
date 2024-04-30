@@ -1,9 +1,9 @@
 # Fdb version 4
-["pdflatex"] 1713901474.35028 "lotito-vlsi-lab6.tex" "lotito-vlsi-lab6.pdf" "lotito-vlsi-lab6" 1713901477.4338 0
+["pdflatex"] 1714255161.6861 "lotito-vlsi-lab6.tex" "lotito-vlsi-lab6.pdf" "lotito-vlsi-lab6" 1714255166.4215 0
   "../src/adder_a.v" 1713899105 623 6f7bab830acbf03f4b54ec59eb2b5fe1 ""
   "../src/adder_a_testbench.v" 1713899629 1027 e31eb6c752f64de4d396c4613892727f ""
   "../src/adder_b.v" 1713899395 1018 e441e6b0779dce46b87972556cc729a3 ""
-  "../src/adder_b_testbench.v" 1713899628 857 65e62829330b0e01409c1f30ee3c20df ""
+  "../src/adder_b_testbench.v" 1714252777 985 390600de4a0ab10bcac87dfed68a0665 ""
   "C:/Users/cloti/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1713901298 168717 68e003168ec277a44a7cc2fc75574876 ""
   "C:/Users/cloti/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecbx1440.pk" 1710091620 40136 4bc64edde0cebe36293d5cb569a8b5e5 ""
   "C:/Users/cloti/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecrm1000.pk" 1710091616 23808 39fd8f95bba8937762f009760740290d ""
@@ -102,8 +102,16 @@
   "C:/Users/cloti/AppData/Local/Programs/MiKTeX/tex/latex/sourcecodepro/ts1sourcecodepro-tlf.fd" 1558279543 2987 22b3250f63599b49ca1fc161dc49eba0 ""
   "C:/Users/cloti/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1700127522 55487 80a65caedd3722f4c20a14a69e785d8f ""
   "C:/Users/cloti/AppData/Local/Programs/MiKTeX/tex/latex/xkeyval/xkeyval.sty" 1656236919 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
-  "lotito-vlsi-lab6.aux" 1713901476 510 c4ccb5c57132b20c8f437ff6a525169a "pdflatex"
-  "lotito-vlsi-lab6.tex" 1713901470 2287 226f9b232b8cd1e897a66a2b832db28c ""
+  "images/adder_a.png" 1714252925 15048 e18cd27cd14fed94db565123cfe9dee5 ""
+  "images/adder_a_area.png" 1714254101 66910 1e403cf84831f2caedc018147afcd8f1 ""
+  "images/adder_a_circuit.png" 1714253938 51713 3ff9ae07e734e9a20732f4fc67e9adcb ""
+  "images/adder_a_timing.png" 1714254126 72339 f8316fa5f970c4d5187d980320a85fe4 ""
+  "images/adder_b.png" 1714253000 13464 dbe4f646bcbac07e76b607bac696a259 ""
+  "images/adder_b_area.png" 1714254295 71895 026724c469f286ac6c02cdf00c1df33f ""
+  "images/adder_b_circuit.png" 1714254261 41991 610872080c1a073ced7dcf240c602af2 ""
+  "images/adder_b_timing.png" 1714254400 69741 411080c839b562f9e37e5864d24b5944 ""
+  "lotito-vlsi-lab6.aux" 1714255165 1773 6ae90e8f2a47b7dcdc58beff2b5d2d6f "pdflatex"
+  "lotito-vlsi-lab6.tex" 1714255156 3151 52ce41ba705e62711d2623a1eb22ba62 ""
   (generated)
   "lotito-vlsi-lab6.aux"
   "lotito-vlsi-lab6.log"

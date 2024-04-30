@@ -1,6 +1,14 @@
 # Fdb version 4
-["pdflatex"] 1713807156.96287 "lotito-project5.tex" "lotito-project5.pdf" "lotito-project5" 1713807159.58472 0
-  "C:/Users/cloti/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1711655088 168717 68e003168ec277a44a7cc2fc75574876 ""
+["bibtex lotito-project5"] 1714505480.75377 "lotito-project5.aux" "lotito-project5.bbl" "lotito-project5" 1714505644.75329 0
+  "./project5Bib.bib" 1714503383 207 d1dfb067dfecb4239ca6a7803e9ea338 ""
+  "C:/Users/cloti/AppData/Local/Programs/MiKTeX/bibtex/bst/ieeetran/IEEEtran.bst" 1708029450 57748 7c8250ecf02814ce6ddc0cdbb63df1dd ""
+  "lotito-project5.aux" 1714505643 1166 0bbf06a9bd16953558a0885f0627a9ae "pdflatex"
+  (generated)
+  "lotito-project5.bbl"
+  "lotito-project5.blg"
+  (rewritten before read)
+["pdflatex"] 1714505642.24781 "lotito-project5.tex" "lotito-project5.pdf" "lotito-project5" 1714505644.75437 0
+  "C:/Users/cloti/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1713901298 168717 68e003168ec277a44a7cc2fc75574876 ""
   "C:/Users/cloti/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1707798959 24225046 29315bcb98eb1a201c0dfa0e6330096b ""
   "C:/Users/cloti/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc" 1458473887 4993 80dc9bab7f31fb78a000ccfed0e27cab ""
   "C:/Users/cloti/AppData/Local/Programs/MiKTeX/fonts/tfm/adobe/times/ptmb7t.tfm" 1136793854 2172 fd0c924230362ff848a33632ed45dc23 ""
@@ -69,8 +77,9 @@
   "images/butterworth.png" 1713464969 43932 c946066b665ff5e57cd0d292c4164241 ""
   "images/chebyshev.png" 1713464930 47185 3da77fa680105332bbb6870e79b0b1b5 ""
   "images/task1.png" 1713464996 55558 e02bd92626a6c3e45aa6b94058363a07 ""
-  "lotito-project5.aux" 1713807159 995 58ab516256a753be7ffb49ab62489df1 "pdflatex"
-  "lotito-project5.tex" 1713807153 2365 55098c0dc91cb4e44241eb551665ed19 ""
+  "lotito-project5.aux" 1714505643 1166 0bbf06a9bd16953558a0885f0627a9ae "pdflatex"
+  "lotito-project5.bbl" 1714505481 1067 116b6d283be53320d54658b91592c780 "bibtex lotito-project5"
+  "lotito-project5.tex" 1714505640 3923 4d94697e16bc795b8b93a71f6d858b0a ""
   (generated)
   "lotito-project5.aux"
   "lotito-project5.log"

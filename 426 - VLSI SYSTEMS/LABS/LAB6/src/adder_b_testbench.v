@@ -13,6 +13,12 @@ wire [16:0] sum;
 
 adder_b U1 (.clk(clk), .n1(n1), .n2(n2), .sum(sum) );
 
+// GTKWAVE (waveform simulator)
+initial begin : GTKWAVE
+    $dumpfile("adder_b.vcd");
+    $dumpvars(0, adder_b_testbench);
+end
+
 initial begin// Apply different sets of inputs.
  clk = 1'b0; n1 = 16'h0; n2 = 16'h0;
 

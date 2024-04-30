@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.2.12)  22 APR 2024 12:35
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.2.12)  30 APR 2024 14:34
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -486,4 +486,138 @@ File: lstlang1.sty 2023/02/27 1.9 listings language file
 )
 (C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
 tex.def
-File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (
+File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count293
+\l__pdf_internal_box=\box57
+) (lotito-project5.aux)
+\openout1 = `lotito-project5.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for LY1/ptm/m/n on input line 46.
+LaTeX Font Info:    Trying to load font information for LY1+ptm on input line 4
+6.
+
+(C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex/latex/ly1\ly1ptm.fd
+File: ly1ptm.fd 2001/02/01 font definitions for LY1/ptm using Berry names.
+)
+LaTeX Font Info:    ... okay on input line 46.
+
+-- Lines per column: 46 (approximate, difference = 4.47656pt).
+\c@lstlisting=\count294
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: <default>
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(92.14519pt, 430.00462pt, 92.14519pt)
+* v-part:(T,H,B)=(95.39737pt, 556.47656pt, 143.09605pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=430.00462pt
+* \textheight=556.47656pt
+* \oddsidemargin=19.8752pt
+* \evensidemargin=19.8752pt
+* \topmargin=-10.21461pt
+* \headheight=12.0pt
+* \headsep=21.342pt
+* \topskip=12.0pt
+* \footskip=25.80774pt
+* \marginparwidth=20.0pt
+* \marginparsep=10.0pt
+* \columnsep=12.0pt
+* \skip\footins=10.79993pt plus 4.79993pt minus 2.39996pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumntrue
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+
+(C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
+ii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count295
+\scratchdimen=\dimen188
+\scratchbox=\box58
+\nofMPsegments=\count296
+\nofMParguments=\count297
+\everyMPshowfont=\toks34
+\MPscratchCnt=\count298
+\MPscratchDim=\dimen189
+\MPnumerator=\count299
+\makeMPintoPDFobject=\count300
+\everyMPtoPDFconversion=\toks35
+)
+(C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
+ase.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(C:\Users\cloti\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.c
+fg
+File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
+))
+<./images/task1.png, id=1, 843.15pt x 632.3625pt>
+File: ./images/task1.png Graphic file (type png)
+<use ./images/task1.png>
+Package pdftex.def Info: ./images/task1.png  used on input line 62.
+(pdftex.def)             Requested size: 199.16928pt x 149.37714pt.
+<./images/butterworth.png, id=2, 843.15pt x 632.3625pt>
+File: ./images/butterworth.png Graphic file (type png)
+<use ./images/butterworth.png>
+Package pdftex.def Info: ./images/butterworth.png  used on input line 71.
+(pdftex.def)             Requested size: 199.16928pt x 149.37714pt.
+<./images/chebyshev.png, id=3, 843.15pt x 632.3625pt>
+File: ./images/chebyshev.png Graphic file (type png)
+<use ./images/chebyshev.png>
+Package pdftex.def Info: ./images/chebyshev.png  used on input line 78.
+(pdftex.def)             Requested size: 199.16928pt x 149.37714pt.
+ (lotito-project5.bbl) [1{C:/Users/cloti/AppData/Local/MiKTeX/fonts/map/pdftex/
+pdftex.map}{C:/Users/cloti/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8
+r.enc}
+
+
+ <./images/task1.png (PNG copy)> <./images/butterworth.png (PNG copy)> <./image
+s/chebyshev.png (PNG copy)>] (lotito-project5.aux)
+ ***********
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-01-04>
+ ***********
+ ) 
+Here is how much of TeX's memory you used:
+ 7042 strings out of 474486
+ 110016 string characters out of 5743755
+ 1932542 words of memory out of 5000000
+ 29245 multiletter control sequences out of 15000+600000
+ 659315 words of font info for 125 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 57i,6n,72p,599b,285s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/cloti/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pf
+b><C:/Users/cloti/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.p
+fb>
+Output written on lotito-project5.pdf (1 page, 181114 bytes).
+PDF statistics:
+ 20 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 16 words of extra memory for PDF output out of 10000 (max. 10000000)
+
