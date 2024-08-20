@@ -1,0 +1,138 @@
+\documentclass{IEEEtran}
+
+\hbadness=99999
+
+% Packages
+\usepackage{amsmath}
+\usepackage{physics}
+\usepackage[cmintegrals]{newtxmath}
+\usepackage{graphicx}
+\usepackage{xurl} % Makes urls better
+\graphicspath{{./images}}
+
+% Title Stuff
+\title{MOSFET Design}
+\author{Chase A. Lotito, \textit{SIUC Undergraduate}}
+\date{}
+
+% Makes a header!
+\markboth{ECE447 --- Semiconductor Devices --- Project 5, May 2024}{Shell \MakeLowercase{\text
+it{et al.}}: A Novel Tin Can Link}
+
+\begin{document}
+
+\maketitle % Makes the title
+
+% ABSTRACT
+\begin{abstract}
+    % [A brief statement on what you plan to do in this project.]
+    For this MOSFET experiment, we want to analytically design, and numerically verify the design for a n-type MOSFET. Parameters to design for are on current, off current, subthreshold swing, and drain-induced barrier lowering (DIBL).
+\end{abstract}
+
+\section{Analytical Approach}
+
+Given the flat-band voltage \(V_{FB}\), the difference between Fermi and Instrinic level \(\phi_{fp}\), oxide capacitance \(C_{ox}\), and acceptor doping concentration, the threshold voltage in a MOSFET is:
+
+\begin{equation*}
+    V_T = V_{FB} + 2\phi_{fp} + \frac{\sqrt{2q\epsilon N_a (2\phi_{fp})}}{C_{ox}}
+\end{equation*}
+
+If we assume there isn't too much band bending from work function differences, then let \(V_{FB} = 0V\). Then we can iterate through values knowing \(C_{ox} = k_{ox} \epsilon_0 / t_{ox}\). Also:
+
+\begin{equation*}
+    \phi_{fp} = \frac{kT}{q} \ln \left( \frac{N_a}{n_i}  \right)
+\end{equation*}
+
+\textbf{Question 1.}
+
+\smallskip
+
+We can backsolve for off current using the triode version of the mosfet drain current, and get that \(V_T=0.8V\) for \(\leq 10 \mu A / \mu m\). By iterating different values, this requires \(N_a = 7e+16 cm^{-3}\) and I set \(t_{ox}=4nm\).
+
+However, if I solve for on current, I get about 1.165\(\mu\)A. This part I am not sure on, it would take me more time to fit all the parameters correctly. Also, \(V_{GS}\) for this is very close to \(V_T\) in value, which decreases the analytical value for \(I_D\).
+
+We can calculate for subthreshold swing using:
+
+\begin{equation*}
+    S = \frac{kT}{q} \ln (10) \left( 1 + \frac{C_b}{C_{ox}}  \right)
+\end{equation*}
+
+We can also solve for current in the triode mode, drain current is:
+
+\begin{equation*}
+    I_D = \frac{1}{2} \mu_n C_{ox} \frac{W}{L} (2(V_{GS} - V_T)V_{DS} - V_{DS}^2)
+\end{equation*}
+
+And in saturation:
+
+\begin{equation*}
+    I_D = \frac{1}{2} \mu_n C_{ox} \frac{W}{L} (V_{GS} - V_T)^2
+\end{equation*}
+
+Given the currents and associated voltages, we can account for drain-induced barrier lowering (DIBL):
+
+\begin{equation*}
+    \text{DIBL} = \frac{|\Delta V_T|}{\Delta V_{DS}}
+\end{equation*}
+
+\section{Design Method}
+% the simulator used and reference to it
+
+For this MOSFET experiment, the \textit{MOSFet} simulator from nanoHUB.org was used \cite{sim}.
+
+The MOSFET must:
+\begin{enumerate}
+    \item ON current (\(V_G = V_D = 0.8V\)) \(\geq 600 \mu A/ \mu m\)\\
+    \item OFF current (\(V_G = 0V, V_D = 0.8V\)) \(\leq 10 \mu A / \mu m\) \\
+    \item Subthreshold Swing, \(S \leq 200 mV/\text{dec}\) \\
+    \item Drain Induced Barrier Lowering (DIBL) \(\leq 250 mV/V\)
+\end{enumerate}
+
+\section{Discussions on Design and Analysis}
+% describe design and analysis, attach necessary graphs
+
+To follow the anayltical, after setting the given parameters, I set \(N_a = 7\times10^{16}cm^{-3}\), and \(t_{ox}=4nm\). 4nm since values needed to be shifted to get convergence.
+
+\begin{figure}[!ht] 
+    \centering
+    \includegraphics*[width = 6cm]{4nm-5e18-idvg.png}
+    \caption{\(I_D-V_{GS}\) curve for \(t_{ox}=4nm\), and \(N_a=7\times10^{16}cm^{-3}\)}
+    \label{fig:idvgs}
+\end{figure}    
+
+\textbf{Question 2.}
+
+\smallskip
+
+For this design, we get off current to be 6.95\(\mu\)A, which satisfies our requirements. The on current is off by a single order of magnitude at 14.5\(\mu\)A, which does not satisfy the requirements. It was difficult to simulate these IV curves that weren't mostly flat across the voltage sweep.
+
+Though, if we look at Figure \ref{fig:idvgs}, the subthreshold begins to flatten for the blue IV-curve near 0.75-0.8V, so the threshold voltage we found analytically follows in simulation.
+
+Major differences will come in the higher accuracy of the simulator, which solves more complex models of the MOSFET while taking quantum effects into account.
+
+\textbf{Question 3.}
+
+\smallskip
+
+Nanoscale device engineers design devices that are applied to every sector's technology, so it is paramount that design decisions are made with the public in mind. 
+
+Critically, devices should be designed to first deliver the highest reliability possible. For public health, reliable semiconductor sensors and transistors which monitor the health of high-risk patients must provide robust functionality guaranteed. 
+
+For the general welfare, smaller and cheaper devices that don't skimp on power efficiency, and deliver on high switching speed can be large boosts to economic growth. If a nation can spearhead innovative semiconductor device designs, then the people of that nation can benefit from the device's gains. Also, reducing in off current, and therefore leakage power, is critical in reducing small and unnecessary carbon emissions---good for reducing the need for electricity mostly generated from coal mines in the United States.
+
+\textbf{Question 4.}
+
+\smallskip
+
+As engineers, making products or designing infrastructure for people requires standards to make sure the public that interacts with a design are safe and better off with the design than before.
+
+It is right to put the safety of others on a pedestal as an engineer. Lives rely on your work, so it is imperative engineers put safety on top. This also ensures that progress made is worth pursuing, since it would have already passed safety standards in approach.
+
+Secondly, it is right to design in aims of making people better off than they were before. More than ever, we need to reduce superfluous junk, and be in search of useful and life-improving tools. For nanoscale devices, making sure to not reinvent another smaller transistor, but instead a transistor that reduces leakage or can withstand greater electric fields.
+
+
+% REFERENCES!
+\bibliographystyle{IEEEtran}
+\bibliography{project5Bib.bib}
+
+\end{document}
